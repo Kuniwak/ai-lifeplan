@@ -1,0 +1,2 @@
+適用開始年	均等割非課税限度額の一人あたり[円]	均等割非課税限度額の加算額[円]	適用終了年	出典
+不明	350000	210000	無期限	https://www.city.setagaya.lg.jp/02051/220.html 世田谷区は 1 級地であり、一人あたり 35 万円・加算 21 万円である。10 万円の加算は令和3年度からで、級地によらないため law.ResidentExemptionBase が持つ。原本は testdata/law/setagaya/hikazei.md

@@ -1,0 +1,6 @@
+slot	path
+extends	base.tsv
+inflation	data/environment/scenario/inflation-past30.tsv
+investment_return	data/environment/scenario/return-past30.tsv
+real_wage_growth	data/environment/scenario/wage-past30.tsv
+pension_level	data/environment/scenario/pension-past30.tsv

@@ -1,0 +1,95 @@
+<law_data_response><attached_files_info/><law_info><law_type>Act</law_type><law_id>329AC0000000115</law_id><law_num>昭和二十九年法律第百十五号</law_num><law_num_era>Showa</law_num_era><law_num_year>29</law_num_year><law_num_type>Act</law_num_type><law_num_num>115</law_num_num><promulgation_date>1954-05-19</promulgation_date></law_info><revision_info><law_revision_id>329AC0000000115_20260525_506AC0000000052</law_revision_id><law_type>Act</law_type><law_title>厚生年金保険法</law_title><law_title_kana>こうせいねんきんほけんほう</law_title_kana><abbrev>厚生年金法</abbrev><category>社会保険</category><updated>2025-11-13T11:52:40+09:00</updated><amendment_promulgate_date>2024-06-14</amendment_promulgate_date><amendment_enforcement_date>2026-05-25</amendment_enforcement_date><amendment_enforcement_comment/><amendment_scheduled_enforcement_date/><amendment_law_id>506AC0000000052</amendment_law_id><amendment_law_title>事業性融資の推進等に関する法律</amendment_law_title><amendment_law_title_kana/><amendment_law_num>令和六年法律第五十二号</amendment_law_num><amendment_type>3</amendment_type><repeal_status>None</repeal_status><repeal_date/><remain_in_force>false</remain_in_force><mission>New</mission><current_revision_status>PreviousEnforced</current_revision_status></revision_info><law_full_text><Article Num="44">
+            <ArticleCaption>（加給年金額）</ArticleCaption>
+            <ArticleTitle>第四十四条</ArticleTitle>
+            <Paragraph Num="1">
+              <ParagraphNum/>
+              <ParagraphSentence>
+                <Sentence Function="main" Num="1" WritingMode="vertical">老齢厚生年金（その年金額の計算の基礎となる被保険者期間の月数が二百四十以上であるものに限る。）の額は、受給権者がその権利を取得した当時（その権利を取得した当時、当該老齢厚生年金の額の計算の基礎となる被保険者期間の月数が二百四十未満であつたときは、第四十三条第二項又は第三項の規定により当該月数が二百四十以上となるに至つた当時。第三項において同じ。）その者によつて生計を維持していたその者の六十五歳未満の配偶者又は子（十八歳に達する日以後の最初の三月三十一日までの間にある子及び二十歳未満で第四十七条第二項に規定する障害等級（以下この条において単に「障害等級」という。）の一級若しくは二級に該当する障害の状態にある子に限る。）があるときは、第四十三条の規定にかかわらず、同条に定める額に加給年金額を加算した額とする。</Sentence>
+                <Sentence Function="proviso" Num="2" WritingMode="vertical">ただし、国民年金法第三十三条の二第一項の規定により加算が行われている子があるとき（当該子について加算する額に相当する部分の全額につき支給を停止されているときを除く。）は、その間、当該子について加算する額に相当する部分の支給を停止する。</Sentence>
+              </ParagraphSentence>
+            </Paragraph>
+            <Paragraph Num="2">
+              <ParagraphNum>２</ParagraphNum>
+              <ParagraphSentence>
+                <Sentence Num="1" WritingMode="vertical">前項に規定する加給年金額は、同項に規定する配偶者については二十二万四千七百円に国民年金法第二十七条に規定する改定率であつて同法第二十七条の三及び第二十七条の五の規定の適用がないものとして改定したもの（以下この章において「改定率」という。）を乗じて得た額（その額に五十円未満の端数が生じたときは、これを切り捨て、五十円以上百円未満の端数が生じたときは、これを百円に切り上げるものとする。）とし、同項に規定する子については一人につき七万四千九百円に改定率を乗じて得た額（そのうち二人までについては、それぞれ二十二万四千七百円に改定率を乗じて得た額とし、それらの額に五十円未満の端数が生じたときは、これを切り捨て、五十円以上百円未満の端数が生じたときは、これを百円に切り上げるものとする。）とする。</Sentence>
+              </ParagraphSentence>
+            </Paragraph>
+            <Paragraph Num="3">
+              <ParagraphNum>３</ParagraphNum>
+              <ParagraphSentence>
+                <Sentence Num="1" WritingMode="vertical">受給権者がその権利を取得した当時胎児であつた子が出生したときは、第一項の規定の適用については、その子は、受給権者がその権利を取得した当時その者によつて生計を維持していた子とみなし、その出生の月の翌月から、年金の額を改定する。</Sentence>
+              </ParagraphSentence>
+            </Paragraph>
+            <Paragraph Num="4">
+              <ParagraphNum>４</ParagraphNum>
+              <ParagraphSentence>
+                <Sentence Num="1" WritingMode="vertical">第一項の規定によりその額が加算された老齢厚生年金については、配偶者又は子が次の各号のいずれかに該当するに至つたときは、同項の規定にかかわらず、その者に係る同項の加給年金額を加算しないものとし、次の各号のいずれかに該当するに至つた月の翌月から、年金の額を改定する。</Sentence>
+              </ParagraphSentence>
+              <Item Num="1">
+                <ItemTitle>一</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">死亡したとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="2">
+                <ItemTitle>二</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">受給権者による生計維持の状態がやんだとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="3">
+                <ItemTitle>三</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">配偶者が、離婚又は婚姻の取消しをしたとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="4">
+                <ItemTitle>四</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">配偶者が、六十五歳に達したとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="5">
+                <ItemTitle>五</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">子が、養子縁組によつて受給権者の配偶者以外の者の養子となつたとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="6">
+                <ItemTitle>六</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">養子縁組による子が、離縁をしたとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="7">
+                <ItemTitle>七</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">子が、婚姻をしたとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="8">
+                <ItemTitle>八</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">子（障害等級の一級又は二級に該当する障害の状態にある子を除く。）について、十八歳に達した日以後の最初の三月三十一日が終了したとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="9">
+                <ItemTitle>九</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">障害等級の一級又は二級に該当する障害の状態にある子（十八歳に達する日以後の最初の三月三十一日までの間にある子を除く。）について、その事情がやんだとき。</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="10">
+                <ItemTitle>十</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">子が、二十歳に達したとき。</Sentence>
+                </ItemSentence>
+              </Item>
+            </Paragraph>
+            <Paragraph Num="5">
+              <ParagraphNum>５</ParagraphNum>
+              <ParagraphSentence>
+                <Sentence Num="1" WritingMode="vertical">第一項又は前項第二号の規定の適用上、老齢厚生年金の受給権者によつて生計を維持していたこと又はその者による生計維持の状態がやんだことの認定に関し必要な事項は、政令で定める。</Sentence>
+              </ParagraphSentence>
+            </Paragraph>
+          </Article></law_full_text></law_data_response>

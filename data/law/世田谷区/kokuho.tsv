@@ -1,0 +1,8 @@
+適用開始年	区分	所得割率	均等割[円/人]	平等割[円/世帯]	課税限度額[円]	適用終了年	出典
+2025	医療分	7.71%	47300	0	660000	2025	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。令和7年度の欄
+2026	医療分	7.51%	47600	0	670000	無期限	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。「加入者全員の賦課基準額の合計額 ×7.51%×加入月数÷12」「加入者数 ×47,600円×加入月数÷12」「67万円」
+2025	後期支援分	2.69%	16800	0	260000	2025	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。令和7年度の欄
+2026	後期支援分	2.80%	17600	0	260000	無期限	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。「加入者全員の賦課基準額の合計額 ×2.80%×加入月数÷12」「加入者数 ×17,600円×加入月数÷12」「26万円」
+2025	介護分	2.25%	16600	0	170000	2025	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。令和7年度の欄
+2026	介護分	2.43%	17800	0	170000	無期限	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。「40～64歳の方の賦課基準額の合計額 ×2.43%×該当月数÷12」「40～64歳の方の加入者数 ×17,800円×該当月数÷12」「17万円」
+2026	子ども子育て支援分	0.27%	1873	0	30000	無期限	https://www.city.setagaya.lg.jp/02060/297.html （保険料の計算方法）。原本は testdata/law/setagaya/kokuho-keisan.md。「加入者全員の賦課基準額の合計額 ×0.27％×加入月数÷12」「18歳以上（注釈）の加入者数 ×1,873円×該当月数÷12」「3万円」。**18 歳未満は均等割が全額軽減される**——「18歳に達する日以降の最初の3月31日までの間にある方は、均等割額が全額軽減されます」

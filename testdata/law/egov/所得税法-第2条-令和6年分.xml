@@ -1,0 +1,834 @@
+<law_data_response><attached_files_info/><law_info><law_type>Act</law_type><law_id>340AC0000000033</law_id><law_num>昭和四十年法律第三十三号</law_num><law_num_era>Showa</law_num_era><law_num_year>40</law_num_year><law_num_type>Act</law_num_type><law_num_num>033</law_num_num><promulgation_date>1965-03-31</promulgation_date></law_info><revision_info><law_revision_id>340AC0000000033_20240517_506AC0000000026</law_revision_id><law_type>Act</law_type><law_title>所得税法</law_title><law_title_kana>しょとくぜいほう</law_title_kana><abbrev></abbrev><category>国税</category><updated>2024-08-16T14:54:28+09:00</updated><amendment_promulgate_date>2024-05-17</amendment_promulgate_date><amendment_enforcement_date>2024-05-17</amendment_enforcement_date><amendment_enforcement_comment/><amendment_scheduled_enforcement_date/><amendment_law_id>506AC0000000026</amendment_law_id><amendment_law_title>雇用保険法等の一部を改正する法律</amendment_law_title><amendment_law_title_kana/><amendment_law_num>令和六年法律第二十六号</amendment_law_num><amendment_type>3</amendment_type><repeal_status>None</repeal_status><repeal_date/><remain_in_force>false</remain_in_force><mission>New</mission><current_revision_status>PreviousEnforced</current_revision_status></revision_info><law_full_text><Article Num="2">
+            <ArticleCaption>（定義）</ArticleCaption>
+            <ArticleTitle>第二条</ArticleTitle>
+            <Paragraph Num="1">
+              <ParagraphNum/>
+              <ParagraphSentence>
+                <Sentence Num="1">この法律において、次の各号に掲げる用語の意義は、当該各号に定めるところによる。</Sentence>
+              </ParagraphSentence>
+              <Item Num="1">
+                <ItemTitle>一</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">国内</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">この法律の施行地をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="2">
+                <ItemTitle>二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">国外</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">この法律の施行地外の地域をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="3">
+                <ItemTitle>三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">居住者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国内に住所を有し、又は現在まで引き続いて一年以上居所を有する個人をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="4">
+                <ItemTitle>四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">非永住者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">居住者のうち、日本の国籍を有しておらず、かつ、過去十年以内において国内に住所又は居所を有していた期間の合計が五年以下である個人をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="5">
+                <ItemTitle>五</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">非居住者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">居住者以外の個人をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="6">
+                <ItemTitle>六</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">内国法人</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国内に本店又は主たる事務所を有する法人をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="7">
+                <ItemTitle>七</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">外国法人</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">内国法人以外の法人をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="8">
+                <ItemTitle>八</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">人格のない社団等</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">法人でない社団又は財団で代表者又は管理人の定めがあるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="8_2">
+                <ItemTitle>八の二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">株主等</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">株主又は合名会社、合資会社若しくは合同会社の社員その他法人の出資者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="8_3">
+                <ItemTitle>八の三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">法人課税信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">法人税法（昭和四十年法律第三十四号）第二条第二十九号の二（定義）に規定する法人課税信託をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="8_4">
+                <ItemTitle>八の四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">恒久的施設</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Function="main" Num="1">次に掲げるものをいう。</Sentence>
+                    <Sentence Function="proviso" Num="2">ただし、我が国が締結した所得に対する租税に関する二重課税の回避又は脱税の防止のための条約において次に掲げるものと異なる定めがある場合には、その条約の適用を受ける非居住者又は外国法人については、その条約において恒久的施設と定められたもの（国内にあるものに限る。）とする。</Sentence>
+                  </Column>
+                </ItemSentence>
+                <Subitem1 Num="1">
+                  <Subitem1Title>イ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">非居住者又は外国法人の国内にある支店、工場その他事業を行う一定の場所で政令で定めるもの</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="2">
+                  <Subitem1Title>ロ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">非居住者又は外国法人の国内にある建設若しくは据付けの工事又はこれらの指揮監督の役務の提供を行う場所その他これに準ずるものとして政令で定めるもの</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="3">
+                  <Subitem1Title>ハ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">非居住者又は外国法人が国内に置く自己のために契約を締結する権限のある者その他これに準ずる者で政令で定めるもの</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+              </Item>
+              <Item Num="9">
+                <ItemTitle>九</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">公社債</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">公債及び社債（会社以外の法人が特別の法律により発行する債券を含む。）をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="10">
+                <ItemTitle>十</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">預貯金</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">預金及び貯金（これらに準ずるものとして政令で定めるものを含む。）をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="11">
+                <ItemTitle>十一</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">合同運用信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">信託会社（金融機関の信託業務の兼営等に関する法律（昭和十八年法律第四十三号）により同法第一条第一項（兼営の認可）に規定する信託業務を営む同項に規定する金融機関を含む。）が引き受けた金銭信託で、共同しない多数の委託者の信託財産を合同して運用するもの（投資信託及び投資法人に関する法律（昭和二十六年法律第百九十八号）第二条第二項（定義）に規定する委託者非指図型投資信託及びこれに類する外国投資信託（同条第二十四項に規定する外国投資信託をいう。第十二号の二及び第十三号において同じ。）並びに委託者が実質的に多数でないものとして政令で定める信託を除く。）をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="12">
+                <ItemTitle>十二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">貸付信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">貸付信託法（昭和二十七年法律第百九十五号）第二条第一項（定義）に規定する貸付信託をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="12_2">
+                <ItemTitle>十二の二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">投資信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">投資信託及び投資法人に関する法律第二条第三項に規定する投資信託及び外国投資信託をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="13">
+                <ItemTitle>十三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">証券投資信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">投資信託及び投資法人に関する法律第二条第四項に規定する証券投資信託及びこれに類する外国投資信託をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="14">
+                <ItemTitle>十四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">オープン型の証券投資信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">証券投資信託のうち、元本の追加信託をすることができるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="15">
+                <ItemTitle>十五</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">公社債投資信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">証券投資信託のうち、その信託財産を公社債に対する投資として運用することを目的とするもので、株式（投資信託及び投資法人に関する法律第二条第十四項に規定する投資口を含む。第二十四条（配当所得）、第二十五条（配当等とみなす金額）、第五十七条の四第三項（株式交換等に係る譲渡所得等の特例）、第百七十六条第一項及び第二項（信託財産に係る利子等の課税の特例）、第二百二十四条の三第二項第一号（株式等の譲渡の対価の受領者の告知）並びに第二百二十五条第一項第二号（支払調書及び支払通知書）において同じ。）又は出資に対する投資として運用しないものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="15_2">
+                <ItemTitle>十五の二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">公社債等運用投資信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">証券投資信託以外の投資信託のうち、信託財産として受け入れた金銭を公社債等（公社債、手形その他の政令で定める資産をいう。）に対して運用するものとして政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="15_3">
+                <ItemTitle>十五の三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">公募公社債等運用投資信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">その設定に係る受益権の募集が公募（金融商品取引法（昭和二十三年法律第二十五号）第二条第三項（定義）に規定する取得勧誘のうち同項第一号に掲げる場合に該当するものとして政令で定めるものをいう。）により行われた公社債等運用投資信託（法人税法第二条第二十九号ロ（２）に掲げる投資信託に該当するものに限る。）をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="15_4">
+                <ItemTitle>十五の四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">特定目的信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">資産の流動化に関する法律（平成十年法律第百五号）第二条第十三項（定義）に規定する特定目的信託をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="15_5">
+                <ItemTitle>十五の五</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">特定受益証券発行信託</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">法人税法第二条第二十九号ハに規定する特定受益証券発行信託をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="16">
+                <ItemTitle>十六</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">棚卸資産</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">事業所得を生ずべき事業に係る商品、製品、半製品、仕掛品、原材料その他の資産（有価証券、第四十八条の二第一項（暗号資産の譲渡原価等の計算及びその評価の方法）に規定する暗号資産及び山林を除く。）で棚卸しをすべきものとして政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="17">
+                <ItemTitle>十七</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">有価証券</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">金融商品取引法第二条第一項に規定する有価証券その他これに準ずるもので政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="18">
+                <ItemTitle>十八</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">固定資産</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">土地（土地の上に存する権利を含む。）、減価償却資産、電話加入権その他の資産（山林を除く。）で政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="19">
+                <ItemTitle>十九</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">減価償却資産</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">不動産所得若しくは雑所得の基因となり、又は不動産所得、事業所得、山林所得若しくは雑所得を生ずべき業務の用に供される建物、構築物、機械及び装置、船舶、車両及び運搬具、工具、器具及び備品、鉱業権その他の資産で償却をすべきものとして政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="20">
+                <ItemTitle>二十</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">繰延資産</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">不動産所得、事業所得、山林所得又は雑所得を生ずべき業務に関し個人が支出する費用のうち支出の効果がその支出の日以後一年以上に及ぶもので政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="21">
+                <ItemTitle>二十一</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">各種所得</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第二編第二章第二節第一款（所得の種類及び各種所得の金額）に規定する利子所得、配当所得、不動産所得、事業所得、給与所得、退職所得、山林所得、譲渡所得、一時所得及び雑所得をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="22">
+                <ItemTitle>二十二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">各種所得の金額</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第二編第二章第二節第一款に規定する利子所得の金額、配当所得の金額、不動産所得の金額、事業所得の金額、給与所得の金額、退職所得の金額、山林所得の金額、譲渡所得の金額、一時所得の金額及び雑所得の金額をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="23">
+                <ItemTitle>二十三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">変動所得</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">漁獲から生ずる所得、著作権の使用料に係る所得その他の所得で年々の変動の著しいもののうち政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="24">
+                <ItemTitle>二十四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">臨時所得</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">役務の提供を約することにより一時に取得する契約金に係る所得その他の所得で臨時に発生するもののうち政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="25">
+                <ItemTitle>二十五</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">純損失の金額</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第六十九条第一項（損益通算）に規定する損失の金額のうち同条の規定を適用してもなお控除しきれない部分の金額をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="26">
+                <ItemTitle>二十六</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">雑損失の金額</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第七十二条第一項（雑損控除）に規定する損失の金額の合計額が同項各号に掲げる場合の区分に応じ当該各号に掲げる金額を超える場合におけるその超える部分の金額をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="27">
+                <ItemTitle>二十七</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">災害</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">震災、風水害、火災その他政令で定める災害をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="28">
+                <ItemTitle>二十八</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">障害者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">精神上の障害により事理を弁識する能力を欠く常況にある者、失明者その他の精神又は身体に障害がある者で政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="29">
+                <ItemTitle>二十九</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">特別障害者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">障害者のうち、精神又は身体に重度の障害がある者で政令で定めるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="30">
+                <ItemTitle>三十</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">寡婦</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">次に掲げる者でひとり親に該当しないものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+                <Subitem1 Num="1">
+                  <Subitem1Title>イ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">夫と離婚した後婚姻をしていない者のうち、次に掲げる要件を満たすもの</Sentence>
+                  </Subitem1Sentence>
+                  <Subitem2 Num="1">
+                    <Subitem2Title>（１）</Subitem2Title>
+                    <Subitem2Sentence>
+                      <Sentence Num="1">扶養親族を有すること。</Sentence>
+                    </Subitem2Sentence>
+                  </Subitem2>
+                  <Subitem2 Num="2">
+                    <Subitem2Title>（２）</Subitem2Title>
+                    <Subitem2Sentence>
+                      <Sentence Num="1">第七十条（純損失の繰越控除）及び第七十一条（雑損失の繰越控除）の規定を適用しないで計算した場合における第二十二条（課税標準）に規定する総所得金額、退職所得金額及び山林所得金額の合計額（以下この条において「合計所得金額」という。）が五百万円以下であること。</Sentence>
+                    </Subitem2Sentence>
+                  </Subitem2>
+                  <Subitem2 Num="3">
+                    <Subitem2Title>（３）</Subitem2Title>
+                    <Subitem2Sentence>
+                      <Sentence Num="1">その者と事実上婚姻関係と同様の事情にあると認められる者として財務省令で定めるものがいないこと。</Sentence>
+                    </Subitem2Sentence>
+                  </Subitem2>
+                </Subitem1>
+                <Subitem1 Num="2">
+                  <Subitem1Title>ロ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">夫と死別した後婚姻をしていない者又は夫の生死の明らかでない者で政令で定めるもののうち、イ（２）及び（３）に掲げる要件を満たすもの</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+              </Item>
+              <Item Num="31">
+                <ItemTitle>三十一</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">ひとり親</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">現に婚姻をしていない者又は配偶者の生死の明らかでない者で政令で定めるもののうち、次に掲げる要件を満たすものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+                <Subitem1 Num="1">
+                  <Subitem1Title>イ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">その者と生計を一にする子で政令で定めるものを有すること。</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="2">
+                  <Subitem1Title>ロ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">合計所得金額が五百万円以下であること。</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="3">
+                  <Subitem1Title>ハ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">その者と事実上婚姻関係と同様の事情にあると認められる者として財務省令で定めるものがいないこと。</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+              </Item>
+              <Item Num="32">
+                <ItemTitle>三十二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">勤労学生</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">次に掲げる者で、自己の勤労に基づいて得た事業所得、給与所得、退職所得又は雑所得（以下この号において「給与所得等」という。）を有するもののうち、合計所得金額が七十五万円以下であり、かつ、合計所得金額のうち給与所得等以外の所得に係る部分の金額が十万円以下であるものをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+                <Subitem1 Num="1">
+                  <Subitem1Title>イ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">学校教育法（昭和二十二年法律第二十六号）第一条（学校の範囲）に規定する学校の学生、生徒又は児童</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="2">
+                  <Subitem1Title>ロ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">国、地方公共団体又は私立学校法（昭和二十四年法律第二百七十号）第三条（定義）に規定する学校法人、同法第六十四条第四項（私立専修学校及び私立各種学校）の規定により設立された法人若しくはこれらに準ずるものとして政令で定める者の設置した学校教育法第百二十四条（専修学校）に規定する専修学校又は同法第百三十四条第一項（各種学校）に規定する各種学校の生徒で政令で定める課程を履修するもの</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="3">
+                  <Subitem1Title>ハ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Sentence Num="1">職業訓練法人の行う職業能力開発促進法（昭和四十四年法律第六十四号）第二十四条第三項（職業訓練の認定）に規定する認定職業訓練を受ける者で政令で定める課程を履修するもの</Sentence>
+                  </Subitem1Sentence>
+                </Subitem1>
+              </Item>
+              <Item Num="33">
+                <ItemTitle>三十三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">同一生計配偶者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">居住者の配偶者でその居住者と生計を一にするもの（第五十七条第一項（事業に専従する親族がある場合の必要経費の特例等）に規定する青色事業専従者に該当するもので同項に規定する給与の支払を受けるもの及び同条第三項に規定する事業専従者に該当するもの（第三十三号の四において「青色事業専従者等」という。）を除く。）のうち、合計所得金額が四十八万円以下である者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="33_2">
+                <ItemTitle>三十三の二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">控除対象配偶者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">同一生計配偶者のうち、合計所得金額が千万円以下である居住者の配偶者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="33_3">
+                <ItemTitle>三十三の三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">老人控除対象配偶者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">控除対象配偶者のうち、年齢七十歳以上の者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="33_4">
+                <ItemTitle>三十三の四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">源泉控除対象配偶者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">居住者（合計所得金額が九百万円以下であるものに限る。）の配偶者でその居住者と生計を一にするもの（青色事業専従者等を除く。）のうち、合計所得金額が九十五万円以下である者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="34">
+                <ItemTitle>三十四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">扶養親族</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">居住者の親族（その居住者の配偶者を除く。）並びに児童福祉法（昭和二十二年法律第百六十四号）第二十七条第一項第三号（都道府県の採るべき措置）の規定により同法第六条の四（定義）に規定する里親に委託された児童及び老人福祉法（昭和三十八年法律第百三十三号）第十一条第一項第三号（市町村の採るべき措置）の規定により同号に規定する養護受託者に委託された老人でその居住者と生計を一にするもの（第五十七条第一項に規定する青色事業専従者に該当するもので同項に規定する給与の支払を受けるもの及び同条第三項に規定する事業専従者に該当するものを除く。）のうち、合計所得金額が四十八万円以下である者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="34_2">
+                <ItemTitle>三十四の二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">控除対象扶養親族</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">扶養親族のうち、次に掲げる者の区分に応じそれぞれ次に定める者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+                <Subitem1 Num="1">
+                  <Subitem1Title>イ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Column Num="1">
+                      <Sentence Num="1">居住者</Sentence>
+                    </Column>
+                    <Column Num="2">
+                      <Sentence Num="1">年齢十六歳以上の者</Sentence>
+                    </Column>
+                  </Subitem1Sentence>
+                </Subitem1>
+                <Subitem1 Num="2">
+                  <Subitem1Title>ロ</Subitem1Title>
+                  <Subitem1Sentence>
+                    <Column Num="1">
+                      <Sentence Num="1">非居住者</Sentence>
+                    </Column>
+                    <Column Num="2">
+                      <Sentence Num="1">年齢十六歳以上三十歳未満の者及び年齢七十歳以上の者並びに年齢三十歳以上七十歳未満の者であつて次に掲げる者のいずれかに該当するもの</Sentence>
+                    </Column>
+                  </Subitem1Sentence>
+                  <Subitem2 Num="1">
+                    <Subitem2Title>（１）</Subitem2Title>
+                    <Subitem2Sentence>
+                      <Sentence Num="1">留学により国内に住所及び居所を有しなくなつた者</Sentence>
+                    </Subitem2Sentence>
+                  </Subitem2>
+                  <Subitem2 Num="2">
+                    <Subitem2Title>（２）</Subitem2Title>
+                    <Subitem2Sentence>
+                      <Sentence Num="1">障害者</Sentence>
+                    </Subitem2Sentence>
+                  </Subitem2>
+                  <Subitem2 Num="3">
+                    <Subitem2Title>（３）</Subitem2Title>
+                    <Subitem2Sentence>
+                      <Sentence Num="1">その居住者からその年において生活費又は教育費に充てるための支払を三十八万円以上受けている者</Sentence>
+                    </Subitem2Sentence>
+                  </Subitem2>
+                </Subitem1>
+              </Item>
+              <Item Num="34_3">
+                <ItemTitle>三十四の三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">特定扶養親族</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">控除対象扶養親族のうち、年齢十九歳以上二十三歳未満の者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="34_4">
+                <ItemTitle>三十四の四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">老人扶養親族</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">控除対象扶養親族のうち、年齢七十歳以上の者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="35">
+                <ItemTitle>三十五</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">特別農業所得者</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">その年において農業所得（米、麦、たばこ、果実、野菜若しくは花の生産若しくは栽培又は養蚕に係る事業その他これに類するものとして政令で定める事業から生ずる所得をいう。以下この号において同じ。）の金額が総所得金額の十分の七に相当する金額を超え、かつ、その年九月一日以後に生ずる農業所得の金額がその年中の農業所得の金額の十分の七を超える者をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="36">
+                <ItemTitle>三十六</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">予定納税額</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第百四条第一項（予定納税額の納付）又は第百七条第一項（特別農業所得者の予定納税額の納付）（これらの規定を第百六十六条（申告、納付及び還付）において準用する場合を含む。）の規定により納付すべき所得税の額をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="37">
+                <ItemTitle>三十七</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">確定申告書</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第二編第五章第二節第一款及び第二款（確定申告）（第百六十六条において準用する場合を含む。）の規定による申告書（当該申告書に係る期限後申告書を含む。）をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="38">
+                <ItemTitle>三十八</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">期限後申告書</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国税通則法（昭和三十七年法律第六十六号）第十八条第二項（期限後申告）に規定する期限後申告書をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="39">
+                <ItemTitle>三十九</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">修正申告書</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国税通則法第十九条第三項（修正申告）に規定する修正申告書をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="40">
+                <ItemTitle>四十</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">青色申告書</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第百四十三条（青色申告）（第百六十六条において準用する場合を含む。）の規定により青色の申告書によつて提出する確定申告書及び確定申告書に係る修正申告書をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="40_2">
+                <ItemTitle>四十の二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">更正請求書</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国税通則法第二十三条第三項（更正の請求）に規定する更正請求書をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="41">
+                <ItemTitle>四十一</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">確定申告期限</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第百二十条第一項（確定所得申告）（第百六十六条において準用する場合を含む。）の規定による申告書の提出期限をいい、年の中途において死亡し、又は出国をした場合には、第百二十五条第一項（年の中途で死亡した場合の確定申告）又は第百二十七条第一項（年の中途で出国をする場合の確定申告）（これらの規定を第百六十六条において準用する場合を含む。）の規定による申告書の提出期限をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="42">
+                <ItemTitle>四十二</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">出国</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">居住者については、国税通則法第百十七条第二項（納税管理人）の規定による納税管理人の届出をしないで国内に住所及び居所を有しないこととなることをいい、非居住者については、同項の規定による納税管理人の届出をしないで国内に居所を有しないこととなること（国内に居所を有しない非居住者で恒久的施設を有するものについては、恒久的施設を有しないこととなることとし、国内に居所を有しない非居住者で恒久的施設を有しないものについては、国内において行う第百六十一条第一項第六号（国内源泉所得）に規定する事業を廃止することとする。）をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="43">
+                <ItemTitle>四十三</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">更正</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国税通則法第二十四条（更正）又は第二十六条（再更正）の規定による更正をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="44">
+                <ItemTitle>四十四</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">決定</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第十九条（納税地指定の処分の取消しがあつた場合の申告等の効力）、第四十四条の二（免責許可の決定等により債務免除を受けた場合の経済的利益の総収入金額不算入）、第五十二条（貸倒引当金）、第五十七条の四（株式交換等に係る譲渡所得等の特例）、第百五十一条の四（相続により取得した有価証券等の取得費の額に変更があつた場合等の修正申告の特例）、第百五十九条（更正等による源泉徴収税額等の還付）、第百六十条（更正等による予納税額の還付）及び第二百二十八条の二（新株予約権の行使に関する調書）の場合を除き、国税通則法第二十五条（決定）の規定による決定をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="45">
+                <ItemTitle>四十五</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">源泉徴収</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第四編第一章から第六章まで（源泉徴収）の規定により所得税を徴収し及び納付することをいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="46">
+                <ItemTitle>四十六</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">附帯税</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国税通則法第二条第四号（定義）に規定する附帯税をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="47">
+                <ItemTitle>四十七</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">充当</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">第百九十条（年末調整）及び第百九十一条（過納額の還付）の場合を除き、国税通則法第五十七条第一項（充当）の規定による充当をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+              <Item Num="48">
+                <ItemTitle>四十八</ItemTitle>
+                <ItemSentence>
+                  <Column Num="1">
+                    <Sentence Num="1">還付加算金</Sentence>
+                  </Column>
+                  <Column Num="2">
+                    <Sentence Num="1">国税通則法第五十八条第一項（還付加算金）に規定する還付加算金をいう。</Sentence>
+                  </Column>
+                </ItemSentence>
+              </Item>
+            </Paragraph>
+            <Paragraph Num="2">
+              <ParagraphNum>２</ParagraphNum>
+              <ParagraphSentence>
+                <Sentence Num="1">この法律において、「相続人」には、包括受遺者を含むものとし、「被相続人」には、包括遺贈者を含むものとする。</Sentence>
+              </ParagraphSentence>
+            </Paragraph>
+          </Article></law_full_text></law_data_response>

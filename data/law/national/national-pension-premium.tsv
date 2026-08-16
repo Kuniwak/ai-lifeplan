@@ -1,0 +1,24 @@
+適用開始年	保険料月額[円]	適用終了年	出典
+2005	13580	2005	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2006	13860	2006	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2007	14100	2007	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2008	14410	2008	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2009	14660	2009	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2010	15100	2010	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2011	15020	2011	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2012	14980	2012	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2013	15040	2013	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2014	15250	2014	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2015	15590	2015	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2016	16260	2016	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2017	16490	2017	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2018	16340	2018	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2019	16410	2019	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2020	16540	2020	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2021	16610	2021	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2022	16590	2022	日本年金機構「国民年金保険料の変遷」 https://www.nenkin.go.jp/service/kokunen/hokenryo/20150337.html。**厚生労働省の発表が届いていない年度である**（README.md「国民年金保険料は法定額 × 保険料改定率」）
+2023	16520	2023	厚生労働省「令和６年度の年金額改定についてお知らせします」の「※令和５年度は 16,520 円」。法定額 17,000 円（平成16年度水準）は国民年金法第87条第3項の表の最後の行。原文の引用は testdata/law/nenkin-kaitei/PROVENANCE.md
+2024	16980	2024	厚生労働省「令和６年度の年金額改定についてお知らせします」の「実際の保険料額」。法定額 17,000 円（平成16年度水準）は国民年金法第87条第3項の表の最後の行。原文の引用は testdata/law/nenkin-kaitei/PROVENANCE.md
+2025	17510	2025	厚生労働省「令和７年度の年金額改定についてお知らせします」の「実際の保険料額」。法定額 17,000 円（平成16年度水準）は国民年金法第87条第3項の表の最後の行。原文の引用は testdata/law/nenkin-kaitei/PROVENANCE.md
+2026	17920	2026	厚生労働省「令和８年度の年金額改定についてお知らせします」の「実際の保険料額」。法定額 17,000 円（平成16年度水準）は国民年金法第87条第3項の表の最後の行。原文の引用は testdata/law/nenkin-kaitei/PROVENANCE.md
+2027	18290	無期限	厚生労働省「令和８年度の年金額改定についてお知らせします」の「実際の保険料額」。法定額 17,000 円（平成16年度水準）は国民年金法第87条第3項の表の最後の行。原文の引用は testdata/law/nenkin-kaitei/PROVENANCE.md。令和9年度は令和8年度の発表が先に告げている

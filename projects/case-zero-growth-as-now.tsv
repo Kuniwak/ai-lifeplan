@@ -1,0 +1,4 @@
+slot	path
+extends	case-zero-growth.tsv
+income_husband	data/controllable/income-husband.tsv
+investment	data/controllable/investment.tsv

@@ -1,0 +1,3 @@
+適用開始年	県民税均等割[円]	市民税均等割[円]	適用終了年	出典
+不明	1500	3500	2023	https://www.city.setagaya.lg.jp/02051/219.html（均等割・森林環境税） 均等割の 500 円 × 2 の加算は東日本大震災からの復興に関し地方公共団体が実施する防災のための施策に必要な財源の確保に係る地方税の臨時特例に関する法律第2条（平成26年度〜令和5年度）。原本は testdata/law/setagaya/kintouwari.md
+2024	1000	3000	無期限	https://www.city.setagaya.lg.jp/02051/219.html（均等割・森林環境税）。原本は testdata/law/setagaya/r8-kuzei-guidebook-3.md

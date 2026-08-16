@@ -1,0 +1,59 @@
+<law_data_response><attached_files_info/><law_info><law_type>Act</law_type><law_id>334AC0000000141</law_id><law_num>昭和三十四年法律第百四十一号</law_num><law_num_era>Showa</law_num_era><law_num_year>34</law_num_year><law_num_type>Act</law_num_type><law_num_num>141</law_num_num><promulgation_date>1959-04-16</promulgation_date></law_info><revision_info><law_revision_id>334AC0000000141_20260525_506AC0000000052</law_revision_id><law_type>Act</law_type><law_title>国民年金法</law_title><law_title_kana>こくみんねんきんほう</law_title_kana><abbrev></abbrev><category>社会保険</category><updated>2025-07-14T10:35:28+09:00</updated><amendment_promulgate_date>2024-06-14</amendment_promulgate_date><amendment_enforcement_date>2026-05-25</amendment_enforcement_date><amendment_enforcement_comment/><amendment_scheduled_enforcement_date/><amendment_law_id>506AC0000000052</amendment_law_id><amendment_law_title>事業性融資の推進等に関する法律</amendment_law_title><amendment_law_title_kana/><amendment_law_num>令和六年法律第五十二号</amendment_law_num><amendment_type>3</amendment_type><repeal_status>None</repeal_status><repeal_date/><remain_in_force>false</remain_in_force><mission>New</mission><current_revision_status>CurrentEnforced</current_revision_status></revision_info><law_full_text><Article Num="27">
+            <ArticleCaption>（年金額）</ArticleCaption>
+            <ArticleTitle>第二十七条</ArticleTitle>
+            <Paragraph Num="1">
+              <ParagraphNum/>
+              <ParagraphSentence>
+                <Sentence Function="main" Num="1" WritingMode="vertical">老齢基礎年金の額は、七十八万九百円に改定率（次条第一項の規定により設定し、同条（第一項を除く。）から第二十七条の五までの規定により改定した率をいう。以下同じ。）を乗じて得た額（その額に五十円未満の端数が生じたときは、これを切り捨て、五十円以上百円未満の端数が生じたときは、これを百円に切り上げるものとする。）とする。</Sentence>
+                <Sentence Function="proviso" Num="2" WritingMode="vertical">ただし、保険料納付済期間の月数が四百八十に満たない者に支給する場合は、当該額に、次の各号に掲げる月数を合算した月数（四百八十を限度とする。）を四百八十で除して得た数を乗じて得た額とする。</Sentence>
+              </ParagraphSentence>
+              <Item Num="1">
+                <ItemTitle>一</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料納付済期間の月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="2">
+                <ItemTitle>二</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料四分の一免除期間の月数（四百八十から保険料納付済期間の月数を控除して得た月数を限度とする。）の八分の七に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="3">
+                <ItemTitle>三</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料四分の一免除期間の月数から前号に規定する保険料四分の一免除期間の月数を控除して得た月数の八分の三に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="4">
+                <ItemTitle>四</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料半額免除期間の月数（四百八十から保険料納付済期間の月数及び保険料四分の一免除期間の月数を合算した月数を控除して得た月数を限度とする。）の四分の三に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="5">
+                <ItemTitle>五</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料半額免除期間の月数から前号に規定する保険料半額免除期間の月数を控除して得た月数の四分の一に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="6">
+                <ItemTitle>六</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料四分の三免除期間の月数（四百八十から保険料納付済期間の月数、保険料四分の一免除期間の月数及び保険料半額免除期間の月数を合算した月数を控除して得た月数を限度とする。）の八分の五に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="7">
+                <ItemTitle>七</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料四分の三免除期間の月数から前号に規定する保険料四分の三免除期間の月数を控除して得た月数の八分の一に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+              <Item Num="8">
+                <ItemTitle>八</ItemTitle>
+                <ItemSentence>
+                  <Sentence Num="1" WritingMode="vertical">保険料全額免除期間（第九十条の三第一項の規定により納付することを要しないものとされた保険料に係るものを除く。）の月数（四百八十から保険料納付済期間の月数、保険料四分の一免除期間の月数、保険料半額免除期間の月数及び保険料四分の三免除期間の月数を合算した月数を控除して得た月数を限度とする。）の二分の一に相当する月数</Sentence>
+                </ItemSentence>
+              </Item>
+            </Paragraph>
+          </Article></law_full_text></law_data_response>

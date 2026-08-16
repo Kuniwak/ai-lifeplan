@@ -1,0 +1,3 @@
+slot	path
+extends	base.tsv
+cost_growth	data/environment/scenario/cost-growth-zero.tsv

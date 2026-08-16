@@ -1,0 +1,19 @@
+適用開始年	段階	本人の市民税	世帯の市民税課税者	判定所得の下限[円]	保険料[円/年]	適用終了年	出典
+2024	1	非課税	いない	0	21,478	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×0.285）「生活保護または中国残留邦人等支援給付を受けている方」「本人および世帯全員が住民税非課税で、本人の公的年金等収入金額と合計所得金額(公的年金等に係る雑所得金額を除く）の合計が82.65万円以下」
+2024	2	非課税	いない	826,501	36,550	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×0.485）「82.65万円を超え120万円以下の方」
+2024	3	非課税	いない	1,200,001	48,984	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×0.65）「120万円を超える方」
+2024	4	非課税	いる	0	64,056	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×0.85）「本人が住民税非課税で、…82.65万円以下で同一世帯に住民税課税者がいる方」
+2024	5	非課税	いる	826,501	75,360	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額）「本人が住民税非課税で、…82.65万円を超え同一世帯に住民税課税者がいる方」。**これが基準額である**
+2024	6	課税	問わない	0	86,664	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×1.15）「本人が住民税課税で、合計所得金額が120万円未満の方」
+2024	7	課税	問わない	1,200,000	94,200	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×1.25）「120万円以上210万円未満」
+2024	8	課税	問わない	2,100,000	105,504	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×1.4）「210万円以上320万円未満」
+2024	9	課税	問わない	3,200,000	120,576	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×1.6）「320万円以上420万円未満」
+2024	10	課税	問わない	4,200,000	143,184	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×1.9）「420万円以上520万円未満」
+2024	11	課税	問わない	5,200,000	158,256	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×2.1）「520万円以上620万円未満」
+2024	12	課税	問わない	6,200,000	173,328	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×2.3）「620万円以上720万円未満」
+2024	13	課税	問わない	7,200,000	188,400	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×2.5）「720万円以上1,000万円未満」
+2024	14	課税	問わない	10,000,000	218,544	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×2.9）「1,000万円以上1,500万円未満」
+2024	15	課税	問わない	15,000,000	256,224	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×3.4）「1,500万円以上2,500万円未満」
+2024	16	課税	問わない	25,000,000	293,904	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×3.9）「2,500万円以上3,500万円未満」
+2024	17	課税	問わない	35,000,000	331,584	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×4.4）「3,500万円以上5,000万円未満」
+2024	18	課税	問わない	50,000,000	369,264	2026	https://www.city.setagaya.lg.jp/02061/2285.html （世田谷区の介護保険料額、第9期 令和6年度〜令和8年度）。原本は testdata/law/setagaya/kaigo-hokenryo.md。（基準額×4.9）「5,000万円以上の方」

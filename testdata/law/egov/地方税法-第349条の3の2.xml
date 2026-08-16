@@ -1,0 +1,44 @@
+<law_data_response><attached_files_info/><law_info><law_type>Act</law_type><law_id>325AC0000000226</law_id><law_num>昭和二十五年法律第二百二十六号</law_num><law_num_era>Showa</law_num_era><law_num_year>25</law_num_year><law_num_type>Act</law_num_type><law_num_num>226</law_num_num><promulgation_date>1950-07-31</promulgation_date></law_info><revision_info><law_revision_id>325AC0000000226_20260731_508AC0000000002</law_revision_id><law_type>Act</law_type><law_title>地方税法</law_title><law_title_kana>ちほうぜいほう</law_title_kana><abbrev></abbrev><category>地方財政</category><updated>2026-06-16T16:03:55+09:00</updated><amendment_promulgate_date>2026-03-31</amendment_promulgate_date><amendment_enforcement_date>2026-07-31</amendment_enforcement_date><amendment_enforcement_comment/><amendment_scheduled_enforcement_date/><amendment_law_id>508AC0000000002</amendment_law_id><amendment_law_title>地方税法等の一部を改正する法律</amendment_law_title><amendment_law_title_kana/><amendment_law_num>令和八年法律第二号</amendment_law_num><amendment_type>3</amendment_type><repeal_status>None</repeal_status><repeal_date/><remain_in_force>false</remain_in_force><mission>New</mission><current_revision_status>CurrentEnforced</current_revision_status></revision_info><law_full_text><Article Num="349_3_2">
+              <ArticleCaption>（住宅用地に対する固定資産税の課税標準の特例）</ArticleCaption>
+              <ArticleTitle>第三百四十九条の三の二</ArticleTitle>
+              <Paragraph Num="1">
+                <ParagraphNum/>
+                <ParagraphSentence>
+                  <Sentence Num="1">専ら人の居住の用に供する家屋又はその一部を人の居住の用に供する家屋で政令で定めるものの敷地の用に供されている土地で政令で定めるもの（前条（第十一項を除く。）の規定の適用を受けるもの並びに空家等対策の推進に関する特別措置法（平成二十六年法律第百二十七号）第十三条第二項の規定により所有者等（同法第五条に規定する所有者等をいう。以下この項において同じ。）に対し勧告がされた同法第十三条第一項に規定する管理不全空家等及び同法第二十二条第二項の規定により所有者等に対し勧告がされた同法第二条第二項に規定する特定空家等の敷地の用に供されている土地を除く。以下この条、次条第一項、第三百五十二条の二第一項及び第三項並びに第三百八十四条において「住宅用地」という。）に対して課する固定資産税の課税標準は、第三百四十九条及び前条第十一項の規定にかかわらず、当該住宅用地に係る固定資産税の課税標準となるべき価格の三分の一の額とする。</Sentence>
+                </ParagraphSentence>
+              </Paragraph>
+              <Paragraph Num="2">
+                <ParagraphNum>２</ParagraphNum>
+                <ParagraphSentence>
+                  <Sentence Num="1">住宅用地のうち、次の各号に掲げる区分に応じ、当該各号に定める住宅用地に該当するもの（以下この項において「小規模住宅用地」という。）に対して課する固定資産税の課税標準は、第三百四十九条、前条第十一項及び前項の規定にかかわらず、当該小規模住宅用地に係る固定資産税の課税標準となるべき価格の六分の一の額とする。</Sentence>
+                </ParagraphSentence>
+                <Item Num="1">
+                  <ItemTitle>一</ItemTitle>
+                  <ItemSentence>
+                    <Column Num="1">
+                      <Sentence Num="1">住宅用地でその面積が二百平方メートル以下であるもの</Sentence>
+                    </Column>
+                    <Column Num="2">
+                      <Sentence Num="1">当該住宅用地</Sentence>
+                    </Column>
+                  </ItemSentence>
+                </Item>
+                <Item Num="2">
+                  <ItemTitle>二</ItemTitle>
+                  <ItemSentence>
+                    <Column Num="1">
+                      <Sentence Num="1">住宅用地でその面積が二百平方メートルを超えるもの</Sentence>
+                    </Column>
+                    <Column Num="2">
+                      <Sentence Num="1">当該住宅用地の面積を当該住宅用地の上に存する住居で政令で定めるものの数（以下この条及び第三百八十四条第一項において「住居の数」という。）で除して得た面積が二百平方メートル以下であるものにあつては当該住宅用地、当該除して得た面積が二百平方メートルを超えるものにあつては二百平方メートルに当該住居の数を乗じて得た面積に相当する住宅用地</Sentence>
+                    </Column>
+                  </ItemSentence>
+                </Item>
+              </Paragraph>
+              <Paragraph Num="3">
+                <ParagraphNum>３</ParagraphNum>
+                <ParagraphSentence>
+                  <Sentence Num="1">前項に規定する住居の数の認定その他同項の規定の適用に関し必要な事項は、総務省令で定める。</Sentence>
+                </ParagraphSentence>
+              </Paragraph>
+            </Article></law_full_text></law_data_response>

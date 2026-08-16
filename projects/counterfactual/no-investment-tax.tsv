@@ -1,0 +1,4 @@
+slot	path
+extends	../base.tsv
+balance	actuals/scenario/balance-all-nisa.tsv
+investment	data/controllable/scenario/investment-no-cap.tsv

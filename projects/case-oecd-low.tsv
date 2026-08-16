@@ -1,0 +1,5 @@
+slot	path
+extends	base.tsv
+inflation	data/environment/scenario/inflation-oecd-low.tsv
+real_wage_growth	data/environment/scenario/wage-oecd-low.tsv
+investment_return	data/environment/scenario/return-oecd-low.tsv

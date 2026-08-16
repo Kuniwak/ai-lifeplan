@@ -1,0 +1,6 @@
+slot	path
+extends	base.tsv
+housing	data/controllable/scenario/housing-never-bought.tsv
+loan	data/controllable/scenario/loan-none.tsv
+housing_rent	data/controllable/scenario/housing-rent-forever.tsv
+housing_maintenance	data/controllable/scenario/housing-maintenance-none.tsv

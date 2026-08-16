@@ -1,0 +1,28 @@
+<law_data_response><attached_files_info/><law_info><law_type>Act</law_type><law_id>340AC0000000033</law_id><law_num>昭和四十年法律第三十三号</law_num><law_num_era>Showa</law_num_era><law_num_year>40</law_num_year><law_num_type>Act</law_num_type><law_num_num>033</law_num_num><promulgation_date>1965-03-31</promulgation_date></law_info><revision_info><law_revision_id>340AC0000000033_20170401_429AC0000000004</law_revision_id><law_type>Act</law_type><law_title>所得税法</law_title><law_title_kana>しょとくぜいほう</law_title_kana><abbrev></abbrev><category>国税</category><updated>2024-07-21T13:28:10+09:00</updated><amendment_promulgate_date>2017-03-31</amendment_promulgate_date><amendment_enforcement_date>2017-04-01</amendment_enforcement_date><amendment_enforcement_comment/><amendment_scheduled_enforcement_date/><amendment_law_id>429AC0000000004</amendment_law_id><amendment_law_title>所得税法等の一部を改正する等の法律</amendment_law_title><amendment_law_title_kana></amendment_law_title_kana><amendment_law_num>平成二十九年法律第四号</amendment_law_num><amendment_type>3</amendment_type><repeal_status>None</repeal_status><repeal_date/><remain_in_force>false</remain_in_force><mission>New</mission><current_revision_status>PreviousEnforced</current_revision_status></revision_info><law_full_text><Article Num="79">
+              <ArticleCaption>（障害者控除）</ArticleCaption>
+              <ArticleTitle>第七十九条</ArticleTitle>
+              <Paragraph Num="1">
+                <ParagraphNum/>
+                <ParagraphSentence>
+                  <Sentence>居住者が障害者である場合には、その者のその年分の総所得金額、退職所得金額又は山林所得金額から二十七万円（その者が特別障害者である場合には、四十万円）を控除する。</Sentence>
+                </ParagraphSentence>
+              </Paragraph>
+              <Paragraph Num="2">
+                <ParagraphNum>２</ParagraphNum>
+                <ParagraphSentence>
+                  <Sentence>居住者の控除対象配偶者又は扶養親族が障害者である場合には、その居住者のその年分の総所得金額、退職所得金額又は山林所得金額から、その障害者一人につき二十七万円（その者が特別障害者である場合には、四十万円）を控除する。</Sentence>
+                </ParagraphSentence>
+              </Paragraph>
+              <Paragraph Num="3">
+                <ParagraphNum>３</ParagraphNum>
+                <ParagraphSentence>
+                  <Sentence>居住者の控除対象配偶者又は扶養親族が特別障害者で、かつ、その居住者又はその居住者の配偶者若しくはその居住者と生計を一にするその他の親族のいずれかとの同居を常況としている者である場合には、前項の規定にかかわらず、その居住者のその年分の総所得金額、退職所得金額又は山林所得金額から、その特別障害者一人につき七十五万円を控除する。</Sentence>
+                </ParagraphSentence>
+              </Paragraph>
+              <Paragraph Num="4">
+                <ParagraphNum>４</ParagraphNum>
+                <ParagraphSentence>
+                  <Sentence>前三項の規定による控除は、障害者控除という。</Sentence>
+                </ParagraphSentence>
+              </Paragraph>
+            </Article></law_full_text></law_data_response>

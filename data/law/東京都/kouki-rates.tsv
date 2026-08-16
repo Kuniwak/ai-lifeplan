@@ -1,0 +1,4 @@
+適用開始年	区分	均等割額[円]	所得割率	賦課限度額[円]	適用終了年	出典
+2024	医療分	47300	9.67%	800000	2025	https://www.tokyo-ikiiki.net/seido/1001968/1001975/index.html （保険料の決め方・賦課）。原本は testdata/law/tokyo-kouki/hokenryo.md。令和6・7年度の欄「47,300円」「9.67%」「80万円」
+2026	医療分	53300	9.88%	850000	無期限	https://www.tokyo-ikiiki.net/seido/1001968/1001975/index.html （保険料の決め方・賦課）。原本は testdata/law/tokyo-kouki/hokenryo.md。令和8・9年度の欄「53,300円」「9.88%」「85万円」
+2026	子ども分	1300	0.26%	21000	無期限	https://www.tokyo-ikiiki.net/seido/1001968/1001975/index.html （保険料の決め方・賦課）。原本は testdata/law/tokyo-kouki/hokenryo.md。「1,300円」「0.26％」「2万1千円」。※注記「令和9年度の子ども分の保険料率については、別途見直しが行われます」

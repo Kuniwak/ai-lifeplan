@@ -1,0 +1,838 @@
+<law_data_response><attached_files_info/><law_info><law_type>Act</law_type><law_id>325AC0000000226</law_id><law_num>昭和二十五年法律第二百二十六号</law_num><law_num_era>Showa</law_num_era><law_num_year>25</law_num_year><law_num_type>Act</law_num_type><law_num_num>226</law_num_num><promulgation_date>1950-07-31</promulgation_date></law_info><revision_info><law_revision_id>325AC0000000226_20170401_429AC0000000002</law_revision_id><law_type>Act</law_type><law_title>地方税法</law_title><law_title_kana>ちほうぜいほう</law_title_kana><abbrev></abbrev><category>地方財政</category><updated>2024-07-24T00:27:07+09:00</updated><amendment_promulgate_date>2017-03-31</amendment_promulgate_date><amendment_enforcement_date>2017-04-01</amendment_enforcement_date><amendment_enforcement_comment/><amendment_scheduled_enforcement_date/><amendment_law_id>429AC0000000002</amendment_law_id><amendment_law_title>地方税法及び航空機燃料譲与税法の一部を改正する法律</amendment_law_title><amendment_law_title_kana></amendment_law_title_kana><amendment_law_num>平成二十九年法律第二号</amendment_law_num><amendment_type>3</amendment_type><repeal_status>None</repeal_status><repeal_date/><remain_in_force>false</remain_in_force><mission>New</mission><current_revision_status>PreviousEnforced</current_revision_status></revision_info><law_full_text><Article Num="34">
+                <ArticleCaption>（所得控除）</ArticleCaption>
+                <ArticleTitle>第三十四条</ArticleTitle>
+                <Paragraph Num="1">
+                  <ParagraphNum/>
+                  <ParagraphSentence>
+                    <Sentence Num="1">道府県は、所得割の納税義務者が次の各号のいずれかに掲げる者に該当する場合においては、それぞれ当該各号に定める金額をその者の前年の所得について算定した総所得金額、退職所得金額又は山林所得金額から控除するものとする。</Sentence>
+                  </ParagraphSentence>
+                  <Item Num="1">
+                    <ItemTitle>一</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">前年中に災害又は盗難若しくは横領（以下この号において「災害等」という。）により自己又は自己と生計を一にする配偶者その他の親族で政令で定めるものの有する資産（第三十二条第十項に規定する資産及び生活に通常必要でない資産として政令で定める資産を除く。）について損失を受けた場合（当該災害等に関連して政令で定めるやむを得ない支出をした場合を含む。）において、当該損失の金額（当該支出をした金額を含み、保険金、損害賠償金その他これらに類するものにより埋められた部分の金額を除く。以下この号において「損失の金額」という。）の合計額が、次に掲げる場合の区分に応じ、それぞれ次に定める金額を超える所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">次に掲げる場合の区分に応じ、それぞれ次に定める金額を超える場合におけるその超える金額</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">損失の金額に含まれる災害関連支出の金額（損失の金額のうち災害に直接関連して支出をした金額として政令で定める金額をいう。以下この号において同じ。）が五万円以下である場合（災害関連支出の金額がない場合を含む。）</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">当該納税義務者の前年の総所得金額、退職所得金額及び山林所得金額の合計額の十分の一に相当する金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">損失の金額に含まれる災害関連支出の金額が五万円を超える場合</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">損失の金額の合計額から災害関連支出の金額のうち五万円を超える部分の金額を控除した金額とイに定める金額とのいずれか低い金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">損失の金額がすべて災害関連支出の金額である場合</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">五万円とイに定める金額とのいずれか低い金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="2">
+                    <ItemTitle>二</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">前年中に自己又は自己と生計を一にする配偶者その他の親族に係る医療費（医師又は歯科医師による診療又は治療、治療又は療養に必要な医薬品の購入その他医療又はこれに関連する人的役務の提供の対価のうち通常必要であると認められるものとして政令で定めるものをいう。）を支払い、その支払つた医療費の金額（保険金、損害賠償金その他これらに類するものにより埋められた部分の金額を除く。）の合計額が、前年の総所得金額、退職所得金額及び山林所得金額の合計額の百分の五に相当する金額（その金額が十万円を超える場合には、十万円）を超える所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">その超える金額（その金額が二百万円を超える場合には、二百万円）</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="3">
+                    <ItemTitle>三</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">前年中に自己又は自己と生計を一にする配偶者その他の親族の負担すべき社会保険料（所得税法第七十四条第二項に規定する社会保険料（租税特別措置法第四十一条の七第二項において社会保険料とみなされる金銭の額を含む。）をいう。）を支払つた、又は給与から控除される所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">その支払つた、又は給与から控除される金額</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="4">
+                    <ItemTitle>四</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">前年中に次に掲げる掛金を支払つた所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">その支払つた金額の合計額</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">小規模企業共済法（昭和四十年法律第百二号）第二条第二項に規定する共済契約（政令で定めるものを除く。）に基づく掛金</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">確定拠出年金法（平成十三年法律第八十八号）第三条第三項第七号の二に規定する企業型年金加入者掛金又は同法第五十五条第二項第四号に規定する個人型年金加入者掛金</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">条例の規定により地方公共団体が精神又は身体に障害のある者に関して実施する共済制度で政令で定めるものに係る契約に基づく掛金</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="5">
+                    <ItemTitle>五</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">前年中にイに規定する新生命保険料若しくは旧生命保険料、ロに規定する介護医療保険料又はハに規定する新個人年金保険料若しくは旧個人年金保険料を支払つた所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">次のイからハまでに掲げる場合の区分に応じそれぞれイからハまでに定める金額の合計額（当該合計額が七万円を超える場合には、七万円）</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">新生命保険契約等に係る保険料若しくは掛金（第八項第一号イからハまでに掲げる契約に係るものにあつては生存又は死亡に基因して一定額の保険金、共済金その他の給付金（以下この号及び第八項において「保険金等」という。）を支払うことを約する部分（ハにおいて「生存死亡部分」という。）に係るものその他政令で定めるものに限るものとし、ロに規定する介護医療保険料及びハに規定する新個人年金保険料を除く。以下イ及びロにおいて「新生命保険料」という。）又は旧生命保険契約等に係る保険料若しくは掛金（ハに規定する旧個人年金保険料その他政令で定めるものを除く。以下イにおいて「旧生命保険料」という。）を支払つた場合</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                      <Subitem2 Num="1">
+                        <Subitem2Title>（１）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">新生命保険料を支払つた場合（（３）に掲げる場合を除く。）</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                        <Subitem3 Num="1">
+                          <Subitem3Title>（ｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新生命保険料の金額の合計額（同年中において新生命保険契約等に基づく剰余金の分配若しくは割戻金の割戻しを受け、又は新生命保険契約等に基づき分配を受ける剰余金若しくは割戻しを受ける割戻金をもつて新生命保険料の払込みに充てた場合には、当該剰余金又は割戻金の額（新生命保険料に係る部分の金額として政令で定めるところにより計算した金額に限る。）を控除した残額。以下（１）及び（３）（ｉ）において同じ。）が一万二千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">当該合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="2">
+                          <Subitem3Title>（ｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新生命保険料の金額の合計額が一万二千円を超え三万二千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">一万二千円と当該合計額から一万二千円を控除した金額の二分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="3">
+                          <Subitem3Title>（ｉｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新生命保険料の金額の合計額が三万二千円を超え五万六千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">二万二千円と当該合計額から三万二千円を控除した金額の四分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="4">
+                          <Subitem3Title>（ｉｖ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新生命保険料の金額の合計額が五万六千円を超える場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">二万八千円</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                      </Subitem2>
+                      <Subitem2 Num="2">
+                        <Subitem2Title>（２）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">旧生命保険料を支払つた場合（（３）に掲げる場合を除く。）</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                        <Subitem3 Num="1">
+                          <Subitem3Title>（ｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧生命保険料の金額の合計額（同年中において旧生命保険契約等に基づく剰余金の分配若しくは割戻金の割戻しを受け、又は旧生命保険契約等に基づき分配を受ける剰余金若しくは割戻しを受ける割戻金をもつて旧生命保険料の払込みに充てた場合には、当該剰余金又は割戻金の額（旧生命保険料に係る部分の金額に限る。）を控除した残額。以下（２）及び（３）（ｉｉ）において同じ。）が一万五千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">当該合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="2">
+                          <Subitem3Title>（ｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧生命保険料の金額の合計額が一万五千円を超え四万円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">一万五千円と当該合計額から一万五千円を控除した金額の二分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="3">
+                          <Subitem3Title>（ｉｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧生命保険料の金額の合計額が四万円を超え七万円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">二万七千五百円と当該合計額から四万円を控除した金額の四分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="4">
+                          <Subitem3Title>（ｉｖ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧生命保険料の金額の合計額が七万円を超える場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">三万五千円</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                      </Subitem2>
+                      <Subitem2 Num="3">
+                        <Subitem2Title>（３）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">新生命保険料及び旧生命保険料を支払つた場合</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">その支払つた次に掲げる保険料の区分に応じそれぞれ次に定める金額の合計額（当該合計額が二万八千円を超える場合には、二万八千円）</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                        <Subitem3 Num="1">
+                          <Subitem3Title>（ｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">新生命保険料</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">前年中に支払つた新生命保険料の金額の合計額の（１）（ｉ）から（ｉｖ）までに掲げる場合の区分に応じそれぞれ（１）（ｉ）から（ｉｖ）までに定める金額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="2">
+                          <Subitem3Title>（ｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">旧生命保険料</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">前年中に支払つた旧生命保険料の金額の合計額の（２）（ｉ）から（ｉｖ）までに掲げる場合の区分に応じそれぞれ（２）（ｉ）から（ｉｖ）までに定める金額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                      </Subitem2>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">介護医療保険契約等に係る保険料又は掛金（病院又は診療所に入院して第二号に規定する医療費を支払つたことその他の政令で定める事由（第八項第二号及び第三号において「医療費等支払事由」という。）に基因して保険金等を支払うことを約する部分に係るものその他政令で定めるものに限るものとし、新生命保険料を除く。以下ロにおいて「介護医療保険料」という。）を支払つた場合</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                      <Subitem2 Num="1">
+                        <Subitem2Title>（１）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">前年中に支払つた介護医療保険料の金額の合計額（同年中において介護医療保険契約等に基づく剰余金の分配若しくは割戻金の割戻しを受け、又は介護医療保険契約等に基づき分配を受ける剰余金若しくは割戻しを受ける割戻金をもつて介護医療保険料の払込みに充てた場合には、当該剰余金又は割戻金の額（介護医療保険料に係る部分の金額として政令で定めるところにより計算した金額に限る。）を控除した残額。以下ロにおいて同じ。）が一万二千円以下である場合</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">当該合計額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                      </Subitem2>
+                      <Subitem2 Num="2">
+                        <Subitem2Title>（２）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">前年中に支払つた介護医療保険料の金額の合計額が一万二千円を超え三万二千円以下である場合</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">一万二千円と当該合計額から一万二千円を控除した金額の二分の一に相当する金額との合計額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                      </Subitem2>
+                      <Subitem2 Num="3">
+                        <Subitem2Title>（３）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">前年中に支払つた介護医療保険料の金額の合計額が三万二千円を超え五万六千円以下である場合</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">二万二千円と当該合計額から三万二千円を控除した金額の四分の一に相当する金額との合計額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                      </Subitem2>
+                      <Subitem2 Num="4">
+                        <Subitem2Title>（４）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">前年中に支払つた介護医療保険料の金額の合計額が五万六千円を超える場合</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">二万八千円</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                      </Subitem2>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">新個人年金保険契約等に係る保険料若しくは掛金（生存死亡部分に係るものに限る。以下ハにおいて「新個人年金保険料」という。）又は旧個人年金保険契約等に係る保険料若しくは掛金（その者の疾病又は身体の傷害その他これらに類する事由に基因して保険金等を支払う旨の特約が付されている契約にあつては、当該特約に係る保険料又は掛金を除く。以下ハにおいて「旧個人年金保険料」という。）を支払つた場合</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                      <Subitem2 Num="1">
+                        <Subitem2Title>（１）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">新個人年金保険料を支払つた場合（（３）に掲げる場合を除く。）</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                        <Subitem3 Num="1">
+                          <Subitem3Title>（ｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新個人年金保険料の金額の合計額（同年中において新個人年金保険契約等に基づく剰余金の分配若しくは割戻金の割戻しを受け、又は新個人年金保険契約等に基づき分配を受ける剰余金若しくは割戻しを受ける割戻金をもつて新個人年金保険料の払込みに充てた場合には、当該剰余金又は割戻金の額（新個人年金保険料に係る部分の金額として政令で定めるところにより計算した金額に限る。）を控除した残額。以下（１）及び（３）（ｉ）において同じ。）が一万二千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">当該合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="2">
+                          <Subitem3Title>（ｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新個人年金保険料の金額の合計額が一万二千円を超え三万二千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">一万二千円と当該合計額から一万二千円を控除した金額の二分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="3">
+                          <Subitem3Title>（ｉｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新個人年金保険料の金額の合計額が三万二千円を超え五万六千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">二万二千円と当該合計額から三万二千円を控除した金額の四分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="4">
+                          <Subitem3Title>（ｉｖ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた新個人年金保険料の金額の合計額が五万六千円を超える場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">二万八千円</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                      </Subitem2>
+                      <Subitem2 Num="2">
+                        <Subitem2Title>（２）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">旧個人年金保険料を支払つた場合（（３）に掲げる場合を除く。）</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">次に掲げる場合の区分に応じそれぞれ次に定める金額</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                        <Subitem3 Num="1">
+                          <Subitem3Title>（ｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧個人年金保険料の金額の合計額（同年中において旧個人年金保険契約等に基づく剰余金の分配若しくは割戻金の割戻しを受け、又は旧個人年金保険契約等に基づき分配を受ける剰余金若しくは割戻しを受ける割戻金をもつて旧個人年金保険料の払込みに充てた場合には、当該剰余金又は割戻金の額（旧個人年金保険料に係る部分の金額に限る。）を控除した残額。以下（２）及び（３）（ｉｉ）において同じ。）が一万五千円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">当該合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="2">
+                          <Subitem3Title>（ｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧個人年金保険料の金額の合計額が一万五千円を超え四万円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">一万五千円と当該合計額から一万五千円を控除した金額の二分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="3">
+                          <Subitem3Title>（ｉｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧個人年金保険料の金額の合計額が四万円を超え七万円以下である場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">二万七千五百円と当該合計額から四万円を控除した金額の四分の一に相当する金額との合計額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="4">
+                          <Subitem3Title>（ｉｖ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">前年中に支払つた旧個人年金保険料の金額の合計額が七万円を超える場合</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">三万五千円</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                      </Subitem2>
+                      <Subitem2 Num="3">
+                        <Subitem2Title>（３）</Subitem2Title>
+                        <Subitem2Sentence>
+                          <Column Num="1">
+                            <Sentence Num="1">新個人年金保険料及び旧個人年金保険料を支払つた場合</Sentence>
+                          </Column>
+                          <Column Num="2">
+                            <Sentence Num="1">その支払つた次に掲げる保険料の区分に応じそれぞれ次に定める金額の合計額（当該合計額が二万八千円を超える場合には、二万八千円）</Sentence>
+                          </Column>
+                        </Subitem2Sentence>
+                        <Subitem3 Num="1">
+                          <Subitem3Title>（ｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">新個人年金保険料</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">前年中に支払つた新個人年金保険料の金額の合計額の（１）（ｉ）から（ｉｖ）までに掲げる場合の区分に応じそれぞれ（１）（ｉ）から（ｉｖ）までに定める金額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                        <Subitem3 Num="2">
+                          <Subitem3Title>（ｉｉ）</Subitem3Title>
+                          <Subitem3Sentence>
+                            <Column Num="1">
+                              <Sentence Num="1">旧個人年金保険料</Sentence>
+                            </Column>
+                            <Column Num="2">
+                              <Sentence Num="1">前年中に支払つた旧個人年金保険料の金額の合計額の（２）（ｉ）から（ｉｖ）までに掲げる場合の区分に応じそれぞれ（２）（ｉ）から（ｉｖ）までに定める金額</Sentence>
+                            </Column>
+                          </Subitem3Sentence>
+                        </Subitem3>
+                      </Subitem2>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="5_2">
+                    <ItemTitle>五の二</ItemTitle>
+                    <ItemSentence>
+                      <Sentence Num="1">削除</Sentence>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="5_3">
+                    <ItemTitle>五の三</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">前年中に、自己若しくは自己と生計を一にする配偶者その他の親族の有する家屋で常時その居住の用に供するもの又はこれらの者の有する所得税法第九条第一項第九号に規定する資産を保険又は共済の目的とし、かつ、地震若しくは噴火又はこれらによる津波を直接又は間接の原因とする火災、損壊、埋没又は流失による損害（以下この号において「地震等損害」という。）によりこれらの資産について生じた損失の額をてん補する保険金又は共済金が支払われる損害保険契約等に係る地震等損害部分の保険料又は掛金（政令で定めるものを除く。以下この号において「地震保険料」という。）を支払つた所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">前年中に支払つた地震保険料の金額の合計額（同年中において損害保険契約等に基づく剰余金の分配若しくは割戻金の割戻しを受け、又は損害保険契約等に基づき分配を受ける剰余金若しくは割戻しを受ける割戻金をもつて地震保険料の払込みに充てた場合には、当該剰余金又は割戻金の額（地震保険料に係る部分の金額に限る。）を控除した残額）の二分の一に相当する金額（その金額が二万五千円を超える場合には、二万五千円）</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="6">
+                    <ItemTitle>六</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">障害者である所得割の納税義務者又は障害者である控除対象配偶者若しくは扶養親族を有する所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">各障害者につき二十六万円（その者が特別障害者（障害者のうち、精神又は身体に重度の障害がある者で政令で定めるものをいう。第四項及び第九項並びに第三十七条において同じ。）である場合には、三十万円）</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="7">
+                    <ItemTitle>七</ItemTitle>
+                    <ItemSentence>
+                      <Sentence Num="1">削除</Sentence>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="8">
+                    <ItemTitle>八</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">寡婦又は寡夫である所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">二十六万円</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="9">
+                    <ItemTitle>九</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">勤労学生である所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">二十六万円</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="10">
+                    <ItemTitle>十</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">控除対象配偶者を有する所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">三十三万円（その控除対象配偶者が老人控除対象配偶者（控除対象配偶者のうち、年齢七十歳以上の者をいう。第九項及び第三十七条において同じ。）である場合には、三十八万円）</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="10_2">
+                    <ItemTitle>十の二</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">自己と生計を一にする配偶者（他の所得割の納税義務者の扶養親族とされる者並びに第三十二条第三項に規定する青色事業専従者に該当するもので同項に規定する給与の支払を受けるもの及び同条第四項に規定する事業専従者に該当するものを除くものとし、前年の合計所得金額が七十六万円未満であるものに限る。）で控除対象配偶者に該当しないものを有する所得割の納税義務者で、前年の合計所得金額が千万円以下であるもの（その配偶者がこの号に規定する所得割の納税義務者としてこの号の規定の適用を受けている者を除く。）</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">次に掲げるその配偶者の区分に応じ、それぞれ次に定める金額</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">前年の合計所得金額が四十五万円未満である配偶者</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">三十三万円</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">前年の合計所得金額が四十五万円以上七十五万円未満である配偶者</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">三十八万円からその配偶者の前年の合計所得金額のうち三十八万円を超える部分の金額（当該超える部分の金額が五万円の整数倍の金額から三万円を控除した金額でないときは、五万円の整数倍の金額から三万円を控除した金額で当該超える部分の金額に満たないもののうち最も多い金額とする。）を控除した金額</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Column Num="1">
+                          <Sentence Num="1">前年の合計所得金額が七十五万円以上である配偶者</Sentence>
+                        </Column>
+                        <Column Num="2">
+                          <Sentence Num="1">三万円</Sentence>
+                        </Column>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="11">
+                    <ItemTitle>十一</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">控除対象扶養親族（扶養親族のうち、年齢十六歳以上の者をいう。以下この項及び第九項並びに第三十七条において同じ。）を有する所得割の納税義務者</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">各控除対象扶養親族につき三十三万円（その者が特定扶養親族（控除対象扶養親族のうち、年齢十九歳以上二十三歳未満の者をいう。第九項及び第三十七条において同じ。）である場合には四十五万円、その者が老人扶養親族（控除対象扶養親族のうち、年齢七十歳以上の者をいう。第五項及び第九項並びに第三十七条において同じ。）である場合には三十八万円）</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                </Paragraph>
+                <Paragraph Num="2">
+                  <ParagraphNum>２</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">道府県は、所得割の納税義務者については、その者の前年の所得について算定した総所得金額、退職所得金額又は山林所得金額から三十三万円を控除するものとする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="3">
+                  <ParagraphNum>３</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">所得割の納税義務者が、第二十三条第一項第十一号に規定する寡婦のうち同号イに該当する者で、扶養親族である子を有し、かつ、前年の合計所得金額が五百万円以下であるものである場合には、当該納税義務者に係る第一項第八号の金額は、三十万円とする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="4">
+                  <ParagraphNum>４</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">所得割の納税義務者の有する控除対象配偶者又は扶養親族が特別障害者で、かつ、当該納税義務者又は当該納税義務者の配偶者若しくは当該納税義務者と生計を一にするその他の親族のいずれかとの同居を常況としている者（第三十七条において「同居特別障害者」という。）である場合には、当該特別障害者に係る第一項第六号の金額は、五十三万円とする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="5">
+                  <ParagraphNum>５</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">所得割の納税義務者の有する老人扶養親族が当該納税義務者又は当該納税義務者の配偶者の直系尊属で、かつ、当該納税義務者又は当該配偶者のいずれかとの同居を常況としている者（第三十七条において「同居直系尊属」という。）である場合には、当該老人扶養親族に係る第一項第十一号の金額は、四十五万円とする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="6">
+                  <ParagraphNum>６</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">租税特別措置法第四条の四第一項に規定する勤労者財産形成貯蓄保険契約等に係る生命保険若しくは損害保険の保険料又は生命共済の共済掛金については、第一項第五号及び第五号の三の規定は、適用しない。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="7">
+                  <ParagraphNum>７</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">第一項第一号の規定によつて控除すべき金額を雑損控除額と、同項第二号の規定によつて控除すべき金額を医療費控除額と、同項第三号の規定によつて控除すべき金額を社会保険料控除額と、同項第四号の規定によつて控除すべき金額を小規模企業共済等掛金控除額と、同項第五号の規定によつて控除すべき金額を生命保険料控除額と、同項第五号の三の規定によつて控除すべき金額を地震保険料控除額と、同項第六号及び第四項の規定によつて控除すべき金額を障害者控除額と、第一項第八号及び第三項の規定によつて控除すべき金額を寡婦（寡夫）控除額と、第一項第九号の規定によつて控除すべき金額を勤労学生控除額と、同項第十号の規定によつて控除すべき金額を配偶者控除額と、同項第十号の二の規定によつて控除すべき金額を配偶者特別控除額と、同項第十一号及び第五項の規定によつて控除すべき金額を扶養控除額と、第二項の規定によつて控除すべき金額を基礎控除額という。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="8">
+                  <ParagraphNum>８</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">第一項第五号及び第五号の三において、次の各号に掲げる用語の意義は、当該各号に定めるところによる。</Sentence>
+                    <Sentence Num="2">この場合において、平成二十四年一月一日以後に第二号に規定する旧生命保険契約等又は第五号に規定する旧個人年金保険契約等に附帯して第一号、第三号又は第四号に規定する新契約を締結したときは、当該旧生命保険契約等又は旧個人年金保険契約等は、同日以後に締結した契約とみなす。</Sentence>
+                  </ParagraphSentence>
+                  <Item Num="1">
+                    <ItemTitle>一</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">新生命保険契約等</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">平成二十四年一月一日以後に締結した次に掲げる契約（失効した同日前に締結した当該契約が同日以後に復活したものを除く。以下この号において「新契約」という。）若しくは他の保険契約（共済に係る契約を含む。第三号及び第四号において同じ。）に附帯して締結した新契約又は同日以後に確定給付企業年金法（平成十三年法律第五十号）第三条第一項第一号その他政令で定める規定（次号において「承認規定」という。）の承認を受けたニに掲げる規約若しくは同項第二号その他政令で定める規定（次号において「認可規定」という。）の認可を受けた同項第二号に規定する基金（次号において「基金」という。）のニに掲げる規約（以下この号及び次号において「新規約」と総称する。）のうち、これらの新契約又は新規約に基づく保険金等の受取人のすべてをその保険料若しくは掛金の払込みをする者又はその配偶者その他の親族とするもの</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">保険業法第二条第三項に規定する生命保険会社又は同条第八項に規定する外国生命保険会社等の締結した保険契約のうち生存又は死亡に基因して一定額の保険金等が支払われるもの（保険期間が五年に満たない保険契約で政令で定めるもの（次号において「特定保険契約」という。）及び当該外国生命保険会社等がこの法律の施行地外において締結したものを除く。）</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">郵政民営化法等の施行に伴う関係法律の整備等に関する法律（平成十七年法律第百二号）第二条の規定による廃止前の簡易生命保険法（昭和二十四年法律第六十八号）第三条に規定する簡易生命保険契約（次号及び第三号において「旧簡易生命保険契約」という。）のうち生存又は死亡に基因して一定額の保険金等が支払われるもの</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">農業協同組合法（昭和二十二年法律第百三十二号）第十条第一項第十号の事業を行う農業協同組合の締結した生命共済に係る契約（共済期間が五年に満たない生命共済に係る契約で政令で定めるものを除く。）その他政令で定めるこれに類する共済に係る契約（次号及び第三号において「生命共済契約等」という。）のうち生存又は死亡に基因して一定額の保険金等が支払われるもの</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="4">
+                      <Subitem1Title>ニ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">確定給付企業年金法第三条第一項に規定する確定給付企業年金に係る規約又はこれに類する退職年金に関する契約で政令で定めるもの</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="2">
+                    <ItemTitle>二</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">旧生命保険契約等</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">平成二十三年十二月三十一日以前に締結した次に掲げる契約（失効した同日以前に締結した当該契約が同日後に復活したものを含む。）又は同日以前に承認規定の承認を受けたホに掲げる規約若しくは認可規定の認可を受けた基金のホに掲げる規約（新規約を除く。）のうち、これらの契約又は規約に基づく保険金等の受取人のすべてをその保険料若しくは掛金の払込みをする者又はその配偶者その他の親族とするもの</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">前号イに掲げる契約</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">旧簡易生命保険契約</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">生命共済契約等</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="4">
+                      <Subitem1Title>ニ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">前号イに規定する生命保険会社若しくは外国生命保険会社等又は保険業法第二条第四項に規定する損害保険会社若しくは同条第九項に規定する外国損害保険会社等の締結した疾病又は身体の傷害その他これらに類する事由に基因して保険金等が支払われる保険契約（イに掲げるもの、保険金等の支払事由が身体の傷害のみに基因することとされているもの、特定保険契約、当該外国生命保険会社等又は当該外国損害保険会社等がこの法律の施行地外において締結したものその他政令で定めるものを除く。）のうち、医療費等支払事由に基因して保険金等が支払われるもの</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="5">
+                      <Subitem1Title>ホ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">前号ニに掲げる規約又は契約</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="3">
+                    <ItemTitle>三</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">介護医療保険契約等</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">平成二十四年一月一日以後に締結した次に掲げる契約（失効した同日前に締結した当該契約が同日以後に復活したものを除く。以下この号において「新契約」という。）又は他の保険契約に附帯して締結した新契約のうち、これらの新契約に基づく保険金等の受取人のすべてをその保険料若しくは掛金の払込みをする者又はその配偶者その他の親族とするもの</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">前号ニに掲げる契約</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">疾病又は身体の傷害その他これらに類する事由に基因して保険金等が支払われる旧簡易生命保険契約又は生命共済契約等（第一号ロ及びハに掲げるもの、保険金等の支払事由が身体の傷害のみに基因するものその他政令で定めるものを除く。）のうち医療費等支払事由に基因して保険金等が支払われるもの</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="4">
+                    <ItemTitle>四</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">新個人年金保険契約等</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">平成二十四年一月一日以後に締結した第一号イからハまでに掲げる契約（年金を給付する定めのあるもので政令で定めるもの（次号において「年金給付契約」という。）に限るものとし、失効した同日前に締結した当該契約が同日以後に復活したものを除く。以下この号において「新契約」という。）又は他の保険契約に附帯して締結した新契約のうち、次に掲げる要件の定めのあるもの</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">当該契約に基づく年金の受取人は、ロの保険料若しくは掛金の払込みをする者又はその配偶者が生存している場合にはこれらの者のいずれかとするものであること。</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">当該契約に基づく保険料又は掛金の払込みは、年金支払開始日前十年以上の期間にわたつて定期に行うものであること。</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="3">
+                      <Subitem1Title>ハ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">当該契約に基づくイに定める個人に対する年金の支払は、当該年金の受取人の年齢が六十歳に達した日以後の日で当該契約で定める日以後十年以上の期間又は当該受取人が生存している期間にわたつて定期に行うものであることその他の政令で定める要件</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                  <Item Num="5">
+                    <ItemTitle>五</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">旧個人年金保険契約等</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">平成二十三年十二月三十一日以前に締結した第二号イからハまでに掲げる契約（年金給付契約に限るものとし、失効した同日以前に締結した当該契約が同日後に復活したものを含む。）のうち、前号イからハまでに掲げる要件の定めのあるもの</Sentence>
+                      </Column>
+                    </ItemSentence>
+                  </Item>
+                  <Item Num="6">
+                    <ItemTitle>六</ItemTitle>
+                    <ItemSentence>
+                      <Column Num="1">
+                        <Sentence Num="1">損害保険契約等</Sentence>
+                      </Column>
+                      <Column Num="2">
+                        <Sentence Num="1">次に掲げる保険契約に附帯して締結されるもの又は当該契約と一体となつて効力を有する一の保険契約若しくは共済に係る契約</Sentence>
+                      </Column>
+                    </ItemSentence>
+                    <Subitem1 Num="1">
+                      <Subitem1Title>イ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">保険業法第二条第四項に規定する損害保険会社又は同条第九項に規定する外国損害保険会社等の締結した保険契約のうち一定の偶然の事故によつて生ずることのある損害をてん補するもの（第二号ニに掲げるもの及び当該外国損害保険会社等がこの法律の施行地外において締結したものを除く。）</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                    <Subitem1 Num="2">
+                      <Subitem1Title>ロ</Subitem1Title>
+                      <Subitem1Sentence>
+                        <Sentence Num="1">農業協同組合法第十条第一項第十号の事業を行う農業協同組合の締結した建物更生共済又は火災共済に係る契約その他政令で定めるこれらに類する共済に係る契約</Sentence>
+                      </Subitem1Sentence>
+                    </Subitem1>
+                  </Item>
+                </Paragraph>
+                <Paragraph Num="9">
+                  <ParagraphNum>９</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Function="main" Num="1">第一項、第三項、第四項又は第五項の場合において、特別障害者若しくはその他の障害者、第三項の規定に該当する寡婦若しくはその他の寡婦、寡夫若しくは勤労学生であるかどうか又は所得割の納税義務者の第四項の規定に該当する控除対象配偶者、老人控除対象配偶者若しくはその他の控除対象配偶者若しくは第一項第十号の二に規定する生計を一にする配偶者若しくは特定扶養親族、第四項の規定に該当する扶養親族、第五項の規定に該当する老人扶養親族若しくはその他の老人扶養親族若しくはその他の控除対象扶養親族若しくはその他の扶養親族であるかどうかの判定は、前年の十二月三十一日（前年の中途においてその者が死亡した場合においては、その死亡の時）の現況によるものとする。</Sentence>
+                    <Sentence Function="proviso" Num="2">ただし、その所得割の納税義務者の親族（扶養親族を除く。）が同日前に既に死亡している場合において、その親族がその所得割の納税義務者の第二十三条第一項第十一号イ又は第十二号に規定する政令で定める親族に該当するかどうかの判定は、その死亡の時の現況によるものとする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="10">
+                  <ParagraphNum>１０</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">所得税法第二条第一項第三十二号の規定は、第一項第九号及び第三十七条の勤労学生の意義について準用する。</Sentence>
+                    <Sentence Num="2">この場合において、同法第二条第一項第三十二号中「合計所得金額」とあるのは、「前年の地方税法第二十三条第一項第十三号に規定する合計所得金額」と読み替えるものとする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="11">
+                  <ParagraphNum>１１</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">前年の中途において所得割の納税義務者の配偶者が死亡し、同年中にその納税義務者が再婚した場合におけるその死亡し、又は再婚した配偶者に係る控除対象配偶者及び第一項第十号の二に規定する生計を一にする配偶者並びに扶養親族の範囲の特例については、政令で定める。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="12">
+                  <ParagraphNum>１２</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">第一項及び第二項の規定による控除に当たつては、まず雑損控除額を控除し、次に医療費控除額、社会保険料控除額、小規模企業共済等掛金控除額、生命保険料控除額、地震保険料控除額、障害者控除額、寡婦（寡夫）控除額、勤労学生控除額、配偶者控除額、配偶者特別控除額、扶養控除額又は基礎控除額を控除するものとし、かつ、総所得金額、山林所得金額又は退職所得金額から順次控除するものとする。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+                <Paragraph Num="13">
+                  <ParagraphNum>１３</ParagraphNum>
+                  <ParagraphSentence>
+                    <Sentence Num="1">前各項に定めるもののほか、第一項各号の規定によつて控除すべき金額の計算及びその控除の手続について必要な事項は、政令で定める。</Sentence>
+                  </ParagraphSentence>
+                </Paragraph>
+              </Article></law_full_text></law_data_response>

@@ -1,0 +1,6 @@
+slot	path
+extends	base.tsv
+inflation	data/environment/scenario/inflation-high-growth.tsv
+investment_return	data/environment/scenario/return-high-growth.tsv
+real_wage_growth	data/environment/scenario/wage-high-growth.tsv
+pension_level	data/environment/scenario/pension-high-growth.tsv

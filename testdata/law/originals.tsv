@@ -1,0 +1,20 @@
+ファイル	バイト数	sha256	支えている表
+egov/児童手当法施行令-第1条-令和6年9月分まで.xml	2937	c6cd4befb3fcee1b208b4de0750174aab20d893637442b79dc68f523e193ad1c	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/児童手当法施行令-第7条-令和6年9月分まで.xml	2553	ce0812eeacc607079f67b55bcaa0c80f3b70291f3e43e08a04796ece717e5734	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/厚生年金保険法-第44条.xml	9435	f21d96012aad37ac068a502660f9c290a9564dfee6c585a412c77561c18cafba	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/国民年金法-第27条.xml	6176	0a7007a2c8c839ad034ef8b16c6784752efa9de5c7c962287304eb01b9748646	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/国民年金法-第87条.xml	13492	a6acdba578caa192af9b9f44d9598fa2168878ec66c8803975e9ac4629f97a43	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/地方税法-第349条の3の2.xml	5562	eceb381c13770c28902bfc74a621a73668e9ce43f25697c4c1c31e76d044f8bd	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/地方税法-第34条-平成29年4月.xml	71790	99bf738424bc3793fb0b2d42fb31d4456bf9308a02a1264758f68e5ee446523a	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/地方税法-第34条.xml	84739	a6dfda9b265edcc6ff24dafcb4dc76153fd68afe063a983be715a70e0ac8442e	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/地方税法-第702条の3.xml	3034	308eee5c3f4d114bd261f1daebc9bc9a5fe053afe2febe76c16dd2b79e8a6c9e	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/所得税法-第2条-令和6年分.xml	50653	7f7b2b5f99737330a37a57392b20cfe7d86e7843c27dec5e43fb1f9089c82c7f	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/所得税法-第2条-令和元年分.xml	45721	b7686a4c7151a21896135d8fd199ac32e3c149fe6c0db47ffa599f21a65f58c2	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/所得税法-第2条-平成29年4月.xml	43837	f2051583e5ef40aef6efd49a0a26b04b55dd7044e20a8c0695a2de3254ac7adb	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/所得税法-第2条.xml	51698	598e6456eb225f3b4037f49893d7b96e6c567356a1bc6936293863fdafed6b16	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/所得税法-第79条-平成29年4月.xml	3551	ff5f8d4f1d1d53c38a6342d8c48cf243f6361bb09c0eca681546b52b284c36d0	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/所得税法-第79条.xml	3592	7df26cde258ea443379b16631f7572a8874708ffa00e17f14b7d4286eb514519	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/森林環境税法.xml	122078	2798bb750fd93717bfbba6766681efdc8ce3f17a75934508bba8cecd1fe4de48	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+egov/租税特別措置法-第41条.xml	85034	8b2f3609e822bff3f270777bcdc4a496004c853d413c76d3c8c5c2ef0b09f263	data/law/national/ と data/law/世田谷区/property-tax.tsv（条文）
+schedule5/salary-income-schedule-until-reiwa6.tsv	30000	49875132ab43a000ffe9a422559efabeb96212059220f8a6c5553fa5656c3b7e	law.SalarySchedule（表ではなく速算表の検算）
+schedule5/salary-income-schedule.tsv	28272	0ad0476042c5fc00f4a780ce62ac0490e47b8355b3742369b9e9b2e06acae1d8	law.SalarySchedule（表ではなく速算表の検算）

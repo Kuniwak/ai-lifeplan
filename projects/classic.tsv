@@ -1,0 +1,8 @@
+slot	path
+extends	base.tsv
+inflation	data/environment/inflation.tsv
+investment_return	data/environment/investment-return.tsv
+real_wage_growth	data/environment/real-wage-growth.tsv
+pension_level	data/environment/pension-level.tsv
+income_husband	data/controllable/income-husband.tsv
+investment	data/controllable/investment.tsv

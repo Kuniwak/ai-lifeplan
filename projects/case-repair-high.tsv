@@ -1,0 +1,3 @@
+slot	path
+extends	base.tsv
+inflation_target	data/environment/scenario/repair-high.tsv

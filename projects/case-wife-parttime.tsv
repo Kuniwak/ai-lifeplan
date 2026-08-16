@@ -1,0 +1,3 @@
+slot	path
+extends	base.tsv
+income_wife	data/controllable/scenario/income-wife-parttime.tsv

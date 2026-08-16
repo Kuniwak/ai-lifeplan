@@ -1,0 +1,3 @@
+slot	path
+extends	case-zero-growth.tsv
+pension_level	data/environment/scenario/pension-zero-growth-depleted.tsv

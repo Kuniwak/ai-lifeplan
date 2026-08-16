@@ -1,0 +1,3 @@
+slot	path
+extends	../base.tsv
+investment	data/controllable/scenario/investment-cap-36m.tsv
