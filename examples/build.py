@@ -132,7 +132,7 @@ TEXT['en'] = dict(
         'The same percentage fall costs a different amount depending on when it lands and how much is held at the time.'),
     p_dials_note=(
         'Where the rows of a table barely differ, that decision barely matters for this household: %(smallDials)s '
-        'each account for under 1%% of the spread. That is a result too. It says which questions the household can '
+        '%(smallVerb)s for under 1%% of the spread. That is a result too. It says which questions the household can '
         'stop deliberating over, and which one (%(topDial)s) deserves the time.'),
 
     h_heat='Housing and living cost together',
@@ -293,7 +293,7 @@ TEXT['ja'] = dict(
     cap_crash='同じ下落率でも、いつ起きるか、そのとき何をどれだけ保有しているかで損失額は変わる。',
     p_dials_note=(
         '表の行どうしがほとんど変わらない意思決定は、この世帯ではほとんど結果を左右しない。'
-        '%(smallDials)sは、それぞればらつきの1%%未満しか占めない。'
+        '%(smallDials)sは、ばらつきの1%%未満しか占めない。'
         'これも結果の1つである。世帯がどの問いに悩むのをやめてよく、どの問い（%(topDial)s）に時間を使うべきかを示している。'),
 
     h_heat='住まいと生活費の組み合わせ',
@@ -558,6 +558,7 @@ def render(lang):
         worstEcon=worst_econ['name'], worstRuin=pct(worst_econ['ruin']),
         resortEcons=join(resort_econ),
         topDial=top_dial['name'],
+        smallVerb='accounts' if len([e for e in dials if e['v'] < 0.01]) == 1 else 'each account',
         smallDials=join([e['name'] for e in D['eta'] if not e['env'] and e['v'] < 0.01]),
     )
     levels = {a['name']: a['n'] for a in [
