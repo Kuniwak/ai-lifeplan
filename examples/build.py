@@ -41,7 +41,8 @@ TEXT['en'] = dict(
     kicker='lifeplan / every combination of five conditions / example',
     title='%(n)s ways this household could go',
     lede=(
-        'Five conditions were given two to seven options each, and every combination of those options was run '
+        'Three decisions the household makes and two conditions it cannot choose were each given two to seven options, '
+        'and every combination of those options was run '
         'as a complete life plan carried to the year the earner turns 100. The final net worth ranges from %(min)s to %(max)s '
         'hundred-million yen. The point of running them all is to see <strong>which condition moves the result</strong>. '
         'The household is invented; see the note at the end.'),
@@ -58,8 +59,9 @@ TEXT['en'] = dict(
         'into separate conditions, each with a few options, and running every combination of options is what '
         'answers that question.'),
     p_method=(
-        'Nothing about this depends on the household. Any life plan is a set of decisions made under conditions '
-        'nobody controls. Write each decision and each outside condition as a short list of options, run the plan '
+        'Nothing about this depends on the household. Any life plan is a set of decisions (housing, work, spending, '
+        'children\'s schooling, when to draw the pension) made under conditions nobody controls (prices, wage growth, '
+        'investment returns, the timing of a crash). Write each decision and each outside condition as a short list of options, run the plan '
         'once per combination, and the results show which decision is worth deliberating over and which '
         'is not. A single simulator run says only whether one particular plan works; this says '
         'what changes the answer.'),
@@ -206,7 +208,7 @@ TEXT['ja'] = dict(
     kicker='lifeplan / 5つの条件の全組み合わせ / サンプル',
     title='この世帯がたどりうる%(n)s通り',
     lede=(
-        '5つの条件にそれぞれ2〜7個の選択肢を用意し、選択肢のすべての組み合わせについて、'
+        '世帯が決められる3つの意思決定と、世帯には選べない2つの外部条件にそれぞれ2〜7個の選択肢を用意し、選択肢のすべての組み合わせについて、'
         '稼ぎ手が100歳になる年までライフプランを1本ずつ通しで計算した。'
         '最終年の純資産は%(min)s億円から%(max)s億円まで散らばる。'
         '全通りを計算する目的は、<strong>どの条件が結果を動かすか</strong>を見ることにある。'
@@ -224,7 +226,7 @@ TEXT['ja'] = dict(
         'シナリオを条件ごとに分解してそれぞれに数個の選択肢を置き、選択肢のすべての組み合わせを計算すれば、その問いに答えられる。'),
     p_method=(
         'この方法はこの世帯に固有のものではない。'
-        'どのライフプランも、誰にも制御できない条件のもとで下す意思決定の集まりである。'
+        'どのライフプランも、誰にも制御できない条件（物価、賃金の伸び、運用の成績、暴落の時期）のもとで下す意思決定（住まい、働き方、支出、子の進路、年金の受け取り方）の集まりである。'
         '意思決定と外部条件をそれぞれ数個の選択肢に書き下し、組み合わせごとにプランを1本ずつ計算すれば、'
         'どの意思決定に悩む価値があり、どれには無いかが結果に現れる。'
         'シミュレータを1回動かして分かるのは、その1本のプランが成り立つかどうかだけである。'
