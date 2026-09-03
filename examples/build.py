@@ -43,8 +43,7 @@ TEXT['en'] = dict(
     lede=(
         'Five conditions were given two to seven options each, and every combination of those options was run '
         'as a complete life plan carried to the year the earner turns 100. The final net worth ranges from %(min)s to %(max)s '
-        'hundred-million yen. Counting how many runs fail is not the point: that count mostly reflects '
-        'which options were fed in. The point is to see <strong>which condition moves the result</strong>. '
+        'hundred-million yen. The point of running them all is to see <strong>which condition moves the result</strong>. '
         'The household is invented; see the note at the end.'),
     tile_n='combinations, each one run as a complete plan',
     tile_top='of the spread comes from %(topAxis)s, the condition with the most influence',
@@ -81,7 +80,7 @@ TEXT['en'] = dict(
     cap_dist=(
         'Minimum <b>%(min)s</b>, lower quartile <b>%(q1)s</b>, median <b>%(med)s</b>, upper quartile <b>%(q3)s</b>, '
         'maximum <b>%(max)s</b>. Blue combinations stayed solvent; red ones ran out of money on the way. '
-        'There is no gap between "ruined" and "just made it": the outcome gets worse continuously.'),
+        'The outcome worsens continuously from "just made it" to "ruined".'),
 
     h_eta='Which condition moves the result',
     sub_eta='Share of the spread each condition accounts for (variance explained, η²)',
@@ -103,7 +102,7 @@ TEXT['en'] = dict(
     callout_econ_all=(
         '<strong>In the harshest economy, every combination fails.</strong> No setting of the household\'s '
         'decisions keeps it solvent there. This is the sweep\'s most useful output: it shows where the problem '
-        'is not something the household can fix by choosing differently.'),
+        'lies outside the household\'s choices.'),
     callout_econ_most=(
         '<strong>In the harshest economy (%(worstEcon)s), %(worstRuin)s of combinations fail.</strong> '
         'Only the most favourable settings of the household\'s decisions survive there. This is the sweep\'s '
@@ -132,7 +131,7 @@ TEXT['en'] = dict(
     p_resort=(
         'Both measures require the mortgage to be repaid first. A home already pledged cannot be pledged again, '
         'and selling means clearing the loan out of the proceeds. <strong>The plan evaluates both and takes '
-        'whichever leaves the household better off.</strong> This is not a decision the household makes.'),
+        'whichever leaves the household better off.</strong>'),
     th_measure='Measure', th_times='times taken',
     cap_resortM=(
         'Taken in <b>%(resortUsed)s</b> cells. The earliest year it was needed was <b>%(resortMin)s</b>, '
@@ -145,9 +144,10 @@ TEXT['en'] = dict(
     h_not='What this sweep does not answer',
     p_not_ruin=(
         '<strong>How likely ruin is.</strong> %(ruinN)s of the %(n)s combinations fail, which is %(ruinPct)s. '
-        'That figure means nothing on its own. It is the share of the scenarios that were fed in, not a probability. '
+        'That figure is the share of the options that were fed in, not a probability. '
         'Load the sweep with pessimistic economies and it rises; load it with optimistic ones and it falls. '
-        'Nobody can rate the scenarios accurately enough to turn the share into a chance. The seven economies and '
+        'Turning it into a chance would require weighting each option by how likely it is, and nobody can do that '
+        'accurately. The seven economies and '
         'the seven crash timings are counted equally here, and they are not equally likely. '
         '<b>Read which condition moves the result, not how many combinations fail.</b>'),
     p_not_alloc=(
@@ -162,13 +162,13 @@ TEXT['en'] = dict(
         '<code>go run ./tools/sweep &amp;&amp; python3 examples/analyse.py &amp;&amp; python3 examples/build.py</code>.'),
     foot_caveat=(
         '<strong>The household in this report does not exist.</strong> Nobody lives on exactly these figures, '
-        'but the figures are not made up either. The salary comes from the 民間給与実態統計調査 by age band, '
+        'but each figure comes from a published statistic. The salary comes from the 民間給与実態統計調査 by age band, '
         'the spouse\'s pay from the 賃金構造基本統計調査 hourly rate for part-time women, the spending from the '
         '家計調査 for the head\'s age band, and the rent and purchase price from the going rate for a 70㎡ flat in '
-        '八王子市. Each source is cited in <code>data/controllable/README.md</code>. The decisions, the statutory '
-        'rules and the economic projections are real; only the household is invented. All amounts are in real terms, '
-        'discounted to the plan\'s first year. Pension levels follow the 2024 財政検証. The crash size is a chosen '
-        'round figure, not a property of any particular portfolio.'),
+        '八王子市. Each source is cited in <code>data/controllable/README.md</code>. Only the household\'s '
+        'makeup is invented; the decisions, the statutory rules and the economic projections are real. All amounts are in real terms, '
+        'discounted to the plan\'s first year. Pension levels follow the 2024 財政検証. The crash size is a round figure '
+        'chosen by hand rather than derived from any particular portfolio.'),
 )
 
 TEXT['ja'] = dict(
@@ -179,8 +179,7 @@ TEXT['ja'] = dict(
         '5つの条件にそれぞれ2〜7個の選択肢を用意し、選択肢のすべての組み合わせについて、'
         '稼ぎ手が100歳になる年までライフプランを1本ずつ通しで計算した。'
         '最終年の純資産は%(min)s億円から%(max)s億円まで散らばる。'
-        '何本が破綻するかを数えることが目的ではない。その数は、どんなシナリオを入力したかをおもに反映するからである。'
-        '目的は<strong>どの意思決定が結果を動かすか</strong>を見ることにある。'
+        '全通りを計算する目的は、<strong>どの条件が結果を動かすか</strong>を見ることにある。'
         'この世帯は架空のものである（末尾の注記を参照）。'),
     tile_n='通りの組み合わせ。それぞれを1本のプランとして計算',
     tile_top='のばらつきが、もっとも影響の大きい条件である%(topAxis)sに由来する',
@@ -216,7 +215,7 @@ TEXT['ja'] = dict(
     cap_dist=(
         '最小<b>%(min)s</b>、第1四分位<b>%(q1)s</b>、中央値<b>%(med)s</b>、第3四分位<b>%(q3)s</b>、最大<b>%(max)s</b>。'
         '青は最後まで存続した組み合わせ、赤は途中で資金が尽きた組み合わせ。'
-        '「破綻」と「ぎりぎり存続」の間に断絶はなく、結果は連続的に悪化していく。'),
+        '結果は「ぎりぎり存続」から「破綻」へ連続的に悪化する。'),
 
     h_eta='どの条件が結果を動かすか',
     sub_eta='各条件がばらつきに占める割合（説明された分散、η²）',
@@ -237,12 +236,12 @@ TEXT['ja'] = dict(
     callout_econ_all=(
         '<strong>もっとも厳しい経済では、すべての組み合わせが破綻する。</strong>'
         '世帯の意思決定をどう設定しても、そこでは存続できない。'
-        'これがこのスイープのもっとも有用な出力である。'
-        '問題が世帯の選択では解決できない場所にあることを示している。'),
+        'これがこの計算のもっとも有用な出力である。'
+        '問題が世帯の選択の外にあることを示している。'),
     callout_econ_most=(
         '<strong>もっとも厳しい経済（%(worstEcon)s）では、組み合わせの%(worstRuin)sが破綻する。</strong>'
         'そこで存続できるのは、世帯の意思決定をもっとも有利に設定した組み合わせだけである。'
-        'これがこのスイープのもっとも有用な出力である。'
+        'これがこの計算のもっとも有用な出力である。'
         '問題のどれだけが世帯の選択の外にあるかを示している。'),
 
     h_dials='意思決定を1つずつ見る',
@@ -263,7 +262,7 @@ TEXT['ja'] = dict(
     p_resort=(
         'どちらの手段も、先に住宅ローンを完済している必要がある。'
         'すでに担保に入れた家を再び担保にはできず、売却する場合は売却代金からローンを清算しなければならない。'
-        '<strong>プランは両方を試算し、世帯にとって有利な方を採用する。</strong>これは世帯が選ぶことではない。'),
+        '<strong>プランは両方を試算し、世帯にとって有利な方を自動で採用する。</strong>'),
     th_measure='手段', th_times='採用回数',
     cap_resortM=(
         '<b>%(resortUsed)s</b>通りの組み合わせで採用された。'
@@ -273,12 +272,12 @@ TEXT['ja'] = dict(
         '自宅の現金化が起きた経済は%(resortEcons)sだけである。'
         '<b>自宅を手放すかどうかは、世帯が何かを選ぶより先に、経済によって決まっている。</b>'),
 
-    h_not='このスイープでは答えられないこと',
+    h_not='この計算では答えられないこと',
     p_not_ruin=(
         '<strong>破綻の確率。</strong>%(n)s通りのうち%(ruinN)s通り、割合にして%(ruinPct)sが破綻する。'
-        'この数字それ自体には意味がない。入力したシナリオの構成比であって、確率ではないからである。'
+        'この数字は入力した選択肢の構成比であって、確率ではない。'
         '悲観的な経済を多く入れれば上がり、楽観的な経済を多く入れれば下がる。'
-        'シナリオの確からしさを正確に見積もれる人はいないので、この割合を確率に読み替えることはできない。'
+        '確率に読み替えるには各選択肢の起こりやすさで重み付けする必要があるが、それを正確に見積もれる人はいない。'
         'ここでは7つの経済と7つの暴落時期を同じ重みで数えているが、それらが同じ確率で起きるわけではない。'
         '<b>何通り破綻するかではなく、どの条件が結果を動かすかを読むこと。</b>'),
     p_not_alloc=(
@@ -293,14 +292,14 @@ TEXT['ja'] = dict(
         '結果は<code>out/sweep/cells.tsv</code>にある。再現するには'
         '<code>go run ./tools/sweep &amp;&amp; python3 examples/analyse.py &amp;&amp; python3 examples/build.py</code>を実行する。'),
     foot_caveat=(
-        '<strong>この報告書の世帯は実在しない。</strong>この数字どおりに暮らしている人はいない。'
-        'ただし数字を勝手に作ったわけでもない。'
+        '<strong>この報告書の世帯は実在しない。</strong>この数字どおりに暮らしている人はいないが、'
+        '数字はそれぞれ公開統計から取っている。'
         '給与は民間給与実態統計調査の年齢階級別の値、配偶者の給与は賃金構造基本統計調査のパート女性の時給、'
         '生活費は世帯主の年齢階級に対応する家計調査の値、家賃と購入価格は八王子市の70㎡分譲の相場から取っている。'
         'それぞれの出典は<code>data/controllable/README.md</code>に記載した。'
-        '意思決定の設定、法定の制度、経済見通しは実在のもので、実在しないのは世帯だけである。'
+        '架空なのは世帯の構成だけで、意思決定の設定、法定の制度、経済見通しは実在のものである。'
         '金額はすべて実質値で、プラン初年度の価値に割り引いている。年金水準は2024年財政検証に従う。'
-        '暴落の大きさは、特定のポートフォリオの性質ではなく、きりのよい数字として選んだものである。'),
+        '暴落の下落率はきりのよい数字として手で選んだもので、特定の資産構成から導いた値ではない。'),
 )
 
 # ---------------------------------------------------------------- html ---
