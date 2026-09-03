@@ -38,6 +38,7 @@ td.rr{color:var(--crit)}
 .callout{border-left:3px solid var(--s1);padding:2px 0 2px 18px;margin:26px 0}
 .callout.warn{border-left-color:var(--crit)}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--band);padding:.1em .35em;border-radius:3px;font-size:.92em}
+ol{padding-left:1.4em}ol li{margin:0 0 .6em}
 footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted)}
 </style>
 <div class="wrap" lang="en">
@@ -57,6 +58,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <h2>What was varied</h2>
 <p class="sub">One condition per row. The first option of each condition is what the original plan assumed.</p>
 <p>A scenario like "carry on as now" changes several things at once. A results row for it can only say which scenario was chosen, not which of its parts made the difference. Splitting the scenarios into separate conditions, each with a few options, and running every combination of options is what answers that question.</p>
+<p>Nothing about this depends on the household. Any life plan is a set of decisions made under conditions nobody controls. Write each decision and each outside condition as a short list of options, run the plan once per combination, and the results show which decision is worth deliberating over and which is not. A single simulator run says only whether one particular plan works; this says what changes the answer.</p>
 <figure><div class="scroll"><table>
 <thead><tr><th>Condition</th><th class="n">Options</th><th>Household chooses?</th><th>What the options are</th></tr></thead>
 <tbody><tr><td>経済</td><td class="n">7</td><td>no</td><td>seven published economic projections</td></tr><tr><td>金融危機</td><td class="n">7</td><td>no</td><td>no crash, a −20% crash in one of five chosen years, or a crash in two consecutive years</td></tr><tr><td>生活費</td><td class="n">3</td><td>yes</td><td>the 家計調査 average for the head's age band, or that figure ±¥40,000 a month</td></tr><tr><td>年金受給開始</td><td class="n">4</td><td>yes</td><td>as in the plan (70), or 65, 70, or 75 for both</td></tr><tr><td>住まい</td><td class="n">2</td><td>yes</td><td>buy a 70㎡ flat in 2023, or rent the same size for life</td></tr></tbody></table></div>
@@ -76,7 +78,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <section>
 <h2>Which condition moves the result</h2>
 <p class="sub">Share of the spread each condition accounts for (variance explained, η²)</p>
-<p>Because every option of every condition appears in the same number of combinations, the spread can be split cleanly by condition. This is a more reliable measure of sensitivity than moving one factor at a time, because a one-at-a-time result depends on where the other factors happened to be parked.</p>
+<p>η² is the share of the total spread that disappears if one condition is held fixed. If the five shares added up to 100%, each condition would act on its own; whatever is missing is the part where conditions act together. Because every option of every condition appears in the same number of combinations, the spread can be split cleanly by condition. This is a more reliable measure of sensitivity than moving one factor at a time, because a one-at-a-time result depends on where the other factors happened to be parked.</p>
 <figure><div class="scroll"><table>
 <thead><tr><th>Condition</th><th class="b">Share of the spread</th><th class="n">η²</th></tr></thead>
 <tbody><tr><td class="k">経済</td><td class="b"><span class="env" style="width:460px"></span></td><td class="n">50.28%</td></tr><tr><td class="k">住まい</td><td class="b"><span class="dial" style="width:310px"></span></td><td class="n">33.89%</td></tr><tr><td class="k">生活費</td><td class="b"><span class="dial" style="width:91px"></span></td><td class="n">9.99%</td></tr><tr><td class="k">年金受給開始</td><td class="b"><span class="dial" style="width:4px"></span></td><td class="n">0.38%</td></tr><tr><td class="k">金融危機</td><td class="b"><span class="env" style="width:2px"></span></td><td class="n">0.19%</td></tr></tbody></table></div>
@@ -104,6 +106,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <figcaption>Deferring the pension raises the median, but the years spent waiting have to be paid for by drawing down savings.</figcaption></figure>
 <figure><div class="scroll"><table><thead><tr><th>Crash</th><th class="n">median</th><th class="n">ruin rate</th></tr></thead><tbody><tr><td>2030年</td><td class="n">−0.08</td><td class="n">53.0%</td></tr><tr><td>2040年</td><td class="n">−0.08</td><td class="n">53.0%</td></tr><tr><td>2050-2051年の2年</td><td class="n">−0.16</td><td class="n">54.2%</td></tr><tr><td>2050年</td><td class="n">−0.11</td><td class="n">54.2%</td></tr><tr><td>2060年</td><td class="n">−0.15</td><td class="n">54.2%</td></tr><tr><td>2070年</td><td class="n">−0.12</td><td class="n">53.6%</td></tr><tr><td>なし</td><td class="n">−0.07</td><td class="n">53.0%</td></tr></tbody></table></div>
 <figcaption>The same percentage fall costs a different amount depending on when it lands and how much is held at the time.</figcaption></figure>
+<p>Where the rows of a table barely differ, that decision barely matters for this household: 年金受給開始 each account for under 1% of the spread. That is a result too. It says which questions the household can stop deliberating over, and which one (住まい) deserves the time.</p>
 </section>
 <hr>
 <section>
@@ -131,6 +134,13 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <p><strong>Asset allocation by age.</strong> Contributions follow one fixed policy, and nothing here varies the mix of shares and bonds. Knowing that a crash hurts most just before drawdown does not say what to do about it.</p>
 <p><strong>Care, job loss, inheritance.</strong> None of these was varied.</p>
 <p><strong>Anything about a real household.</strong> Every figure describes an invented one.</p>
+</section>
+<hr>
+<section>
+<h2>Doing the same for your own household</h2>
+<p>The simulator and the sweep are in the repository, and nothing in them is specific to this household. Three things change:</p>
+<ol><li>Describe the household. Income, spending, housing, loans, pension and so on are one TSV file each under <code>data/controllable/</code>; the manifest <code>projects/base.tsv</code> lists which file fills which slot. Replace the figures with your own. The README in that directory says where each of the example figures came from.</li><li>Write the options. Each option is another TSV file for the same slot; the ones used here are under <code>data/controllable/scenario/</code> (decisions) and <code>data/environment/scenario/</code> (economies, crashes).</li><li>List the conditions. <code>Axes()</code> in <code>tools/sweep/main.go</code> names each condition, its options, and which file each option swaps in. Add, remove or rename conditions there. The number of plans to run is the product of the option counts.</li></ol>
+<p>Then run the three commands in the footer. The sweep runs one plan per combination on every core; the two scripts produce this page from the results.</p>
 </section>
 <footer>
 <p>Generated by <code>tools/sweep</code>, which passes overrides to <code>plan.Build</code> instead of writing 1,176 manifests. Results are in <code>out/sweep/cells.tsv</code>. Reproduce with <code>go run ./tools/sweep &amp;&amp; python3 examples/analyse.py &amp;&amp; python3 examples/build.py</code>.</p>
