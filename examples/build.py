@@ -10,7 +10,6 @@ prose never contradicts the data it sits next to.
 import io, json, sys
 
 D = json.load(io.open('out/sweep/data.json', encoding='utf-8'))
-d = D['dist']
 res = D['resort']
 ry = res.get('years', {})
 W = 520
@@ -39,33 +38,19 @@ TEXT = {}
 TEXT['en'] = dict(
     lang='en',
     kicker='lifeplan / every combination of five conditions / example',
-    title='%(n)s ways this household could go',
+    title='%(n)s scenarios this household could follow',
     lede=(
-        'Three decisions the household makes and two conditions it cannot choose were each given two to seven options, '
-        'and every combination of those options was run '
-        'as a complete life plan carried to the year the earner turns 100. The final net worth ranges from %(min)s to %(max)s '
-        'hundred-million yen. The point of running them all is to see <strong>which condition moves the result</strong>. '
-        'The household is invented; see the note at the end.'),
-    tile_n='combinations, each one run as a complete plan',
-    tile_top='of the spread comes from %(topAxis)s, the condition with the most influence',
-    tile_main='of the spread is explained by the five conditions acting separately',
-    tile_resort='combinations had to turn the home into cash',
+        'For an invented household, every combination of three choices the household makes and two outside conditions it cannot choose '
+        'was turned into a scenario, %(n)s in all. In some the household still has assets at 100; in others the assets run out. '
+        'The point of computing every combination is to see <strong>which conditions shape the path of the assets, and by how much</strong>.'),
 
-    h_axes='What was varied',
-    sub_axes='One condition per row. The first option of each condition is what the original plan assumed.',
-    p_axes=(
-        'A scenario like "carry on as now" changes several things at once. A results row for it can only '
-        'say which scenario was chosen, not which of its parts made the difference. Splitting the scenarios '
-        'into separate conditions, each with a few options, and running every combination of options is what '
-        'answers that question.'),
+    h_axes='What conditions were assumed',
+    p_axes='Computing every combination of the conditions shows which option to take.',
     p_method=(
-        'Nothing about this depends on the household. Any life plan is a set of decisions (housing, work, spending, '
-        'children\'s schooling, when to draw the pension) made under conditions nobody controls (prices, wage growth, '
-        'investment returns, the timing of a crash). Write each decision and each outside condition as a short list of options, run the plan '
-        'once per combination, and the results show which decision is worth deliberating over and which '
-        'is not. A single simulator run says only whether one particular plan works; this says '
-        'what changes the answer.'),
-    th_axis='Condition', th_levels='Options', th_chosen='Household chooses?', th_what='What the options are',
+        'There are two kinds: conditions nobody controls (prices, wage growth, investment returns, the timing of a crash) '
+        "and decisions (housing, work, spending, children's schooling, when to draw the pension). "
+        'Computing a scenario for each combination shows which decisions matter.'),
+    th_axis='Condition', th_chosen='Household chooses?', th_what='What the options are',
     axes=[
         ('経済', 'no', 'seven published economic projections'),
         ('金融危機', 'no', 'no crash, a −20%% crash in one of five chosen years, or a crash in two consecutive years'),
@@ -77,29 +62,12 @@ TEXT['en'] = dict(
         '7 × 7 × 3 × 4 × 2 = <b>%(n)s</b> combinations. Each added condition multiplies the number of plans to run, '
         'so choosing the conditions is also choosing how long the whole run takes.'),
 
-    h_dist='How widely the results spread',
-    sub_dist='Net worth in the final year, in today\'s prices, in hundred-million yen',
-    p_dist=(
-        'In the simulator, assets stop at zero and never go negative. A plan that cannot pay a bill records '
-        'the unpaid amount as a shortfall and keeps going. If the chart used assets alone, every ruined combination '
-        'would sit at zero and the chart would go flat exactly where the differences matter most. '
-        'So the measure used here is <strong>assets minus the accumulated shortfall</strong>, which can go below zero.'),
-    th_band='Range', th_cells='Combinations', th_n='count', th_ruined='of which ruined',
-    cap_dist=(
-        'Minimum <b>%(min)s</b>, lower quartile <b>%(q1)s</b>, median <b>%(med)s</b>, upper quartile <b>%(q3)s</b>, '
-        'maximum <b>%(max)s</b>. Blue combinations stayed solvent; red ones ran out of money on the way. '
-        'The outcome worsens continuously from "just made it" to "ruined".'),
 
     h_eta='Which condition moves the result',
     sub_eta='Share of the spread each condition accounts for (variance explained, η²)',
     p_eta=(
-        'η² is the share of the total spread that disappears if one condition is held fixed. If the five shares '
-        'added up to 100%%, each condition would act on its own; whatever is missing is the part where conditions '
-        'act together. '
-        'Because every option of every condition appears in the same number of combinations, the spread can be '
-        'split cleanly by condition. '
-        'This is a more reliable measure of sensitivity than moving one factor at a time, because a one-at-a-time '
-        'result depends on where the other factors happened to be parked.'),
+        'Roughly, η² is how much a condition matters. '
+        'Precisely, it is the spread that disappears when that condition is held at one option.'),
     th_share='Share of the spread',
     cap_eta=(
         'Orange bars are conditions the household cannot choose; blue bars are decisions it can make. '
@@ -141,12 +109,11 @@ TEXT['en'] = dict(
     sub_heat='Each row covers every combination of the other three conditions',
     cap_heat='The median and ruin rate in each row are taken over those combinations.',
 
-    h_resort='The home is the last resource',
-    sub_resort='When a plan cannot pay, it either sells the home and rents, or borrows against it',
+    h_resort='What happens after the money runs out',
+    sub_resort='When the assets run out, the household either sells the home and rents, or borrows against it',
     p_resort=(
-        'Both measures require the mortgage to be repaid first. A home already pledged cannot be pledged again, '
-        'and selling means clearing the loan out of the proceeds. <strong>The plan evaluates both and takes '
-        'whichever leaves the household better off.</strong>'),
+        'Both require the mortgage to be repaid first. A home already pledged cannot be pledged again, '
+        'so selling means clearing the loan out of the proceeds. <strong>Both are evaluated and the better one is taken.</strong>'),
     th_measure='Measure', th_times='times taken',
     cap_resortM=(
         'Taken in <b>%(resortUsed)s</b> cells. The earliest year it was needed was <b>%(resortMin)s</b>, '
@@ -156,24 +123,10 @@ TEXT['en'] = dict(
         'Only these economies ever force the home into cash: %(resortEcons)s. '
         '<b>Whether the home has to be sold is settled by the economy before the household chooses anything.</b>'),
 
-    h_not='What this sweep does not answer',
-    p_not_ruin=(
-        '<strong>How likely ruin is.</strong> %(ruinN)s of the %(n)s combinations fail, which is %(ruinPct)s. '
-        'That figure is the share of the options that were fed in, not a probability. '
-        'Load the sweep with pessimistic economies and it rises; load it with optimistic ones and it falls. '
-        'Turning it into a chance would require weighting each option by how likely it is, and nobody can do that '
-        'accurately. The seven economies and '
-        'the seven crash timings are counted equally here, and they are not equally likely. '
-        '<b>Read which condition moves the result, not how many combinations fail.</b>'),
-    p_not_alloc=(
-        '<strong>Asset allocation by age.</strong> Contributions follow one fixed policy, and nothing here varies '
-        'the mix of shares and bonds. Knowing that a crash hurts most just before drawdown does not say what to do about it.'),
-    p_not_other='<strong>Care, job loss, inheritance.</strong> None of these was varied.',
-    p_not_real='<strong>Anything about a real household.</strong> Every figure describes an invented one.',
 
-    h_diy='Doing the same for your own household',
+    h_diy='Running it on your own conditions',
     p_diy=(
-        'The simulator and the sweep are in the repository, and nothing in them is specific to this household. '
+        'The simulator and the full-combination run are in the repository, and nothing in them is specific to this household. '
         'Three things change:'),
     diy_steps=[
         'Describe the household. Income, spending, housing, loans, pension and so on are one TSV file each under '
@@ -206,32 +159,18 @@ TEXT['en'] = dict(
 TEXT['ja'] = dict(
     lang='ja',
     kicker='lifeplan / 5つの条件の全組み合わせ / サンプル',
-    title='この世帯がたどりうる%(n)s通り',
+    title='この世帯がたどりうる%(n)s通りのシナリオ',
     lede=(
-        '世帯が決められる3つの意思決定と、世帯には選べない2つの外部条件にそれぞれ2〜7個の選択肢を用意し、選択肢のすべての組み合わせについて、'
-        '稼ぎ手が100歳になる年までライフプランを1本ずつ通しで計算した。'
-        '最終年の純資産は%(min)s億円から%(max)s億円まで散らばる。'
-        '全通りを計算する目的は、<strong>どの条件が結果を動かすか</strong>を見ることにある。'
-        'この世帯は架空のものである（末尾の注記を参照）。'),
-    tile_n='通りの組み合わせ。それぞれを1本のプランとして計算',
-    tile_top='のばらつきが、もっとも影響の大きい条件である%(topAxis)sに由来する',
-    tile_main='のばらつきが、5つの条件それぞれ単独の効果で説明できる',
-    tile_resort='通りで、自宅を現金化せざるを得なかった',
+        '架空の世帯について、世帯が決められる3つの選択肢と世帯には選べない2つの外部条件のすべての組み合わせで%(n)s通りのシナリオを作成した。'
+        '100歳時点で資産が残るシナリオもあれば資産が枯渇するシナリオもある。'
+        '全通りの組み合わせを計算する目的は、<strong>どの条件がどの程度資産の推移を左右するか</strong>を見ることにある。'),
 
-    h_axes='何を振ったか',
-    sub_axes='1行が1つの条件。各条件の最初の選択肢がプラン原案の前提',
-    p_axes=(
-        '「今のまま続ける」のようなシナリオは、複数の要素を同時に変える。'
-        'その結果の行からは、どのシナリオを選んだかは分かっても、その中のどの要素が効いたかは分からない。'
-        'シナリオを条件ごとに分解してそれぞれに数個の選択肢を置き、選択肢のすべての組み合わせを計算すれば、その問いに答えられる。'),
+    h_axes='どんな条件を想定したか',
+    p_axes='条件のすべての組み合わせを計算することで、とるべき選択肢がわかる。',
     p_method=(
-        'この方法はこの世帯に固有のものではない。'
-        'どのライフプランも、誰にも制御できない条件（物価、賃金の伸び、運用の成績、暴落の時期）のもとで下す意思決定（住まい、働き方、支出、子の進路、年金の受け取り方）の集まりである。'
-        '意思決定と外部条件をそれぞれ数個の選択肢に書き下し、組み合わせごとにプランを1本ずつ計算すれば、'
-        'どの意思決定に悩む価値があり、どれには無いかが結果に現れる。'
-        'シミュレータを1回動かして分かるのは、その1本のプランが成り立つかどうかだけである。'
-        '全組み合わせを計算すると、何が答えを変えるのかが分かる。'),
-    th_axis='条件', th_levels='選択肢の数', th_chosen='世帯が選べるか', th_what='選択肢の内容',
+        '誰にも制御できない条件（物価、賃金の伸び、運用の成績、暴落の時期）と意思決定（住まい、働き方、支出、子の進路、年金の受け取り方）の2つがある。'
+        'この組み合わせごとにシナリオを計算すればどの意思決定が重要かを判断できる。'),
+    th_axis='条件', th_chosen='世帯が選べるか', th_what='選択肢の内容',
     axes=[
         ('経済', 'いいえ', '公表されている7つの経済見通し'),
         ('金融危機', 'いいえ', '暴落なし、5つの年のいずれかで−20%%の下落、または2年連続の下落'),
@@ -243,27 +182,12 @@ TEXT['ja'] = dict(
         '7 × 7 × 3 × 4 × 2 = <b>%(n)s</b>通り。'
         '条件を1つ増やすごとに計算するプランの本数は掛け算で増えるので、条件をどう選ぶかがそのまま計算時間を決める。'),
 
-    h_dist='結果はどれだけ散らばるか',
-    sub_dist='最終年の純資産。現在価値、単位は億円',
-    p_dist=(
-        'シミュレータでは資産は0で下げ止まり、マイナスにはならない。'
-        '支払えないプランは不足額を「不足」として記録し、計算を続ける。'
-        '資産だけをそのまま描くと、破綻した組み合わせはすべて0に張り付き、差がもっとも重要な部分で図が横ばいになってしまう。'
-        'そこでここでは<strong>資産から累積不足額を引いた値</strong>を指標にする。この値はマイナスにもなりうる。'),
-    th_band='範囲', th_cells='組み合わせの数', th_n='件数', th_ruined='うち破綻',
-    cap_dist=(
-        '最小<b>%(min)s</b>、第1四分位<b>%(q1)s</b>、中央値<b>%(med)s</b>、第3四分位<b>%(q3)s</b>、最大<b>%(max)s</b>。'
-        '青は最後まで存続した組み合わせ、赤は途中で資金が尽きた組み合わせ。'
-        '結果は「ぎりぎり存続」から「破綻」へ連続的に悪化する。'),
 
     h_eta='どの条件が結果を動かすか',
     sub_eta='各条件がばらつきに占める割合（説明された分散、η²）',
     p_eta=(
-        'η²は、ある条件を1つの選択肢に固定したときに消えるばらつきの割合である。'
-        '5つの割合の合計が100%%なら各条件は単独で効いていることになり、100%%に足りない分は条件どうしが組み合わさって効いている部分である。'
-        'どの条件のどの選択肢も同じ回数ずつ組み合わせに現れるので、ばらつきを条件ごとにきれいに分解できる。'
-        '1つの条件だけを動かして他を固定する方法では、他の条件をどの選択肢に固定したかで結果が変わってしまう。'
-        '全組み合わせからの分解は、その影響を受けない分だけ感度の測り方として信頼できる。'),
+        'η²は大雑把にはその選択肢の重大さである。'
+        '厳密には、ある条件を1つの選択肢に固定したときに消えるばらつきを意味する。'),
     th_share='ばらつきに占める割合',
     cap_eta=(
         'オレンジは世帯が選べない条件、青は世帯が決められる条件。'
@@ -302,12 +226,12 @@ TEXT['ja'] = dict(
     sub_heat='各行は、他の3つの条件のすべての組み合わせを集計',
     cap_heat='各行の中央値と破綻率は、それらの組み合わせ全体から求めたもの。',
 
-    h_resort='最後に残るのは自宅',
-    sub_resort='プランが支払えなくなると、自宅を売却して賃貸に移るか、自宅を担保に借りる',
+    h_resort='破産後の行動',
+    sub_resort='資産が枯渇すると、自宅を売却して賃貸に移るか自宅を担保に借りることになる',
     p_resort=(
-        'どちらの手段も、先に住宅ローンを完済している必要がある。'
-        'すでに担保に入れた家を再び担保にはできず、売却する場合は売却代金からローンを清算しなければならない。'
-        '<strong>プランは両方を試算し、世帯にとって有利な方を自動で採用する。</strong>'),
+        'どちらの手段も先に住宅ローンを完済している必要がある。'
+        'すでに担保に入れた家を再び担保にはできないため売却する場合は売却代金からローンを清算しなければならない。'
+        '<strong>両方の選択肢を試算し有利な方を採用している。</strong>'),
     th_measure='手段', th_times='採用回数',
     cap_resortM=(
         '<b>%(resortUsed)s</b>通りの組み合わせで採用された。'
@@ -317,23 +241,10 @@ TEXT['ja'] = dict(
         '自宅の現金化が起きた経済は%(resortEcons)sだけである。'
         '<b>自宅を手放すかどうかは、世帯が何かを選ぶより先に、経済によって決まっている。</b>'),
 
-    h_not='この計算では答えられないこと',
-    p_not_ruin=(
-        '<strong>破綻の確率。</strong>%(n)s通りのうち%(ruinN)s通り、割合にして%(ruinPct)sが破綻する。'
-        'この数字は入力した選択肢の構成比であって、確率ではない。'
-        '悲観的な経済を多く入れれば上がり、楽観的な経済を多く入れれば下がる。'
-        '確率に読み替えるには各選択肢の起こりやすさで重み付けする必要があるが、それを正確に見積もれる人はいない。'
-        'ここでは7つの経済と7つの暴落時期を同じ重みで数えているが、それらが同じ確率で起きるわけではない。'
-        '<b>何通り破綻するかではなく、どの条件が結果を動かすかを読むこと。</b>'),
-    p_not_alloc=(
-        '<strong>年齢別の資産配分。</strong>拠出は単一の運用方針に固定しており、株式と債券の配分は振っていない。'
-        '暴落は取り崩し直前がもっとも痛いと分かっても、それにどう備えるべきかまでは分からない。'),
-    p_not_other='<strong>介護、失職、相続。</strong>どれも条件として振っていない。',
-    p_not_real='<strong>実在する世帯について。</strong>ここに出てくる数字はすべて架空の世帯のものである。',
 
-    h_diy='自分の世帯で同じことをするには',
+    h_diy='自分の条件で試算する方法',
     p_diy=(
-        'シミュレータも全組み合わせの計算もリポジトリに含まれており、この世帯に固有の部分はない。'
+        'シミュレータも全組み合わせの計算もリポジトリに含まれておりこの世帯に固有の部分はない。'
         '差し替えるのは次の3つである。'),
     diy_steps=[
         '世帯を記述する。収入、支出、住まい、ローン、年金などは<code>data/controllable/</code>の下にTSVファイルが1つずつあり、'
@@ -415,32 +326,15 @@ SKELETON = '''<!-- generated by tools/sweep + examples/build.py; do not edit by 
 <h1>{title}</h1>
 <p class="lede">{lede}</p>
 </header>
-<div class="tiles">
-<div class="tile"><span class="v">{n}</span><span class="k">{tile_n}</span></div>
-<div class="tile"><span class="v">{etaTop}</span><span class="k">{tile_top}</span></div>
-<div class="tile"><span class="v">{etaMain}</span><span class="k">{tile_main}</span></div>
-<div class="tile"><span class="v">{resortUsed}</span><span class="k">{tile_resort}</span></div>
-</div>
 <hr>
 <section>
 <h2>{h_axes}</h2>
-<p class="sub">{sub_axes}</p>
 <p>{p_axes}</p>
 <p>{p_method}</p>
 <figure><div class="scroll"><table>
-<thead><tr><th>{th_axis}</th><th class="n">{th_levels}</th><th>{th_chosen}</th><th>{th_what}</th></tr></thead>
+<thead><tr><th>{th_axis}</th><th>{th_chosen}</th><th>{th_what}</th></tr></thead>
 <tbody>{axes}</tbody></table></div>
 <figcaption>{cap_axes}</figcaption></figure>
-</section>
-<hr>
-<section>
-<h2>{h_dist}</h2>
-<p class="sub">{sub_dist}</p>
-<p>{p_dist}</p>
-<figure><div class="scroll"><table>
-<thead><tr><th>{th_band}</th><th class="b">{th_cells}</th><th class="n">{th_n}</th><th class="n">{th_ruined}</th></tr></thead>
-<tbody>{hist}</tbody></table></div>
-<figcaption>{cap_dist}</figcaption></figure>
 </section>
 <hr>
 <section>
@@ -497,14 +391,6 @@ SKELETON = '''<!-- generated by tools/sweep + examples/build.py; do not edit by 
 </section>
 <hr>
 <section>
-<h2>{h_not}</h2>
-<p>{p_not_ruin}</p>
-<p>{p_not_alloc}</p>
-<p>{p_not_other}</p>
-<p>{p_not_real}</p>
-</section>
-<hr>
-<section>
 <h2>{h_diy}</h2>
 <p>{p_diy}</p>
 <ol>{diy_steps}</ol>
@@ -519,13 +405,6 @@ SKELETON = '''<!-- generated by tools/sweep + examples/build.py; do not edit by 
 
 
 def tables():
-    mx = max(h['n'] for h in D['hist'])
-    hist = ''.join(
-        '<tr><td class="k">%s 〜 %s</td><td class="b"><span class="r" style="width:%dpx"></span><span class="s" style="width:%dpx"></span></td><td class="n">%s</td><td class="n rr">%s</td></tr>'
-        % (oku(h['lo']), oku(h['lo'] + 0.5), bar(h['ruin'], mx),
-           bar(h['n'] - h['ruin'], mx) if h['n'] - h['ruin'] else 0,
-           com(h['n']), com(h['ruin']) if h['ruin'] else '—')
-        for h in D['hist'])
     emx = max(e['v'] for e in D['eta'])
     eta = ''.join(
         '<tr><td class="k">%s</td><td class="b"><span class="%s" style="width:%dpx"></span></td><td class="n">%s</td></tr>'
@@ -544,7 +423,7 @@ def tables():
     rm = ''.join('<tr><td>%s</td><td class="n">%s</td></tr>' % (m['name'], com(m['n'])) for m in res['byMeasure'])
     re_ = ''.join('<tr><td>%s</td><td class="n">%s</td><td class="n">%s</td></tr>'
                   % (e['name'], com(e['used']), pct(e['used'] / e['n'])) for e in res['byEconomy'])
-    return dict(hist=hist, eta=eta, econ=econ, heat=heat, resortM=rm, resortE=re_,
+    return dict(eta=eta, econ=econ, heat=heat, resortM=rm, resortE=re_,
                 dial_housing=dial('住まい'), dial_living=dial('生活費'),
                 dial_pension=dial('年金受給開始'), dial_crisis=dial('金融危機'))
 
@@ -553,8 +432,7 @@ def render(lang):
     T = TEXT[lang]
     join = (lambda xs: '、'.join(xs)) if lang == 'ja' else (lambda xs: ', '.join(xs[:-1]) + ' and ' + xs[-1] if len(xs) > 1 else xs[0])
     nums = dict(
-        n=com(D['n']), ruinN=com(d['ruinN']), ruinPct=pct(d['ruin']),
-        min=oku(d['min']), max=oku(d['max']), med=oku(d['med']), q1=oku(d['q1']), q3=oku(d['q3']),
+        n=com(D['n']),
         etaMain='%.1f%%' % (D['etaMainSum'] * 100), etaTop='%.0f%%' % (top['v'] * 100), topAxis=top['name'],
         resortUsed=com(res['used']), resortMin=ry.get('min', '—'), resortMed=ry.get('med', '—'), resortMax=ry.get('max', '—'),
         worstEcon=worst_econ['name'], worstRuin=pct(worst_econ['ruin']),
@@ -563,17 +441,10 @@ def render(lang):
         smallVerb='accounts' if len([e for e in dials if e['v'] < 0.01]) == 1 else 'each account',
         smallDials=join([e['name'] for e in D['eta'] if not e['env'] and e['v'] < 0.01]),
     )
-    levels = {a['name']: a['n'] for a in [
-        {'name': '経済', 'n': len(D['econ'])},
-        {'name': '金融危機', 'n': len(D['dials']['金融危機'])},
-        {'name': '生活費', 'n': len(D['dials']['生活費'])},
-        {'name': '年金受給開始', 'n': len(D['dials']['年金受給開始'])},
-        {'name': '住まい', 'n': len(D['dials']['住まい'])}]}
     out = {}
     for k, v in T.items():
         if k == 'axes':
-            out['axes'] = ''.join('<tr><td>%s</td><td class="n">%d</td><td>%s</td><td>%s</td></tr>'
-                                  % (a, levels[a], c, t % nums) for a, c, t in v)
+            out['axes'] = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (a, c, t % nums) for a, c, t in v)
         elif k == 'diy_steps':
             out[k] = ''.join('<li>%s</li>' % x for x in v)
         elif isinstance(v, str):
