@@ -50,6 +50,23 @@ for w in sorted({r['住まい'] for r in rows}):
         heat.append({'住まい':w,'生活費':c,'n':len(sel),'ruin':sum(r['ruin'] for r in sel)/len(sel),
                      'med':statistics.median([r['net'] for r in sel])})
 D['heat']=heat
+# 家賃と担保。cells は 2090 年の1点しか持たないので、推移は別の表から読む。
+H=list(csv.DictReader(io.open('out/sweep/housing.tsv',encoding='utf-8'),delimiter='\t'))
+HY=[2030,2046,2050,2070,2090]
+rent={(r['経済'],int(r['西暦'])):int(r['家賃']) for r in H if r['住まい']=='賃貸のまま'}
+own={(r['経済'],int(r['西暦'])):r for r in H if r['住まい']=='持ち家'}
+hecon=[]
+for e in econ:
+    rows=[]
+    for y in HY:
+        o=own[(e['name'],y)]
+        rows.append({'year':y,'level':float(o['物価指数']),'rent':rent[(e['name'],y)],
+                     'sale':int(o['売却後家賃']),'cover':int(o['売却受取額'])/int(o['売却後家賃'])})
+    hecon.append({'name':e['name'],'rows':rows})
+one=own[(econ[0]['name'],HY[0])]
+D['housing']={'years':HY,'econ':hecon,
+              'collateral':int(one['担保評価額']),'proceeds':int(one['売却受取額']),
+              'paths':len({tuple(r['level'] for r in e['rows']) for e in hecon})}
 io.open('out/sweep/data.json','w').write(json.dumps(D,ensure_ascii=False))
 print('n=%d ruin=%.1f%% (%d) med=%+.2f min=%+.2f max=%+.2f'%(n,100*D['dist']['ruin'],D['dist']['ruinN'],D['dist']['med'],D['dist']['min'],D['dist']['max']))
 print('eta:',[(e['name'],round(e['v']*100,1)) for e in eta])

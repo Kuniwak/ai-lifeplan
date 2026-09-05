@@ -18,6 +18,8 @@ W = 520
 def oku(v): return ('+' if v >= 0 else '−') + ('%.2f' % abs(v))
 def pct(v): return '%.1f%%' % (v * 100)
 def com(v): return '{:,}'.format(v)
+def man(v): return '{:,}'.format(int(round(v / 10000)))
+def yrs(v): return '%.1f' % v
 def bar(v, mx, w=W): return max(2, int(round(v / mx * w))) if mx else 2
 
 
@@ -28,6 +30,21 @@ top_dial = dials[0]                       # largest axis the household chooses
 econ_eta = next(e for e in D['eta'] if e['name'] == '経済')
 worst_econ = max(D['econ'], key=lambda e: e['ruin'])
 house = {r['lv']: r for r in D['dials']['住まい']}
+hs = D['housing']
+hyears = hs['years']
+hlast = hyears[-1]
+cover_last = {e['name']: e['rows'][-1]['cover'] for e in hs['econ']}
+cover_first = {e['name']: e['rows'][0]['cover'] for e in hs['econ']}
+fast = min(cover_last.values())                            # prices rise fastest
+econ_fast = [e['name'] for e in hs['econ'] if cover_last[e['name']] == fast]
+econ_slow = max(cover_last, key=lambda k: cover_last[k])
+
+# The year the renting scenario moves to a smaller flat: the one year where the
+# rent falls in real terms. Read off the series rather than written down here,
+# so the prose cannot drift from the table it sits under.
+_rows0 = hs['econ'][0]['rows']
+MOVE_YEAR = next(cur['year'] for prev, cur in zip(_rows0, _rows0[1:])
+                 if cur['rent'] / cur['level'] < prev['rent'] / prev['level'])
 resort_econ = [e['name'] for e in res['byEconomy'] if e['used']]
 econ_names = [e['name'] for e in D['econ']]
 worst_all_fail = worst_econ['ruin'] >= 1.0
@@ -56,7 +73,7 @@ TEXT['en'] = dict(
         ('金融危機', 'no', 'no crash, a −20%% crash in one of five chosen years, or a crash in two consecutive years'),
         ('生活費', 'yes', 'the 家計調査 average for the head\'s age band, or that figure ±¥40,000 a month'),
         ('年金受給開始', 'yes', 'as in the plan (70), or 65, 70, or 75 for both'),
-        ('住まい', 'yes', 'buy a 70㎡ flat in 2023, or rent the same size for life'),
+        ('住まい', 'yes', 'buy a 70㎡ flat in 2023, or rent for life, moving to a one-bedroom once the children leave'),
     ],
     cap_axes=(
         '7 × 7 × 3 × 4 × 2 = <b>%(n)s</b> combinations. Each added condition multiplies the number of plans to run, '
@@ -124,6 +141,30 @@ TEXT['en'] = dict(
         '<b>Whether the home has to be sold is settled by the economy before the household chooses anything.</b>'),
 
 
+    h_housing='How the rent and the collateral move',
+    sub_housing='For each economy, the rent of the renting scenario and the value the home can be pledged for',
+    p_housing=(
+        'Rent is carried up by prices. The value the home can be pledged for is the land value on the property tax '
+        'notice, and it is held at that figure in cash terms for the whole span. The two do not move together, '
+        'so the later the home is turned into cash, the fewer years of rent it buys.'),
+    cap_rent=(
+        '<b>Rent, cash terms.</b> Yen a year, cash of the day. In real terms the rent is flat until the move to a one-bedroom in %(moveYear)s, '
+        'so every change here except that step is prices. Seven economies produce only <b>%(paths)s</b> price paths, '
+        'and economies that share a path share a row.'),
+    cap_real=(
+        '<b>Pledged value, real terms.</b> The same ¥%(collateralYen)s, deflated to the prices of the plan\'s first year. '
+        'Nothing about the land has changed; the figure falls because the plan holds it in cash terms while '
+        'prices rise.'),
+    cap_cover=(
+        '<b>Years of rent the sale covers.</b> The pledged value is ¥%(collateralYen)s, of which selling nets %(proceedRate)s, or ¥%(proceedsYen)s. '
+        'That is divided by the rent of the year it is spent. <b>The rent after selling is the family-sized one</b>, '
+        'not the one-bedroom the renting scenario moves to, because the household that sells has not moved.'),
+    callout_housing=(
+        '<strong>In the economies where prices rise fastest (%(econFast)s), selling the home in %(hlast)s buys '
+        '%(coverFastLast)s years of rent; in %(hyears0)s it would have bought %(coverFastFirst)s.</strong> '
+        'The fall is entirely the collateral being held in cash terms. If land in 八王子市 rises with prices, '
+        'this understates what the home is worth, which is the safe direction; if land there falls, it overstates it.'),
+
     h_diy='Running it on your own conditions',
     p_diy=(
         'The simulator and the full-combination run are in the repository, and nothing in them is specific to this household. '
@@ -176,7 +217,7 @@ TEXT['ja'] = dict(
         ('金融危機', 'いいえ', '暴落なし、5つの年のいずれかで−20%%の下落、または2年連続の下落'),
         ('生活費', 'はい', '世帯主の年齢階級に対応する家計調査の平均、またはその±月4万円'),
         ('年金受給開始', 'はい', '原案どおり（70歳）、または夫婦とも65歳、70歳、75歳'),
-        ('住まい', 'はい', '2023年に70㎡の分譲を購入、または同じ広さを生涯賃貸'),
+        ('住まい', 'はい', '2023年に70㎡の分譲を購入、または生涯賃貸で子の独立後は1LDKへ移る'),
     ],
     cap_axes=(
         '7 × 7 × 3 × 4 × 2 = <b>%(n)s</b>通り。'
@@ -241,6 +282,31 @@ TEXT['ja'] = dict(
         '自宅の現金化が起きた経済は%(resortEcons)sだけである。'
         '<b>自宅を手放すかどうかは、世帯が何かを選ぶより先に、経済によって決まっている。</b>'),
 
+
+    h_housing='家賃と担保評価額はどう動くか',
+    sub_housing='経済ごとに、賃貸の家賃と、自宅を担保に入れたときの評価額を年で追う',
+    p_housing=(
+        '家賃は物価に連れて上がる。'
+        '担保に入れられる評価額は固定資産税の納税通知書から読んだ土地の評価額で、計算の全期間にわたって名目のまま据え置いている。'
+        'この2つは同じ向きに動かないので、自宅を現金に換えるのが遅いほど、買える家賃の年数は少なくなる。'),
+    cap_rent=(
+        '<b>家賃（名目）。</b>単位は円/年、その年の価格。実質では%(moveYear)s年の1LDKへの転居まで一定なので、'
+        'この段以外の動きはすべて物価による。'
+        '7つの経済が作る物価の道筋は<b>%(paths)s</b>通りしかなく、同じ道筋の経済は同じ行になる。'),
+    cap_real=(
+        '<b>担保評価額（実質）。</b>同じ%(collateral)s万円を、プラン初年度の価格に割り戻したもの。'
+        '土地について何かが変わったわけではない。物価が上がるあいだ名目で据え置いているので、実質では下がる。'),
+    cap_cover=(
+        '<b>売却代金で払える家賃の年数。</b>担保評価額%(collateral)s万円のうち、売却して手元に残るのは%(proceedRate)sの%(proceeds)s万円である。'
+        'これをその年の家賃で割った。'
+        '<b>売却後に払う家賃は子が居たころと同じ広さのもの</b>で、賃貸シナリオが移る1LDKではない。'
+        '売却する世帯は転居していないからである。'),
+    callout_housing=(
+        '<strong>物価がもっとも速く上がる経済（%(econFast)s）では、%(hlast)s年に自宅を売っても家賃%(coverFastLast)s年分にしかならない。'
+        '%(hyears0)s年なら%(coverFastFirst)s年分だった。</strong>'
+        'この目減りは担保を名目で据え置いていることだけから来ている。'
+        '八王子市の地価が物価に連れて上がるなら、これは自宅を安く見積もりすぎており、安全側である。'
+        '逆に地価が下がるなら、高く見積もっていることになる。'),
 
     h_diy='自分の条件で試算する方法',
     p_diy=(
@@ -391,6 +457,25 @@ SKELETON = '''<!-- generated by tools/sweep + examples/build.py; do not edit by 
 </section>
 <hr>
 <section>
+<h2>{h_housing}</h2>
+<p class="sub">{sub_housing}</p>
+<p>{p_housing}</p>
+<figure><div class="scroll"><table>
+<thead><tr><th>{th_econ}</th>{hyearHeads}</tr></thead>
+<tbody>{rentRows}</tbody></table></div>
+<figcaption>{cap_rent}</figcaption></figure>
+<figure><div class="scroll"><table>
+<thead><tr><th>{th_econ}</th>{hyearHeads}</tr></thead>
+<tbody>{realRows}</tbody></table></div>
+<figcaption>{cap_real}</figcaption></figure>
+<figure><div class="scroll"><table>
+<thead><tr><th>{th_econ}</th>{hyearHeads}</tr></thead>
+<tbody>{coverRows}</tbody></table></div>
+<figcaption>{cap_cover}</figcaption></figure>
+<div class="callout">{callout_housing}</div>
+</section>
+<hr>
+<section>
 <h2>{h_diy}</h2>
 <p>{p_diy}</p>
 <ol>{diy_steps}</ol>
@@ -423,7 +508,24 @@ def tables():
     rm = ''.join('<tr><td>%s</td><td class="n">%s</td></tr>' % (m['name'], com(m['n'])) for m in res['byMeasure'])
     re_ = ''.join('<tr><td>%s</td><td class="n">%s</td><td class="n">%s</td></tr>'
                   % (e['name'], com(e['used']), pct(e['used'] / e['n'])) for e in res['byEconomy'])
-    return dict(eta=eta, econ=econ, heat=heat, resortM=rm, resortE=re_,
+    hyear_heads = ''.join('<th class="n">%d</th>' % y for y in hyears)
+    rent_rows = ''.join(
+        '<tr%s><td>%s</td>%s</tr>'
+        % (' class="base"' if e['name'] == '成長型' else '', e['name'],
+           ''.join('<td class="n">%s</td>' % com(r['rent']) for r in e['rows']))
+        for e in hs['econ'])
+    real_rows = ''.join(
+        '<tr%s><td>%s</td>%s</tr>'
+        % (' class="base"' if e['name'] == '成長型' else '', e['name'],
+           ''.join('<td class="n">%s</td>' % com(int(round(hs['collateral'] / r['level']))) for r in e['rows']))
+        for e in hs['econ'])
+    cover_rows = ''.join(
+        '<tr%s><td>%s</td>%s</tr>'
+        % (' class="base"' if e['name'] == '成長型' else '', e['name'],
+           ''.join('<td class="n">%s</td>' % yrs(r['cover']) for r in e['rows']))
+        for e in hs['econ'])
+    return dict(hyearHeads=hyear_heads, rentRows=rent_rows, coverRows=cover_rows, realRows=real_rows,
+                eta=eta, econ=econ, heat=heat, resortM=rm, resortE=re_,
                 dial_housing=dial('住まい'), dial_living=dial('生活費'),
                 dial_pension=dial('年金受給開始'), dial_crisis=dial('金融危機'))
 
@@ -440,6 +542,13 @@ def render(lang):
         topDial=top_dial['name'],
         smallVerb='accounts' if len([e for e in dials if e['v'] < 0.01]) == 1 else 'each account',
         smallDials=join([e['name'] for e in D['eta'] if not e['env'] and e['v'] < 0.01]),
+        moveYear=MOVE_YEAR, paths=hs['paths'], hlast=hlast, hyears0=hyears[0],
+        collateral=man(hs['collateral']), proceeds=man(hs['proceeds']),
+        collateralYen=com(hs['collateral']), proceedsYen=com(hs['proceeds']),
+        proceedRate='%d%%' % round(100 * hs['proceeds'] / hs['collateral']),
+        econFast=join(econ_fast), econSlow=econ_slow,
+        coverFastLast=yrs(fast), coverFastFirst=yrs(cover_first[econ_fast[0]]),
+        coverSlowLast=yrs(cover_last[econ_slow]),
     )
     out = {}
     for k, v in T.items():

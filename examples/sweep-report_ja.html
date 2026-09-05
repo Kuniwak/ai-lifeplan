@@ -54,7 +54,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <p>誰にも制御できない条件（物価、賃金の伸び、運用の成績、暴落の時期）と意思決定（住まい、働き方、支出、子の進路、年金の受け取り方）の2つがある。この組み合わせごとにシナリオを計算すればどの意思決定が重要かを判断できる。</p>
 <figure><div class="scroll"><table>
 <thead><tr><th>条件</th><th>世帯が選べるか</th><th>選択肢の内容</th></tr></thead>
-<tbody><tr><td>経済</td><td>いいえ</td><td>公表されている7つの経済見通し</td></tr><tr><td>金融危機</td><td>いいえ</td><td>暴落なし、5つの年のいずれかで−20%の下落、または2年連続の下落</td></tr><tr><td>生活費</td><td>はい</td><td>世帯主の年齢階級に対応する家計調査の平均、またはその±月4万円</td></tr><tr><td>年金受給開始</td><td>はい</td><td>原案どおり（70歳）、または夫婦とも65歳、70歳、75歳</td></tr><tr><td>住まい</td><td>はい</td><td>2023年に70㎡の分譲を購入、または同じ広さを生涯賃貸</td></tr></tbody></table></div>
+<tbody><tr><td>経済</td><td>いいえ</td><td>公表されている7つの経済見通し</td></tr><tr><td>金融危機</td><td>いいえ</td><td>暴落なし、5つの年のいずれかで−20%の下落、または2年連続の下落</td></tr><tr><td>生活費</td><td>はい</td><td>世帯主の年齢階級に対応する家計調査の平均、またはその±月4万円</td></tr><tr><td>年金受給開始</td><td>はい</td><td>原案どおり（70歳）、または夫婦とも65歳、70歳、75歳</td></tr><tr><td>住まい</td><td>はい</td><td>2023年に70㎡の分譲を購入、または生涯賃貸で子の独立後は1LDKへ移る</td></tr></tbody></table></div>
 <figcaption>7 × 7 × 3 × 4 × 2 = <b>1,176</b>通り。条件を1つ増やすごとに計算するプランの本数は掛け算で増えるので、条件をどう選ぶかがそのまま計算時間を決める。</figcaption></figure>
 </section>
 <hr>
@@ -64,8 +64,8 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <p>η²は大雑把にはその選択肢の重大さである。厳密には、ある条件を1つの選択肢に固定したときに消えるばらつきを意味する。</p>
 <figure><div class="scroll"><table>
 <thead><tr><th>条件</th><th class="b">ばらつきに占める割合</th><th class="n">η²</th></tr></thead>
-<tbody><tr><td class="k">経済</td><td class="b"><span class="env" style="width:460px"></span></td><td class="n">50.28%</td></tr><tr><td class="k">住まい</td><td class="b"><span class="dial" style="width:310px"></span></td><td class="n">33.89%</td></tr><tr><td class="k">生活費</td><td class="b"><span class="dial" style="width:91px"></span></td><td class="n">9.99%</td></tr><tr><td class="k">年金受給開始</td><td class="b"><span class="dial" style="width:4px"></span></td><td class="n">0.38%</td></tr><tr><td class="k">金融危機</td><td class="b"><span class="env" style="width:2px"></span></td><td class="n">0.19%</td></tr></tbody></table></div>
-<figcaption>オレンジは世帯が選べない条件、青は世帯が決められる条件。5つの条件それぞれ単独の効果を合計するとばらつきの<b>94.7%</b>を説明する。残りは条件どうしが組み合わさって生じる効果で、ある条件の効き方が別の条件の選択肢によって変わる分である。</figcaption></figure>
+<tbody><tr><td class="k">経済</td><td class="b"><span class="env" style="width:460px"></span></td><td class="n">65.67%</td></tr><tr><td class="k">住まい</td><td class="b"><span class="dial" style="width:119px"></span></td><td class="n">16.95%</td></tr><tr><td class="k">生活費</td><td class="b"><span class="dial" style="width:85px"></span></td><td class="n">12.11%</td></tr><tr><td class="k">年金受給開始</td><td class="b"><span class="dial" style="width:3px"></span></td><td class="n">0.49%</td></tr><tr><td class="k">金融危機</td><td class="b"><span class="env" style="width:2px"></span></td><td class="n">0.28%</td></tr></tbody></table></div>
+<figcaption>オレンジは世帯が選べない条件、青は世帯が決められる条件。5つの条件それぞれ単独の効果を合計するとばらつきの<b>95.5%</b>を説明する。残りは条件どうしが組み合わさって生じる効果で、ある条件の効き方が別の条件の選択肢によって変わる分である。</figcaption></figure>
 </section>
 <hr>
 <section>
@@ -73,7 +73,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <p class="sub">経済ごとに、他の4つの条件のすべての組み合わせを集計</p>
 <figure><div class="scroll"><table>
 <thead><tr><th>経済</th><th class="n">最悪</th><th class="n">中央値</th><th class="n">最良</th><th class="n">破綻率</th></tr></thead>
-<tbody><tr><td>高成長</td><td class="n">−0.29</td><td class="n">+2.00</td><td class="n">+4.43</td><td class="n">16.7%</td></tr><tr class="base"><td>成長型</td><td class="n">−0.83</td><td class="n">+0.86</td><td class="n">+3.45</td><td class="n">33.3%</td></tr><tr><td>OECD</td><td class="n">−0.96</td><td class="n">+0.35</td><td class="n">+2.42</td><td class="n">37.5%</td></tr><tr><td>OECD低</td><td class="n">−1.05</td><td class="n">+0.03</td><td class="n">+1.69</td><td class="n">50.0%</td></tr><tr><td>過去30年</td><td class="n">−1.47</td><td class="n">−0.59</td><td class="n">+1.02</td><td class="n">66.7%</td></tr><tr><td>ゼロ成長</td><td class="n">−1.58</td><td class="n">−0.74</td><td class="n">+0.29</td><td class="n">83.3%</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">−1.78</td><td class="n">−0.94</td><td class="n">+0.08</td><td class="n">87.5%</td></tr></tbody></table></div>
+<tbody><tr><td>高成長</td><td class="n">+0.41</td><td class="n">+2.35</td><td class="n">+4.43</td><td class="n">16.7%</td></tr><tr class="base"><td>成長型</td><td class="n">−0.30</td><td class="n">+1.30</td><td class="n">+3.45</td><td class="n">33.3%</td></tr><tr><td>OECD</td><td class="n">−0.49</td><td class="n">+0.78</td><td class="n">+2.42</td><td class="n">33.3%</td></tr><tr><td>OECD低</td><td class="n">−0.60</td><td class="n">+0.38</td><td class="n">+1.69</td><td class="n">50.0%</td></tr><tr><td>過去30年</td><td class="n">−1.02</td><td class="n">−0.26</td><td class="n">+1.02</td><td class="n">66.7%</td></tr><tr><td>ゼロ成長</td><td class="n">−1.14</td><td class="n">−0.53</td><td class="n">+0.29</td><td class="n">83.3%</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">−1.34</td><td class="n">−0.72</td><td class="n">+0.08</td><td class="n">87.5%</td></tr></tbody></table></div>
 <figcaption>単位は億円、現在価値。網掛けの行がプラン原案の前提とする経済。</figcaption></figure>
 <div class="callout warn"><strong>もっとも厳しい経済（ゼロ成長枯渇）では、組み合わせの87.5%が破綻する。</strong>そこで存続できるのは、世帯の意思決定をもっとも有利に設定した組み合わせだけである。これがこの計算のもっとも有用な出力である。問題のどれだけが世帯の選択の外にあるかを示している。</div>
 </section>
@@ -81,13 +81,13 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <section>
 <h2>意思決定を1つずつ見る</h2>
 <p class="sub">各選択肢の純資産中央値と破綻率。他の条件のすべての組み合わせを集計</p>
-<figure><div class="scroll"><table><thead><tr><th>住まい</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>持ち家</td><td class="n">+0.82</td><td class="n">25.0%</td></tr><tr><td>賃貸のまま</td><td class="n">−0.68</td><td class="n">82.1%</td></tr></tbody></table></div>
+<figure><div class="scroll"><table><thead><tr><th>住まい</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>持ち家</td><td class="n">+0.82</td><td class="n">25.0%</td></tr><tr><td>賃貸のまま</td><td class="n">−0.18</td><td class="n">81.0%</td></tr></tbody></table></div>
 <figcaption>住まいは世帯が決められる意思決定の中で最大である。経済ほどではないが、他のどの意思決定よりも結果を動かす。</figcaption></figure>
-<figure><div class="scroll"><table><thead><tr><th>生活費</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>+4万</td><td class="n">−0.58</td><td class="n">71.4%</td></tr><tr><td>−4万</td><td class="n">+0.27</td><td class="n">32.1%</td></tr><tr><td>家計調査どおり</td><td class="n">−0.20</td><td class="n">57.1%</td></tr></tbody></table></div>
+<figure><div class="scroll"><table><thead><tr><th>生活費</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>+4万</td><td class="n">−0.26</td><td class="n">71.4%</td></tr><tr><td>−4万</td><td class="n">+0.81</td><td class="n">30.4%</td></tr><tr><td>家計調査どおり</td><td class="n">+0.23</td><td class="n">57.1%</td></tr></tbody></table></div>
 <figcaption>支出も結果を動かすが、住まいほどではない。</figcaption></figure>
-<figure><div class="scroll"><table><thead><tr><th>年金受給開始</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>65歳</td><td class="n">−0.27</td><td class="n">56.1%</td></tr><tr><td>70歳</td><td class="n">−0.06</td><td class="n">52.4%</td></tr><tr><td>75歳</td><td class="n">−0.03</td><td class="n">53.4%</td></tr><tr><td>現行(夫70妻66)</td><td class="n">−0.06</td><td class="n">52.4%</td></tr></tbody></table></div>
+<figure><div class="scroll"><table><thead><tr><th>年金受給開始</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>65歳</td><td class="n">+0.11</td><td class="n">53.7%</td></tr><tr><td>70歳</td><td class="n">+0.28</td><td class="n">52.4%</td></tr><tr><td>75歳</td><td class="n">+0.29</td><td class="n">53.4%</td></tr><tr><td>現行(夫70妻66)</td><td class="n">+0.28</td><td class="n">52.4%</td></tr></tbody></table></div>
 <figcaption>年金の繰り下げは中央値を押し上げるが、受給を待つ年数は貯蓄の取り崩しでしのぐことになる。</figcaption></figure>
-<figure><div class="scroll"><table><thead><tr><th>暴落</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>2030年</td><td class="n">−0.08</td><td class="n">53.0%</td></tr><tr><td>2040年</td><td class="n">−0.08</td><td class="n">53.0%</td></tr><tr><td>2050-2051年の2年</td><td class="n">−0.16</td><td class="n">54.2%</td></tr><tr><td>2050年</td><td class="n">−0.11</td><td class="n">54.2%</td></tr><tr><td>2060年</td><td class="n">−0.15</td><td class="n">54.2%</td></tr><tr><td>2070年</td><td class="n">−0.12</td><td class="n">53.6%</td></tr><tr><td>なし</td><td class="n">−0.07</td><td class="n">53.0%</td></tr></tbody></table></div>
+<figure><div class="scroll"><table><thead><tr><th>暴落</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>2030年</td><td class="n">+0.30</td><td class="n">52.4%</td></tr><tr><td>2040年</td><td class="n">+0.27</td><td class="n">52.4%</td></tr><tr><td>2050-2051年の2年</td><td class="n">+0.18</td><td class="n">53.6%</td></tr><tr><td>2050年</td><td class="n">+0.22</td><td class="n">53.6%</td></tr><tr><td>2060年</td><td class="n">+0.21</td><td class="n">53.6%</td></tr><tr><td>2070年</td><td class="n">+0.20</td><td class="n">53.0%</td></tr><tr><td>なし</td><td class="n">+0.32</td><td class="n">52.4%</td></tr></tbody></table></div>
 <figcaption>同じ下落率でも、いつ起きるか、そのとき何をどれだけ保有しているかで損失額は変わる。</figcaption></figure>
 <p>表の行どうしがほとんど変わらない意思決定は、この世帯ではほとんど結果を左右しない。年金受給開始は、ばらつきの1%未満しか占めない。これも結果の1つである。世帯がどの問いに悩むのをやめてよく、どの問い（住まい）に時間を使うべきかを示している。</p>
 </section>
@@ -97,7 +97,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <p class="sub">各行は、他の3つの条件のすべての組み合わせを集計</p>
 <figure><div class="scroll"><table>
 <thead><tr><th>住まい</th><th>生活費</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead>
-<tbody><tr><td>持ち家</td><td>+4万</td><td class="n">+0.31</td><td class="n">42.9%</td></tr><tr><td>持ち家</td><td>−4万</td><td class="n">+1.44</td><td class="n">3.6%</td></tr><tr><td>持ち家</td><td>家計調査どおり</td><td class="n">+0.89</td><td class="n">28.6%</td></tr><tr><td>賃貸のまま</td><td>+4万</td><td class="n">−0.89</td><td class="n">100.0%</td></tr><tr><td>賃貸のまま</td><td>−4万</td><td class="n">−0.15</td><td class="n">60.7%</td></tr><tr><td>賃貸のまま</td><td>家計調査どおり</td><td class="n">−0.53</td><td class="n">85.7%</td></tr></tbody></table></div>
+<tbody><tr><td>持ち家</td><td>+4万</td><td class="n">+0.31</td><td class="n">42.9%</td></tr><tr><td>持ち家</td><td>−4万</td><td class="n">+1.44</td><td class="n">3.6%</td></tr><tr><td>持ち家</td><td>家計調査どおり</td><td class="n">+0.89</td><td class="n">28.6%</td></tr><tr><td>賃貸のまま</td><td>+4万</td><td class="n">−0.40</td><td class="n">100.0%</td></tr><tr><td>賃貸のまま</td><td>−4万</td><td class="n">+0.46</td><td class="n">57.1%</td></tr><tr><td>賃貸のまま</td><td>家計調査どおり</td><td class="n">+0.01</td><td class="n">85.7%</td></tr></tbody></table></div>
 <figcaption>各行の中央値と破綻率は、それらの組み合わせ全体から求めたもの。</figcaption></figure>
 </section>
 <hr>
@@ -105,10 +105,29 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <h2>破産後の行動</h2>
 <p class="sub">資産が枯渇すると、自宅を売却して賃貸に移るか自宅を担保に借りることになる</p>
 <p>どちらの手段も先に住宅ローンを完済している必要がある。すでに担保に入れた家を再び担保にはできないため売却する場合は売却代金からローンを清算しなければならない。<strong>両方の選択肢を試算し有利な方を採用している。</strong></p>
-<figure><div class="scroll"><table><thead><tr><th>手段</th><th class="n">採用回数</th></tr></thead><tbody><tr><td>リバースモーゲージ</td><td class="n">134</td></tr><tr><td>売却して賃貸</td><td class="n">26</td></tr></tbody></table></div>
+<figure><div class="scroll"><table><thead><tr><th>手段</th><th class="n">採用回数</th></tr></thead><tbody><tr><td>リバースモーゲージ</td><td class="n">135</td></tr><tr><td>売却して賃貸</td><td class="n">25</td></tr></tbody></table></div>
 <figcaption><b>160</b>通りの組み合わせで採用された。必要になった年は最も早くて<b>2058</b>年、中央値は<b>2068</b>年、最も遅くて<b>2090</b>年。</figcaption></figure>
 <figure><div class="scroll"><table><thead><tr><th>経済</th><th class="n">採用した組み合わせの数</th><th class="n">割合</th></tr></thead><tbody><tr><td>OECD</td><td class="n">0</td><td class="n">0.0%</td></tr><tr><td>OECD低</td><td class="n">0</td><td class="n">0.0%</td></tr><tr><td>ゼロ成長</td><td class="n">56</td><td class="n">33.3%</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">76</td><td class="n">45.2%</td></tr><tr><td>成長型</td><td class="n">0</td><td class="n">0.0%</td></tr><tr><td>過去30年</td><td class="n">28</td><td class="n">16.7%</td></tr><tr><td>高成長</td><td class="n">0</td><td class="n">0.0%</td></tr></tbody></table></div>
 <figcaption>自宅の現金化が起きた経済はゼロ成長、ゼロ成長枯渇、過去30年だけである。<b>自宅を手放すかどうかは、世帯が何かを選ぶより先に、経済によって決まっている。</b></figcaption></figure>
+</section>
+<hr>
+<section>
+<h2>家賃と担保評価額はどう動くか</h2>
+<p class="sub">経済ごとに、賃貸の家賃と、自宅を担保に入れたときの評価額を年で追う</p>
+<p>家賃は物価に連れて上がる。担保に入れられる評価額は固定資産税の納税通知書から読んだ土地の評価額で、計算の全期間にわたって名目のまま据え置いている。この2つは同じ向きに動かないので、自宅を現金に換えるのが遅いほど、買える家賃の年数は少なくなる。</p>
+<figure><div class="scroll"><table>
+<thead><tr><th>経済</th><th class="n">2030</th><th class="n">2046</th><th class="n">2050</th><th class="n">2070</th><th class="n">2090</th></tr></thead>
+<tbody><tr><td>高成長</td><td class="n">2,638,753</td><td class="n">1,921,107</td><td class="n">2,079,468</td><td class="n">3,089,980</td><td class="n">4,591,548</td></tr><tr class="base"><td>成長型</td><td class="n">2,638,753</td><td class="n">1,921,107</td><td class="n">2,079,468</td><td class="n">3,089,980</td><td class="n">4,591,548</td></tr><tr><td>OECD</td><td class="n">2,638,753</td><td class="n">1,921,107</td><td class="n">2,079,468</td><td class="n">3,089,980</td><td class="n">4,591,548</td></tr><tr><td>OECD低</td><td class="n">2,511,914</td><td class="n">1,562,057</td><td class="n">1,625,483</td><td class="n">1,983,398</td><td class="n">2,420,122</td></tr><tr><td>過去30年</td><td class="n">2,487,142</td><td class="n">1,498,370</td><td class="n">1,546,897</td><td class="n">1,814,145</td><td class="n">2,127,564</td></tr><tr><td>ゼロ成長</td><td class="n">2,438,184</td><td class="n">1,378,339</td><td class="n">1,400,525</td><td class="n">1,516,928</td><td class="n">1,643,007</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">2,438,184</td><td class="n">1,378,339</td><td class="n">1,400,525</td><td class="n">1,516,928</td><td class="n">1,643,007</td></tr></tbody></table></div>
+<figcaption><b>家賃（名目）。</b>単位は円/年、その年の価格。実質では2046年の1LDKへの転居まで一定なので、この段以外の動きはすべて物価による。7つの経済が作る物価の道筋は<b>4</b>通りしかなく、同じ道筋の経済は同じ行になる。</figcaption></figure>
+<figure><div class="scroll"><table>
+<thead><tr><th>経済</th><th class="n">2030</th><th class="n">2046</th><th class="n">2050</th><th class="n">2070</th><th class="n">2090</th></tr></thead>
+<tbody><tr><td>高成長</td><td class="n">12,680,011</td><td class="n">9,236,656</td><td class="n">8,533,463</td><td class="n">5,742,647</td><td class="n">3,864,734</td></tr><tr class="base"><td>成長型</td><td class="n">12,680,011</td><td class="n">9,236,656</td><td class="n">8,533,463</td><td class="n">5,742,647</td><td class="n">3,864,734</td></tr><tr><td>OECD</td><td class="n">12,680,011</td><td class="n">9,236,656</td><td class="n">8,533,463</td><td class="n">5,742,647</td><td class="n">3,864,734</td></tr><tr><td>OECD低</td><td class="n">13,320,647</td><td class="n">11,359,948</td><td class="n">10,917,031</td><td class="n">8,946,830</td><td class="n">7,332,146</td></tr><tr><td>過去30年</td><td class="n">13,453,777</td><td class="n">11,843,330</td><td class="n">11,471,649</td><td class="n">9,781,318</td><td class="n">8,340,284</td></tr><tr><td>ゼロ成長</td><td class="n">13,722,799</td><td class="n">12,874,747</td><td class="n">12,669,683</td><td class="n">11,697,861</td><td class="n">10,799,969</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">13,722,799</td><td class="n">12,874,747</td><td class="n">12,669,683</td><td class="n">11,697,861</td><td class="n">10,799,969</td></tr></tbody></table></div>
+<figcaption><b>担保評価額（実質）。</b>同じ1,400万円を、プラン初年度の価格に割り戻したもの。土地について何かが変わったわけではない。物価が上がるあいだ名目で据え置いているので、実質では下がる。</figcaption></figure>
+<figure><div class="scroll"><table>
+<thead><tr><th>経済</th><th class="n">2030</th><th class="n">2046</th><th class="n">2050</th><th class="n">2070</th><th class="n">2090</th></tr></thead>
+<tbody><tr><td>高成長</td><td class="n">5.1</td><td class="n">3.7</td><td class="n">3.5</td><td class="n">2.3</td><td class="n">1.6</td></tr><tr class="base"><td>成長型</td><td class="n">5.1</td><td class="n">3.7</td><td class="n">3.5</td><td class="n">2.3</td><td class="n">1.6</td></tr><tr><td>OECD</td><td class="n">5.1</td><td class="n">3.7</td><td class="n">3.5</td><td class="n">2.3</td><td class="n">1.6</td></tr><tr><td>OECD低</td><td class="n">5.4</td><td class="n">4.6</td><td class="n">4.4</td><td class="n">3.6</td><td class="n">3.0</td></tr><tr><td>過去30年</td><td class="n">5.5</td><td class="n">4.8</td><td class="n">4.7</td><td class="n">4.0</td><td class="n">3.4</td></tr><tr><td>ゼロ成長</td><td class="n">5.6</td><td class="n">5.2</td><td class="n">5.1</td><td class="n">4.7</td><td class="n">4.4</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">5.6</td><td class="n">5.2</td><td class="n">5.1</td><td class="n">4.7</td><td class="n">4.4</td></tr></tbody></table></div>
+<figcaption><b>売却代金で払える家賃の年数。</b>担保評価額1,400万円のうち、売却して手元に残るのは97%の1,358万円である。これをその年の家賃で割った。<b>売却後に払う家賃は子が居たころと同じ広さのもの</b>で、賃貸シナリオが移る1LDKではない。売却する世帯は転居していないからである。</figcaption></figure>
+<div class="callout"><strong>物価がもっとも速く上がる経済（高成長、成長型、OECD）では、2090年に自宅を売っても家賃1.6年分にしかならない。2030年なら5.1年分だった。</strong>この目減りは担保を名目で据え置いていることだけから来ている。八王子市の地価が物価に連れて上がるなら、これは自宅を安く見積もりすぎており、安全側である。逆に地価が下がるなら、高く見積もっていることになる。</div>
 </section>
 <hr>
 <section>

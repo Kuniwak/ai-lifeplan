@@ -11,6 +11,7 @@ import (
 	"sync"
 
 	"github.com/Kuniwak/lifeplan/date"
+	"github.com/Kuniwak/lifeplan/input"
 	"github.com/Kuniwak/lifeplan/money"
 	"github.com/Kuniwak/lifeplan/plan"
 	"github.com/Kuniwak/lifeplan/table"
@@ -159,6 +160,134 @@ func run(root string, axes []axis, cell []int) (result, error) {
 	return out, nil
 }
 
+// housingHeader and housingLines answer a question the cells cannot: the cells
+// hold one number per plan at 2090, and the rent and the collateral are two
+// series that move over the whole span. The rent is carried up by prices; the
+// collateral is a figure read off a tax notice and stays where it is. How far
+// apart they drift is set by the economy, so one plan per economy is enough,
+// and the other conditions are left at the level the plan itself assumes.
+func housingHeader() []string {
+	return []string{"経済", "住まい", "西暦", "物価指数", "家賃", "担保評価額", "売却受取額", "売却後家賃"}
+}
+
+func axisNamed(axes []axis, name string) axis {
+	for _, a := range axes {
+		if a.name == name {
+			return a
+		}
+	}
+	panic("sweep: 軸 " + name + " が無い")
+}
+
+// collateralOf reads the land value the last resort pledges. plan.Build keeps
+// it out of reach unless a plan actually runs short, so it is read here from
+// the table the manifest names rather than taken off a plan that happened to
+// need it.
+func collateralOf(root string) (money.Yen, error) {
+	loaded, err := plan.Load(plan.Sources{
+		Root:        root,
+		ProjectPath: filepath.Join(root, "projects", "base.tsv"),
+	})
+	if err != nil {
+		return 0, err
+	}
+	path, ok := loaded.SlotPaths()[input.PropertyAssessmentSlot]
+	if !ok {
+		return 0, fmt.Errorf("sweep: %q を埋める表が無い", input.PropertyAssessmentSlot)
+	}
+	t, err := tsv.ReadFile(filepath.Join(root, filepath.FromSlash(path)))
+	if err != nil {
+		return 0, err
+	}
+	r, err := tsv.NewReader(t, input.PropertyAssessmentSlot, input.LandValueColumn)
+	if err != nil {
+		return 0, err
+	}
+	return r.Yen(0, input.LandValueColumn)
+}
+
+// sellAndRentYearly is the rent the household would pay after selling, in the
+// prices of the plan's first year. It is not the rent of the renting scenario:
+// that one moves to a smaller flat once the children leave, and this one keeps
+// the size the family had.
+func sellAndRent(root string) (table.Measure, error) {
+	loaded, err := plan.Load(plan.Sources{
+		Root:        root,
+		ProjectPath: filepath.Join(root, "projects", "base.tsv"),
+	})
+	if err != nil {
+		return table.Measure{}, err
+	}
+	path, ok := loaded.SlotPaths()[input.LastResortSlot]
+	if !ok {
+		return table.Measure{}, fmt.Errorf("sweep: %q を埋める表が無い", input.LastResortSlot)
+	}
+	t, err := tsv.ReadFile(filepath.Join(root, filepath.FromSlash(path)))
+	if err != nil {
+		return table.Measure{}, err
+	}
+	measures, err := table.Measures(t)
+	if err != nil {
+		return table.Measure{}, err
+	}
+	measure, ok := measures[table.SellAndRent]
+	if !ok {
+		return table.Measure{}, fmt.Errorf("sweep: %q が %q に無い", table.SellAndRent, input.LastResortSlot)
+	}
+	return measure, nil
+}
+
+func housingLines(root string, axes []axis) ([]string, error) {
+	collateral, err := collateralOf(root)
+	if err != nil {
+		return nil, err
+	}
+	measure, err := sellAndRent(root)
+	if err != nil {
+		return nil, err
+	}
+	yearlyRent := measure.RentMonthly * date.MonthsAYear
+
+	econ, housing := axisNamed(axes, "経済"), axisNamed(axes, "住まい")
+	var lines []string
+	for _, e := range econ.levels {
+		for _, h := range housing.levels {
+			overrides := map[tsv.Slot]string{}
+			for slot, path := range e.slots {
+				overrides[slot] = path
+			}
+			owns := h.key == "持ち家"
+			for slot, path := range h.slots {
+				overrides[slot] = path
+			}
+			built, err := plan.Build(plan.Sources{
+				Root:          root,
+				ProjectPath:   filepath.Join(root, "projects", "base.tsv"),
+				SlotOverrides: overrides,
+			})
+			if err != nil {
+				return nil, fmt.Errorf("sweep: %s / %s: %w", e.key, h.key, err)
+			}
+			pledged, proceeds := money.Yen(0), money.Yen(0)
+			if owns {
+				pledged, proceeds = collateral, measure.Proceeds(collateral)
+			}
+			for _, row := range built.Expense.Rows() {
+				level, ok := built.PriceLevels.At(row.Year)
+				if !ok {
+					return nil, fmt.Errorf("sweep: %d 年の物価が無い", row.Year)
+				}
+				lines = append(lines, strings.Join([]string{
+					e.key, h.key, fmt.Sprint(row.Year), level.String(),
+					fmt.Sprint(int64(row.Value.Rent)), fmt.Sprint(int64(pledged)),
+					fmt.Sprint(int64(proceeds)), fmt.Sprint(int64(level.Apply(yearlyRent))),
+				}, "\t"))
+			}
+		}
+	}
+	return lines, nil
+}
+
 func header(axes []axis) []string {
 	head := make([]string, 0, len(axes)+4*len(years)+1)
 	for _, a := range axes {
@@ -195,6 +324,7 @@ func line(axes []axis, cell []int, r result) []string {
 func main() {
 	root := flag.String("root", ".", "take the paths written in the manifest from here")
 	out := flag.String("out", "out/sweep/cells.tsv", "write the cells here")
+	housingOut := flag.String("housing-out", "out/sweep/housing.tsv", "write the rent and collateral series here")
 	flag.Parse()
 
 	axes := Axes()
@@ -245,4 +375,16 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Printf("wrote %d cells to %s\n", len(cells), *out)
+
+	series, err := housingLines(*root, axes)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		os.Exit(1)
+	}
+	housingBody := strings.Join(housingHeader(), "\t") + "\n" + strings.Join(series, "\n") + "\n"
+	if err := os.WriteFile(*housingOut, []byte(housingBody), 0o644); err != nil {
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		os.Exit(1)
+	}
+	fmt.Printf("wrote %d rows to %s\n", len(series), *housingOut)
 }

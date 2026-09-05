@@ -849,6 +849,20 @@ func (p *Plan) lastResortOf(tables map[tsv.Slot]*tsv.Table, measure table.Measur
 		return table.LastResort{}, nil
 	}
 
+	// Both measures pledge the home, so a household that does not own one in
+	// that year has neither to offer. The assessment table is filled in from
+	// the tax notice and says nothing about who owns the flat, so without this
+	// the renting scenarios would borrow against, or sell, a home they never
+	// bought — and the rent they would move into is one they are already
+	// paying.
+	owned, ok := p.Calendar.At(from)
+	if !ok {
+		return table.LastResort{}, nil
+	}
+	if years, owns := owned.YearsOwned(); !owns || years < 0 {
+		return table.LastResort{}, nil
+	}
+
 	collateral, err := landValue(tables)
 	if err != nil {
 		return table.LastResort{}, err
