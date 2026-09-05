@@ -1,36 +1,21 @@
 # lifeplan
 
-> **地の文は未回復である。**個人情報の混入を断つため、いったん章構成と
-> 出典の引用だけを残して地の文を削除した。復元は別のセッションで行う。
-> **書き戻すときは、世帯の帳票ではなく公開資料だけを根拠にすること。**
+## 概要
 
+世帯の生涯収支を年ごとに計算するシミュレータである。
+収入、支出、住まい、ローン、年金などを TSV の表で書くと、所得税、住民税、社会保険料、公的年金を法令どおりに計算し、資産の推移を書き出す。
 
-## Why it exists
+## 目的
 
-## What is in here
+住まい、働き方、年金の受け取り方といった意思決定が資産の推移をどれだけ動かすかを、比べるために使う。
+条件の全組み合わせを計算して、どの条件が結果を左右するのかを測ることもできる。
 
-## Installation
+## インストール方法
 
-## Use
+Go 1.26 以降が必要である。
+リポジトリを clone して `make` を実行すると、`bin/lifeplan` が build され、入力の検証と `out/` への表の書き出しまで行われる。
 
-## The example household is invented
+## ライセンス
 
-## Parts will be missing for your household — that is expected
-
-### Your municipality
-
-### Your financial products
-
-### Your housing
-
-### How to add just the part you need
-
-## Documents
-
-## What is verified, and what is not
-
-## Development
-
-## Language
-
-## License
+MIT License。
+Copyright (C) 2026 Yuki Kokubun (@Kuniwak)
