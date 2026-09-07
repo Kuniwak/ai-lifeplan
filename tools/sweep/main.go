@@ -105,8 +105,19 @@ type result struct {
 	shortfall map[date.Year]money.Yen
 	ruin      date.Year
 
+	// net is the net worth of every year in the plan, in real terms: what the
+	// household can reach minus the shortfall accumulated so far. The cells keep
+	// one year of it; series.tsv keeps all of it for a few cells, so the report
+	// can draw the path and not only its end.
+	net []yearValue
+
 	resort     table.MeasureName
 	resortFrom date.Year
+}
+
+type yearValue struct {
+	year  date.Year
+	value money.Yen
 }
 
 var years = []date.Year{2090}
@@ -144,6 +155,7 @@ func run(root string, axes []axis, cell []int) (result, error) {
 			out.ruin = row.Year
 		}
 		short += level.Deflate(row.Value.Shortfall)
+		out.net = append(out.net, yearValue{row.Year, level.Deflate(row.Value.Available()) - short})
 		for _, year := range years {
 			if row.Year == year {
 				out.assets[year] = level.Deflate(row.Value.Total)
@@ -288,6 +300,42 @@ func housingLines(root string, axes []axis) ([]string, error) {
 	return lines, nil
 }
 
+// seriesHeader and seriesLines keep the whole path of the net worth for the
+// cells that differ only in the economy and the housing. The other conditions
+// stay at the level the plan itself assumes. The report draws these paths first,
+// so a reader sees what one scenario computes before the summary of all of them.
+func seriesHeader() []string {
+	return []string{"経済", "住まい", "西暦", "純資産"}
+}
+
+func isSeriesCell(axes []axis, cell []int) bool {
+	for i, a := range axes {
+		if a.name != "経済" && a.name != "住まい" && cell[i] != 0 {
+			return false
+		}
+	}
+	return true
+}
+
+func seriesLines(axes []axis, cell []int, r result) []string {
+	econ := axes[axisIndex(axes, "経済")].levels[cell[axisIndex(axes, "経済")]].key
+	house := axes[axisIndex(axes, "住まい")].levels[cell[axisIndex(axes, "住まい")]].key
+	lines := make([]string, 0, len(r.net))
+	for _, p := range r.net {
+		lines = append(lines, strings.Join([]string{econ, house, fmt.Sprint(p.year), fmt.Sprint(int64(p.value))}, "\t"))
+	}
+	return lines
+}
+
+func axisIndex(axes []axis, name string) int {
+	for i, a := range axes {
+		if a.name == name {
+			return i
+		}
+	}
+	panic("sweep: no axis named " + name)
+}
+
 func header(axes []axis) []string {
 	head := make([]string, 0, len(axes)+4*len(years)+1)
 	for _, a := range axes {
@@ -325,12 +373,14 @@ func main() {
 	root := flag.String("root", ".", "take the paths written in the manifest from here")
 	out := flag.String("out", "out/sweep/cells.tsv", "write the cells here")
 	housingOut := flag.String("housing-out", "out/sweep/housing.tsv", "write the rent and collateral series here")
+	seriesOut := flag.String("series-out", "out/sweep/series.tsv", "write the yearly net worth of the economy × housing cells here")
 	flag.Parse()
 
 	axes := Axes()
 	cells := Cells(axes)
 
 	lines := make([]string, len(cells))
+	paths := make([][]string, len(cells))
 	var failed sync.Map
 	var wg sync.WaitGroup
 	work := make(chan int)
@@ -345,6 +395,9 @@ func main() {
 					continue
 				}
 				lines[i] = strings.Join(line(axes, cells[i], r), "\t")
+				if isSeriesCell(axes, cells[i]) {
+					paths[i] = seriesLines(axes, cells[i], r)
+				}
 			}
 		}()
 	}
@@ -375,6 +428,17 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Printf("wrote %d cells to %s\n", len(cells), *out)
+
+	var pathLines []string
+	for _, p := range paths {
+		pathLines = append(pathLines, p...)
+	}
+	pathBody := strings.Join(seriesHeader(), "\t") + "\n" + strings.Join(pathLines, "\n") + "\n"
+	if err := os.WriteFile(*seriesOut, []byte(pathBody), 0o644); err != nil {
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		os.Exit(1)
+	}
+	fmt.Printf("wrote %d rows to %s\n", len(pathLines), *seriesOut)
 
 	series, err := housingLines(*root, axes)
 	if err != nil {

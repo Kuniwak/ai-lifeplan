@@ -46,6 +46,14 @@ _rows0 = hs['econ'][0]['rows']
 MOVE_YEAR = next(cur['year'] for prev, cur in zip(_rows0, _rows0[1:])
                  if cur['rent'] / cur['level'] < prev['rent'] / prev['level'])
 resort_econ = [e['name'] for e in res['byEconomy'] if e['used']]
+SER = D['series']
+BASE_ECON = '成長型'
+OWN, RENT = '持ち家', '賃貸のまま'
+def series(econ, house): return next(l for l in SER['lines'] if l['econ'] == econ and l['house'] == house)
+own_base, rent_base = series(BASE_ECON, OWN), series(BASE_ECON, RENT)
+gap_last = own_base['values'][-1] - rent_base['values'][-1]
+# The economies in which the owning household, every other condition as planned, still ends below zero.
+own_ruin_econs = [l['econ'] for l in SER['lines'] if l['house'] == OWN and l['values'][-1] < 0]
 econ_names = [e['name'] for e in D['econ']]
 worst_all_fail = worst_econ['ruin'] >= 1.0
 
@@ -61,6 +69,22 @@ TEXT['en'] = dict(
         'was turned into a scenario, %(n)s in all. In some the household still has assets at 100; in others the assets run out. '
         'The point of computing every combination is to see <strong>which conditions shape the path of the assets, and by how much</strong>.'),
 
+    h_path='What one scenario computes',
+    sub_path='Net worth by year, real terms, hundred-million yen',
+    p_path=(
+        'A scenario is one run of the simulator: for every year from %(y0)s to %(y1)s it adds up the pay, '
+        'the pension, the tax and social insurance as the law sets them, the living cost, the rent or mortgage, '
+        'and the return on what is held, and carries the balance to the next year. '
+        'The line is that balance, deflated to the prices of %(y0)s. '
+        'When it drops below zero, the household has run out; the sweep counts that year as the ruin year.'),
+    cap_path_house=(
+        '<b>Buying against renting, in the %(baseEcon)s economy the plan assumes.</b> Housing is the largest condition the household itself chooses. Both start from the same %(y0)s balance. '
+        'The owner pays the mortgage off and then keeps the flat; the renter keeps paying, moves to a smaller flat in %(moveYear)s, '
+        'and ends %(gapLast)s hundred-million yen behind. This one difference is the whole of the housing row in the tables below.'),
+    cap_path_econ=(
+        '<b>The household as the plan assumes it, under each of the seven economies.</b> Nothing about the household changes between the lines; '
+        'only prices, wage growth, investment returns and the pension level do. %(ownRuinN)s of the seven (%(ownRuinEcons)s) '
+        'end below zero. The spread between the best line and the worst is why the economy explains most of the variance below.'),
     h_axes='What conditions were assumed',
     p_axes='Computing every combination of the conditions shows which option to take.',
     p_method=(
@@ -206,6 +230,21 @@ TEXT['ja'] = dict(
         '100歳時点で資産が残るシナリオもあれば資産が枯渇するシナリオもある。'
         '全通りの組み合わせを計算する目的は、<strong>どの条件がどの程度資産の推移を左右するか</strong>を見ることにある。'),
 
+    h_path='ひとつのシナリオが計算しているもの',
+    sub_path='年ごとの純資産、実質値、億円',
+    p_path=(
+        'シナリオとはシミュレータの1回の実行である。%(y0)s年から%(y1)s年まで、年ごとに給与、年金、法令どおりの税と社会保険料、'
+        '生活費、家賃かローン、保有資産の運用益を足し引きし、残高を翌年へ持ち越す。'
+        '線はその残高を%(y0)s年の物価に割り引いたものである。'
+        '線が0を割った年は資産が尽きた年で、全組み合わせの集計ではこれを破産年と数えている。'),
+    cap_path_house=(
+        '<b>プランが想定する%(baseEcon)sの経済での、持ち家と賃貸。</b>世帯自身が選べる条件では住まいが最も大きい。どちらも%(y0)s年の同じ残高から始まる。'
+        '持ち家はローンを返し終えたあとも住まいが残る。賃貸は払い続け、%(moveYear)s年に狭い部屋へ移り、'
+        '最後は%(gapLast)s億円の差がつく。下の表の住まいの行は、この1本の差を全組み合わせで集計したものである。'),
+    cap_path_econ=(
+        '<b>プランの想定どおりの世帯を7つの経済見通しに置いたもの。</b>線の間で世帯の側は何も変えていない。'
+        '変わるのは物価、賃金上昇率、運用利回り、年金水準だけである。7つのうち%(ownRuinN)s（%(ownRuinEcons)s）は0を割って終わる。'
+        '最も良い線と最も悪い線の開きが、下で経済がばらつきの大半を説明する理由である。'),
     h_axes='どんな条件を想定したか',
     p_axes='条件のすべての組み合わせを計算することで、とるべき選択肢がわかる。',
     p_method=(
@@ -380,6 +419,13 @@ td.rr{color:var(--crit)}
 .callout.warn{border-left-color:var(--crit)}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--band);padding:.1em .35em;border-radius:3px;font-size:.92em}
 ol{padding-left:1.4em}ol li{margin:0 0 .6em}
+figure.chart{padding:12px 12px 8px}
+figure.chart svg{display:block;width:100%;height:auto;font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+figure.chart .grid{stroke:var(--rule)}figure.chart .zero{stroke:var(--ink2);stroke-width:1.2}
+figure.chart .ax{fill:var(--muted);font-size:12px}figure.chart .lbl{fill:var(--ink);font-size:12.5px;font-weight:600}
+figure.chart .lbl.dim{fill:var(--muted);font-weight:500}figure.chart .mark{stroke:var(--muted);stroke-dasharray:3 3}
+figure.chart .mk{fill:var(--muted);font-size:11.5px}
+figure.chart .l1{stroke:var(--s1)}figure.chart .l2{stroke:var(--s2)}figure.chart .ld{stroke:var(--muted);opacity:.55}
 footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted)}
 '''
 
@@ -392,6 +438,20 @@ SKELETON = '''<!-- generated by tools/sweep + docs/build.py; do not edit by hand
 <h1>{title}</h1>
 <p class="lede">{lede}</p>
 </header>
+<hr>
+<section>
+<h2>{h_path}</h2>
+<p class="sub">{sub_path}</p>
+<p>{p_path}</p>
+<figure class="chart">{chart_econ}<figcaption>{cap_path_econ}</figcaption></figure>
+<figure><div class="scroll"><table>
+<thead><tr><th>{th_econ}</th>{hyearHeads}</tr></thead>
+<tbody>{path_econ_rows}</tbody></table></div></figure>
+<figure class="chart">{chart_house}<figcaption>{cap_path_house}</figcaption></figure>
+<figure><div class="scroll"><table>
+<thead><tr><th>{th_housing}</th>{hyearHeads}</tr></thead>
+<tbody>{path_house_rows}</tbody></table></div></figure>
+</section>
 <hr>
 <section>
 <h2>{h_axes}</h2>
@@ -489,6 +549,61 @@ SKELETON = '''<!-- generated by tools/sweep + docs/build.py; do not edit by hand
 '''
 
 
+def nice_step(span):
+    for st in (0.25, 0.5, 1, 2, 5, 10):
+        if span / st <= 8:
+            return st
+    return 10
+
+
+def chart(lines, marks=(), title=''):
+    """lines: [(name, values, cls, dim)]. One SVG, y in 億円, x in years, labels at the right end."""
+    import math
+    years = SER['years']
+    Wc, Hc, L, R, T, B = 800, 360, 44, 132, 22, 30
+    lo = min(0, min(min(v) for _, v, _, _ in lines)); hi = max(0, max(max(v) for _, v, _, _ in lines))
+    st = nice_step(hi - lo)
+    lo = math.floor(lo / st) * st; hi = math.ceil(hi / st) * st
+    def X(y): return L + (Wc - L - R) * (y - years[0]) / (years[-1] - years[0])
+    def Y(v): return T + (Hc - T - B) * (hi - v) / (hi - lo)
+    o = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" role="img" aria-label="%s">' % (Wc, Hc, title)]
+    v = lo
+    while v <= hi + 1e-9:
+        cls = 'zero' if abs(v) < 1e-9 else 'grid'
+        o.append('<line class="%s" x1="%d" y1="%.1f" x2="%d" y2="%.1f"/>' % (cls, L, Y(v), Wc - R, Y(v)))
+        o.append('<text class="ax" x="%d" y="%.1f" text-anchor="end">%g</text>' % (L - 6, Y(v) + 4, v))
+        v += st
+    for y in range(years[0] + (10 - years[0] % 10) % 10, years[-1] + 1, 10):
+        o.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%d</text>' % (X(y), Hc - 8, y))
+    for y, label in marks:
+        o.append('<line class="mark" x1="%.1f" y1="%d" x2="%.1f" y2="%.1f"/>' % (X(y), T, X(y), Y(lo)))
+        o.append('<text class="mk" x="%.1f" y="%d" text-anchor="middle">%s %d</text>' % (X(y), T - 8, label, y))
+    ends = []
+    for name, vals, cls, dim in lines:
+        pts = ' '.join('%.1f,%.1f' % (X(y), Y(val)) for y, val in zip(years, vals))
+        o.append('<polyline class="%s" fill="none" stroke-width="%s" stroke-linejoin="round" points="%s"/>' % (cls, '1.5' if dim else '2.5', pts))
+        ends.append([Y(vals[-1]), name, dim])
+    ends.sort()
+    for i in range(1, len(ends)):                      # push labels apart, top to bottom
+        ends[i][0] = max(ends[i][0], ends[i - 1][0] + 15)
+    for i in range(len(ends) - 2, -1, -1):             # and back up if the bottom overflowed
+        ends[i][0] = min(ends[i][0], ends[i + 1][0] - 15)
+    for yy, name, dim in ends:
+        o.append('<text class="lbl%s" x="%d" y="%.1f">%s</text>' % (' dim' if dim else '', Wc - R + 8, yy + 4, name))
+    o.append('</svg>')
+    return ''.join(o)
+
+
+def path_tables():
+    at = [SER['years'].index(y) for y in hyears]
+    def row(name, vals, base):
+        return '<tr%s><td>%s</td>%s</tr>' % (' class="base"' if base else '', name,
+                                             ''.join('<td class="n">%s</td>' % oku(vals[i]) for i in at))
+    house = ''.join(row(l['house'], l['values'], l['house'] == OWN) for l in (own_base, rent_base))
+    econ = ''.join(row(l['econ'], l['values'], l['econ'] == BASE_ECON) for l in SER['lines'] if l['house'] == OWN)
+    return house, econ
+
+
 def tables():
     emx = max(e['v'] for e in D['eta'])
     eta = ''.join(
@@ -524,7 +639,8 @@ def tables():
         % (' class="base"' if e['name'] == '成長型' else '', e['name'],
            ''.join('<td class="n">%s</td>' % yrs(r['cover']) for r in e['rows']))
         for e in hs['econ'])
-    return dict(hyearHeads=hyear_heads, rentRows=rent_rows, coverRows=cover_rows, realRows=real_rows,
+    ph, pe = path_tables()
+    return dict(hyearHeads=hyear_heads, rentRows=rent_rows, path_house_rows=ph, path_econ_rows=pe, coverRows=cover_rows, realRows=real_rows,
                 eta=eta, econ=econ, heat=heat, resortM=rm, resortE=re_,
                 dial_housing=dial('住まい'), dial_living=dial('生活費'),
                 dial_pension=dial('年金受給開始'), dial_crisis=dial('金融危機'))
@@ -542,7 +658,9 @@ def render(lang):
         topDial=top_dial['name'],
         smallVerb='accounts' if len([e for e in dials if e['v'] < 0.01]) == 1 else 'each account',
         smallDials=join([e['name'] for e in D['eta'] if not e['env'] and e['v'] < 0.01]),
-        moveYear=MOVE_YEAR, paths=hs['paths'], hlast=hlast, hyears0=hyears[0],
+        moveYear=MOVE_YEAR, paths=hs['paths'],
+        y0=SER['years'][0], y1=SER['years'][-1], baseEcon=BASE_ECON, gapLast='%.2f' % gap_last,
+        ownRuinN=(len(own_ruin_econs) if lang == 'en' else '%dつ' % len(own_ruin_econs)), ownRuinEcons=join(own_ruin_econs), hlast=hlast, hyears0=hyears[0],
         collateral=man(hs['collateral']), proceeds=man(hs['proceeds']),
         collateralYen=com(hs['collateral']), proceedsYen=com(hs['proceeds']),
         proceedRate='%d%%' % round(100 * hs['proceeds'] / hs['collateral']),
@@ -563,6 +681,11 @@ def render(lang):
     out['cap_housing'] = out['cap_housing_bigger'] if top_dial['v'] > econ_eta['v'] else out['cap_housing_smaller']
     out.update(nums)
     out.update(tables())
+    move_label = '住み替え' if lang == 'ja' else 'move'
+    out['chart_house'] = chart([(OWN, own_base['values'], 'l1', False), (RENT, rent_base['values'], 'l2', False)],
+                               marks=[(MOVE_YEAR, move_label)], title=T['sub_path'])
+    out['chart_econ'] = chart([(l['econ'], l['values'], 'l1' if l['econ'] == BASE_ECON else 'ld', l['econ'] != BASE_ECON)
+                               for l in SER['lines'] if l['house'] == OWN], title=T['sub_path'])
     out['css'] = CSS
     return SKELETON.format(**out)
 

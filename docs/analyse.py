@@ -67,6 +67,13 @@ one=own[(econ[0]['name'],HY[0])]
 D['housing']={'years':HY,'econ':hecon,
               'collateral':int(one['担保評価額']),'proceeds':int(one['売却受取額']),
               'paths':len({tuple(r['level'] for r in e['rows']) for e in hecon})}
+# 純資産の推移。cells は 2090 年の1点しか持たないので、経済×住まいの14通りだけ全年を読む。
+S=list(csv.DictReader(io.open('out/sweep/series.tsv',encoding='utf-8'),delimiter='\t'))
+sy=sorted({int(r['西暦']) for r in S})
+sv={(r['経済'],r['住まい'],int(r['西暦'])):int(r['純資産'])/OKU for r in S}
+while sy and all(sv[(r['経済'],r['住まい'],sy[0])]==0 for r in S): sy=sy[1:]  # プラン開始前の年は落とす
+D['series']={'years':sy,'lines':[{'econ':e,'house':h,'values':[sv[(e,h,y)] for y in sy]}
+    for e in [x['name'] for x in econ] for h in sorted({r['住まい'] for r in S})]}
 io.open('out/sweep/data.json','w').write(json.dumps(D,ensure_ascii=False))
 print('n=%d ruin=%.1f%% (%d) med=%+.2f min=%+.2f max=%+.2f'%(n,100*D['dist']['ruin'],D['dist']['ruinN'],D['dist']['med'],D['dist']['min'],D['dist']['max']))
 print('eta:',[(e['name'],round(e['v']*100,1)) for e in eta])
