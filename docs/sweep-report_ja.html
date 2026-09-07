@@ -3,11 +3,11 @@
 <html lang="ja">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>平均的な世帯がたどりうる1,176通りのシナリオ</title>
-<meta name="description" content="架空の世帯について、世帯が決められる3つの選択肢と世帯には選べない2つの外部条件のすべての組み合わせで1,176通りのシナリオを作成した。100歳時点で資産が残るシナリオもあれば資産が枯渇するシナリオもある。全通りの組み合わせを計算する目的は、どの条件がどの程度資産の推移を左右するかを見ることにある。">
+<title>あなたがたどりうる（かもしれない）1,176通りのシナリオ</title>
+<meta name="description" content="平均的な架空の世帯について、自分で決められる3つの条件と決められない2つの条件のすべての組み合わせで1,176通りのシナリオを作成した。条件によっては破産シナリオもある。全通りの組み合わせを計算する目的はどの条件がどの程度資産の推移を左右するかを見ることにある。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="平均的な世帯がたどりうる1,176通りのシナリオ">
-<meta property="og:description" content="架空の世帯について、世帯が決められる3つの選択肢と世帯には選べない2つの外部条件のすべての組み合わせで1,176通りのシナリオを作成した。100歳時点で資産が残るシナリオもあれば資産が枯渇するシナリオもある。全通りの組み合わせを計算する目的は、どの条件がどの程度資産の推移を左右するかを見ることにある。">
+<meta property="og:title" content="あなたがたどりうる（かもしれない）1,176通りのシナリオ">
+<meta property="og:description" content="平均的な架空の世帯について、自分で決められる3つの条件と決められない2つの条件のすべての組み合わせで1,176通りのシナリオを作成した。条件によっては資産が枯渇する破産シナリオもある。全通りの組み合わせを計算する目的はどの条件がどの程度資産の推移を左右するかを見ることにある。">
 <meta property="og:url" content="https://kuniwak.github.io/ai-lifeplan/sweep-report_ja.html">
 <meta property="og:image" content="https://ogimage.blog.st-hatena.com/11696248318752538694/14945776032049095917/1788752824">
 <meta property="og:site_name" content="lifeplan">
@@ -64,8 +64,8 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <div class="wrap" lang="ja">
 <header>
 <p class="kicker">lifeplan / 5つの条件の全組み合わせ / サンプル</p>
-<h1>平均的な世帯がたどりうる1,176通りのシナリオ</h1>
-<p class="lede">架空の世帯について、世帯が決められる3つの選択肢と世帯には選べない2つの外部条件のすべての組み合わせで1,176通りのシナリオを作成した。100歳時点で資産が残るシナリオもあれば資産が枯渇するシナリオもある。全通りの組み合わせを計算する目的は、<strong>どの条件がどの程度資産の推移を左右するか</strong>を見ることにある。</p>
+<h1>あなたがたどりうる（かもしれない）1,176通りのシナリオ</h1>
+<p class="lede">平均的な架空の世帯について、自分で決められる3つの条件と決められない2つの条件のすべての組み合わせで1,176通りのシナリオを作成した。条件によっては破産シナリオもある。全通りの組み合わせを計算する目的は<strong>どの条件がどの程度資産の推移を左右するか</strong>を見ることにある。</p>
 </header>
 <hr>
 <section>
@@ -145,22 +145,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 </section>
 <hr>
 <section>
-<h2>家賃と担保評価額はどう動くか</h2>
-<p class="sub">経済ごとに、賃貸の家賃と、自宅を担保に入れたときの評価額を年で追う</p>
-<p>家賃は物価に連れて上がる。担保に入れられる評価額は固定資産税の納税通知書から読んだ土地の評価額で、計算の全期間にわたって名目のまま据え置いている。この2つは同じ向きに動かないので、自宅を現金に換えるのが遅いほど、買える家賃の年数は少なくなる。</p>
-<figure><div class="scroll"><table>
-<thead><tr><th>経済</th><th class="n">2030</th><th class="n">2046</th><th class="n">2050</th><th class="n">2070</th><th class="n">2090</th></tr></thead>
-<tbody><tr><td>高成長</td><td class="n">2,638,753</td><td class="n">1,921,107</td><td class="n">2,079,468</td><td class="n">3,089,980</td><td class="n">4,591,548</td></tr><tr class="base"><td>成長型</td><td class="n">2,638,753</td><td class="n">1,921,107</td><td class="n">2,079,468</td><td class="n">3,089,980</td><td class="n">4,591,548</td></tr><tr><td>OECD</td><td class="n">2,638,753</td><td class="n">1,921,107</td><td class="n">2,079,468</td><td class="n">3,089,980</td><td class="n">4,591,548</td></tr><tr><td>OECD低</td><td class="n">2,511,914</td><td class="n">1,562,057</td><td class="n">1,625,483</td><td class="n">1,983,398</td><td class="n">2,420,122</td></tr><tr><td>過去30年</td><td class="n">2,487,142</td><td class="n">1,498,370</td><td class="n">1,546,897</td><td class="n">1,814,145</td><td class="n">2,127,564</td></tr><tr><td>ゼロ成長</td><td class="n">2,438,184</td><td class="n">1,378,339</td><td class="n">1,400,525</td><td class="n">1,516,928</td><td class="n">1,643,007</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">2,438,184</td><td class="n">1,378,339</td><td class="n">1,400,525</td><td class="n">1,516,928</td><td class="n">1,643,007</td></tr></tbody></table></div>
-<figcaption><b>家賃（名目）。</b>単位は円/年、その年の価格。実質では2046年の1LDKへの転居まで一定なので、この段以外の動きはすべて物価による。7つの経済が作る物価の道筋は<b>4</b>通りしかなく、同じ道筋の経済は同じ行になる。</figcaption></figure>
-<figure><div class="scroll"><table>
-<thead><tr><th>経済</th><th class="n">2030</th><th class="n">2046</th><th class="n">2050</th><th class="n">2070</th><th class="n">2090</th></tr></thead>
-<tbody><tr><td>高成長</td><td class="n">12,680,011</td><td class="n">9,236,656</td><td class="n">8,533,463</td><td class="n">5,742,647</td><td class="n">3,864,734</td></tr><tr class="base"><td>成長型</td><td class="n">12,680,011</td><td class="n">9,236,656</td><td class="n">8,533,463</td><td class="n">5,742,647</td><td class="n">3,864,734</td></tr><tr><td>OECD</td><td class="n">12,680,011</td><td class="n">9,236,656</td><td class="n">8,533,463</td><td class="n">5,742,647</td><td class="n">3,864,734</td></tr><tr><td>OECD低</td><td class="n">13,320,647</td><td class="n">11,359,948</td><td class="n">10,917,031</td><td class="n">8,946,830</td><td class="n">7,332,146</td></tr><tr><td>過去30年</td><td class="n">13,453,777</td><td class="n">11,843,330</td><td class="n">11,471,649</td><td class="n">9,781,318</td><td class="n">8,340,284</td></tr><tr><td>ゼロ成長</td><td class="n">13,722,799</td><td class="n">12,874,747</td><td class="n">12,669,683</td><td class="n">11,697,861</td><td class="n">10,799,969</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">13,722,799</td><td class="n">12,874,747</td><td class="n">12,669,683</td><td class="n">11,697,861</td><td class="n">10,799,969</td></tr></tbody></table></div>
-<figcaption><b>担保評価額（実質）。</b>同じ1,400万円を、プラン初年度の価格に割り戻したもの。土地について何かが変わったわけではない。物価が上がるあいだ名目で据え置いているので、実質では下がる。</figcaption></figure>
-<figure><div class="scroll"><table>
-<thead><tr><th>経済</th><th class="n">2030</th><th class="n">2046</th><th class="n">2050</th><th class="n">2070</th><th class="n">2090</th></tr></thead>
-<tbody><tr><td>高成長</td><td class="n">5.1</td><td class="n">3.7</td><td class="n">3.5</td><td class="n">2.3</td><td class="n">1.6</td></tr><tr class="base"><td>成長型</td><td class="n">5.1</td><td class="n">3.7</td><td class="n">3.5</td><td class="n">2.3</td><td class="n">1.6</td></tr><tr><td>OECD</td><td class="n">5.1</td><td class="n">3.7</td><td class="n">3.5</td><td class="n">2.3</td><td class="n">1.6</td></tr><tr><td>OECD低</td><td class="n">5.4</td><td class="n">4.6</td><td class="n">4.4</td><td class="n">3.6</td><td class="n">3.0</td></tr><tr><td>過去30年</td><td class="n">5.5</td><td class="n">4.8</td><td class="n">4.7</td><td class="n">4.0</td><td class="n">3.4</td></tr><tr><td>ゼロ成長</td><td class="n">5.6</td><td class="n">5.2</td><td class="n">5.1</td><td class="n">4.7</td><td class="n">4.4</td></tr><tr><td>ゼロ成長枯渇</td><td class="n">5.6</td><td class="n">5.2</td><td class="n">5.1</td><td class="n">4.7</td><td class="n">4.4</td></tr></tbody></table></div>
-<figcaption><b>売却代金で払える家賃の年数。</b>担保評価額1,400万円のうち、売却して手元に残るのは97%の1,358万円である。これをその年の家賃で割った。<b>売却後に払う家賃は子が居たころと同じ広さのもの</b>で、賃貸シナリオが移る1LDKではない。売却する世帯は転居していないからである。</figcaption></figure>
-<div class="callout"><strong>物価がもっとも速く上がる経済（高成長、成長型、OECD）では、2090年に自宅を売っても家賃1.6年分にしかならない。2030年なら5.1年分だった。</strong>この目減りは担保を名目で据え置いていることだけから来ている。八王子市の地価が物価に連れて上がるなら、これは自宅を安く見積もりすぎており、安全側である。逆に地価が下がるなら、高く見積もっていることになる。</div>
+<!-- TODO: 破産を避けるためにできる選択の解説 -->
 </section>
 <hr>
 <section>
