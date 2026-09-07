@@ -132,7 +132,7 @@ TEXT['en'] = dict(
 
     h_dials='Each decision on its own',
     sub_dials='Median net worth and ruin rate for each option, across every combination of the other conditions',
-    th_housing='Housing', th_living='Living cost', th_pension='Pension start', th_crash='Crash', th_ruin_s='ruin rate',
+    th_housing='Housing', th_living='Living cost', th_pension='Pension start', th_crash='Crash', th_vs_none='vs. no crash', th_ruin_s='ruin rate',
     cap_housing_bigger=(
         'Housing is the largest decision the household controls, and it moves the result more than the economy does.'),
     cap_housing_smaller=(
@@ -275,7 +275,7 @@ TEXT['ja'] = dict(
 
     h_dials='意思決定を1つずつ見る',
     sub_dials='各選択肢の純資産中央値と破綻率。他の条件のすべての組み合わせを集計',
-    th_housing='住まい', th_living='生活費', th_pension='年金受給開始', th_crash='暴落', th_ruin_s='破綻率',
+    th_housing='住まい', th_living='生活費', th_pension='年金受給開始', th_crash='暴落', th_vs_none='なしとの差', th_ruin_s='破綻率',
     cap_housing_bigger='住まいは世帯が決められる意思決定の中で最大で、経済よりも結果を動かす。',
     cap_housing_smaller='住まいは世帯が決められる意思決定の中で最大である。経済ほどではないが、他のどの意思決定よりも結果を動かす。',
     cap_living='支出も結果を動かすが、住まいほどではない。',
@@ -467,7 +467,7 @@ SKELETON = '''<!doctype html>
 <figcaption>{cap_living}</figcaption></figure>
 <figure><div class="scroll"><table><thead><tr><th>{th_pension}</th><th class="n">{th_median}</th><th class="n">{th_ruin_s}</th></tr></thead><tbody>{dial_pension}</tbody></table></div>
 <figcaption>{cap_pension}</figcaption></figure>
-<figure><div class="scroll"><table><thead><tr><th>{th_crash}</th><th class="n">{th_median}</th><th class="n">{th_ruin_s}</th></tr></thead><tbody>{dial_crisis}</tbody></table></div>
+<figure><div class="scroll"><table><thead><tr><th>{th_crash}</th><th class="n">{th_median}</th><th class="n">{th_vs_none}</th><th class="n">{th_ruin_s}</th></tr></thead><tbody>{dial_crisis}</tbody></table></div>
 <figcaption>{cap_crash}</figcaption></figure>
 <p>{p_dials_note}</p>
 </section>
@@ -574,9 +574,17 @@ def tables():
         % (' class="base"' if e['name'] == '成長型' else '', e['name'], oku(e['min']), oku(e['med']), oku(e['max']), pct(e['ruin']))
         for e in D['econ'])
 
-    def dial(name):
-        return ''.join('<tr><td>%s</td><td class="n">%s</td><td class="n">%s</td></tr>' % (r['lv'], oku(r['med']), pct(r['ruin']))
-                       for r in D['dials'][name])
+    def dial(name, base=None):
+        # With a base option, add a column of each option's median minus the base's, and put the base first.
+        rows = D['dials'][name]
+        if base is not None:
+            rows = sorted(rows, key=lambda r: r['lv'] != base)
+            ref = next(r['med'] for r in rows if r['lv'] == base)
+        return ''.join('<tr%s><td>%s</td><td class="n">%s</td>%s<td class="n">%s</td></tr>'
+                       % (' class="base"' if r['lv'] == base else '', r['lv'], oku(r['med']),
+                          '' if base is None else '<td class="n">%s</td>' % ('—' if r['lv'] == base else oku(r['med'] - ref)),
+                          pct(r['ruin']))
+                       for r in rows)
     heat = ''.join('<tr><td>%s</td><td>%s</td><td class="n">%s</td><td class="n">%s</td></tr>'
                    % (h['住まい'], h['生活費'], oku(h['med']), pct(h['ruin'])) for h in D['heat'])
     rm = ''.join('<tr><td>%s</td><td class="n">%s</td></tr>' % (m['name'], com(m['n'])) for m in res['byMeasure'])
@@ -587,7 +595,7 @@ def tables():
     return dict(hyearHeads=hyear_heads, path_house_rows=ph, path_econ_rows=pe,
                 eta=eta, econ=econ, heat=heat, resortM=rm, resortE=re_,
                 dial_housing=dial('住まい'), dial_living=dial('生活費'),
-                dial_pension=dial('年金受給開始'), dial_crisis=dial('金融危機'))
+                dial_pension=dial('年金受給開始'), dial_crisis=dial('金融危機', base='なし'))
 
 
 def strip_tags(s):
