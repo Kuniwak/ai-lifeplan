@@ -80,12 +80,12 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <hr>
 <section>
 <h2>どの条件の影響度が高いか</h2>
-<p class="sub">各条件がばらつきに占める割合（説明された分散、η²）</p>
-<p>η²は大雑把にはその条件の重大さである。厳密には、ある条件を1つの選択肢に固定したときに消えるばらつきを意味する。</p>
+<p class="sub">各条件の効果量（η²、説明された分散の割合）</p>
+<p>効果量は大雑把にはその条件の重大さである。厳密には、最終資産の分散のうち、その条件の選択肢ごとの平均値の違いで説明できる割合である。選択肢を変えても平均値がほとんど動かない条件は、効果量が小さい。</p>
 <figure><div class="scroll"><table>
-<thead><tr><th>条件</th><th class="b">ばらつきに占める割合</th><th class="n">η²</th></tr></thead>
+<thead><tr><th>条件</th><th class="b">効果量</th><th class="n">効果量（η²）</th></tr></thead>
 <tbody><tr><td class="k">経済</td><td class="b"><span class="env" style="width:460px"></span></td><td class="n">65.67%</td></tr><tr><td class="k">住まい</td><td class="b"><span class="dial" style="width:119px"></span></td><td class="n">16.95%</td></tr><tr><td class="k">生活費</td><td class="b"><span class="dial" style="width:85px"></span></td><td class="n">12.11%</td></tr><tr><td class="k">年金受給開始</td><td class="b"><span class="dial" style="width:3px"></span></td><td class="n">0.49%</td></tr><tr><td class="k">金融危機</td><td class="b"><span class="env" style="width:2px"></span></td><td class="n">0.28%</td></tr></tbody></table></div>
-<figcaption>オレンジは世帯が選べない条件、青は世帯が決められる条件。5つの条件それぞれ単独の効果を合計するとばらつきの<b>95.5%</b>を説明する。残りは条件どうしが組み合わさって生じる効果で、ある条件の効き方が別の条件の選択肢によって変わる分である。</figcaption></figure>
+<figcaption>オレンジは世帯が選べない条件、青は世帯が決められる条件。5つの条件それぞれ単独の効果量を合計すると分散の<b>95.5%</b>を説明する。残りは交互作用、つまり条件どうしが組み合わさって生じる効果で、ある条件の効き方が別の条件の選択肢によって変わる分である。シミュレータは決定的で乱数を含まないので、残りのすべてが交互作用である。</figcaption></figure>
 </section>
 <hr>
 <section>
@@ -109,7 +109,7 @@ footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-si
 <figcaption>年金の繰り下げは中央値を押し上げるが、受給を待つ年数は貯蓄の取り崩しでしのぐことになる。</figcaption></figure>
 <figure><div class="scroll"><table><thead><tr><th>暴落</th><th class="n">中央値</th><th class="n">破綻率</th></tr></thead><tbody><tr><td>2030年</td><td class="n">+0.30</td><td class="n">52.4%</td></tr><tr><td>2040年</td><td class="n">+0.27</td><td class="n">52.4%</td></tr><tr><td>2050-2051年の2年</td><td class="n">+0.18</td><td class="n">53.6%</td></tr><tr><td>2050年</td><td class="n">+0.22</td><td class="n">53.6%</td></tr><tr><td>2060年</td><td class="n">+0.21</td><td class="n">53.6%</td></tr><tr><td>2070年</td><td class="n">+0.20</td><td class="n">53.0%</td></tr><tr><td>なし</td><td class="n">+0.32</td><td class="n">52.4%</td></tr></tbody></table></div>
 <figcaption>同じ下落率でも、いつ起きるか、そのとき何をどれだけ保有しているかで損失額は変わる。</figcaption></figure>
-<p>表の行どうしがほとんど変わらない意思決定は、平均的な世帯ではほとんど結果を左右しない。年金受給開始は、ばらつきの1%未満しか占めない。これも結果の1つである。世帯がどの問いに悩むのをやめてよく、どの問い（住まい）に時間を使うべきかを示している。</p>
+<p>表の行どうしがほとんど変わらない意思決定は、平均的な世帯ではほとんど結果を左右しない。年金受給開始の効果量は1%未満である。これも結果の1つである。世帯がどの問いに悩むのをやめてよく、どの問い（住まい）に時間を使うべきかを示している。</p>
 </section>
 <hr>
 <section>
