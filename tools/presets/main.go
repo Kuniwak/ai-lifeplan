@@ -46,13 +46,10 @@ var repairs = []preset{
 
 var dials = []preset{
 	{"best", "最良執行", nil},
-	{"as-now", "現状のまま（給与の下り坂・積立 10 万・課税から先に売る）", []slot{
-		{"income_husband", "data/controllable/income-husband.tsv"},
+	{"as-now", "現状のまま（積立 10 万・課税から先に売る）", []slot{
 		{"investment", "data/controllable/investment.tsv"}}},
-	{"invest-as-now", "運用だけ現状", []slot{
-		{"investment", "data/controllable/investment.tsv"}}},
-	{"income-decline", "給与だけ下り坂", []slot{
-		{"income_husband", "data/controllable/income-husband.tsv"}}},
+	{"income-no-decline", "給与を 60 歳以降も維持", []slot{
+		{"income_husband", "data/controllable/income-husband-flat.tsv"}}},
 	{"income-flat", "給与を定年まで維持", []slot{
 		{"income_husband", "data/controllable/scenario/income-husband-flat-to-retirement.tsv"}}},
 	{"settle-2050", "2042 年にローンを一括返済", []slot{

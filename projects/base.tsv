@@ -12,7 +12,7 @@ medical_cost_by_age	data/environment/medical-cost-by-age.tsv
 pension_level	data/environment/scenario/pension-growth-transition.tsv
 inflation_target	data/environment/inflation-target.tsv
 reference_range	data/environment/reference-range.tsv
-income_husband	data/controllable/income-husband-flat.tsv
+income_husband	data/controllable/income-husband.tsv
 income_wife	data/controllable/income-wife.tsv
 pension	data/controllable/pension.tsv
 tuition	data/controllable/tuition.tsv
